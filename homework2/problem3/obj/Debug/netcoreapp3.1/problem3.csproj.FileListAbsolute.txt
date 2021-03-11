@@ -1,0 +1,13 @@
+D:\projects\C#\DotNetHomework\homework2\problem3\bin\Debug\netcoreapp3.1\problem3.exe
+D:\projects\C#\DotNetHomework\homework2\problem3\bin\Debug\netcoreapp3.1\problem3.deps.json
+D:\projects\C#\DotNetHomework\homework2\problem3\bin\Debug\netcoreapp3.1\problem3.runtimeconfig.json
+D:\projects\C#\DotNetHomework\homework2\problem3\bin\Debug\netcoreapp3.1\problem3.runtimeconfig.dev.json
+D:\projects\C#\DotNetHomework\homework2\problem3\bin\Debug\netcoreapp3.1\problem3.dll
+D:\projects\C#\DotNetHomework\homework2\problem3\bin\Debug\netcoreapp3.1\problem3.pdb
+D:\projects\C#\DotNetHomework\homework2\problem3\obj\Debug\netcoreapp3.1\problem3.csprojAssemblyReference.cache
+D:\projects\C#\DotNetHomework\homework2\problem3\obj\Debug\netcoreapp3.1\problem3.AssemblyInfoInputs.cache
+D:\projects\C#\DotNetHomework\homework2\problem3\obj\Debug\netcoreapp3.1\problem3.AssemblyInfo.cs
+D:\projects\C#\DotNetHomework\homework2\problem3\obj\Debug\netcoreapp3.1\problem3.csproj.CoreCompileInputs.cache
+D:\projects\C#\DotNetHomework\homework2\problem3\obj\Debug\netcoreapp3.1\problem3.dll
+D:\projects\C#\DotNetHomework\homework2\problem3\obj\Debug\netcoreapp3.1\problem3.pdb
+D:\projects\C#\DotNetHomework\homework2\problem3\obj\Debug\netcoreapp3.1\problem3.genruntimeconfig.cache

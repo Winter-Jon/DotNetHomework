@@ -11,22 +11,22 @@ namespace problem1
             Console.WriteLine("请输入第二个操作数：");
             double b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("请输入操作符：");
-            char c= Convert.ToChar(Console.ReadLine());
+            char oper= Convert.ToChar(Console.ReadLine());
             double s = 0;
 
-            if (c=='+')
+            if (oper=='+')
             {
                 s = a + b;
             }
-            else if (c == '-')
+            else if (oper == '-')
             {
                 s = a - b;
             }
-            else if (c == '*')
+            else if (oper == '*')
             {
                 s = a * b;
             }
-            else if (c == '/')
+            else if (oper == '/')
             {
                 s = a / b;
             }
