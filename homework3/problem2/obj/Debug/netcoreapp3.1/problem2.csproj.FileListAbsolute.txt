@@ -1,0 +1,13 @@
+D:\projects\C#\DotNetHomework\homework3\problem2\bin\Debug\netcoreapp3.1\problem2.exe
+D:\projects\C#\DotNetHomework\homework3\problem2\bin\Debug\netcoreapp3.1\problem2.deps.json
+D:\projects\C#\DotNetHomework\homework3\problem2\bin\Debug\netcoreapp3.1\problem2.runtimeconfig.json
+D:\projects\C#\DotNetHomework\homework3\problem2\bin\Debug\netcoreapp3.1\problem2.runtimeconfig.dev.json
+D:\projects\C#\DotNetHomework\homework3\problem2\bin\Debug\netcoreapp3.1\problem2.dll
+D:\projects\C#\DotNetHomework\homework3\problem2\bin\Debug\netcoreapp3.1\problem2.pdb
+D:\projects\C#\DotNetHomework\homework3\problem2\obj\Debug\netcoreapp3.1\problem2.csprojAssemblyReference.cache
+D:\projects\C#\DotNetHomework\homework3\problem2\obj\Debug\netcoreapp3.1\problem2.AssemblyInfoInputs.cache
+D:\projects\C#\DotNetHomework\homework3\problem2\obj\Debug\netcoreapp3.1\problem2.AssemblyInfo.cs
+D:\projects\C#\DotNetHomework\homework3\problem2\obj\Debug\netcoreapp3.1\problem2.csproj.CoreCompileInputs.cache
+D:\projects\C#\DotNetHomework\homework3\problem2\obj\Debug\netcoreapp3.1\problem2.dll
+D:\projects\C#\DotNetHomework\homework3\problem2\obj\Debug\netcoreapp3.1\problem2.pdb
+D:\projects\C#\DotNetHomework\homework3\problem2\obj\Debug\netcoreapp3.1\problem2.genruntimeconfig.cache
