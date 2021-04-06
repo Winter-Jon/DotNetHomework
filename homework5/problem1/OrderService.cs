@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace problem1
 {
     class OrderService
     {
-        readonly List<Order> OrderList;
+        private List<Order> OrderList;
 
         public void AddOrderDetails(Order order)
         {
@@ -155,5 +158,22 @@ namespace problem1
             return o;
         }
 
+        public void Import()
+        {
+            XmlSerializer xml = new XmlSerializer(typeof(List<Order>));
+            using (FileStream fs = new FileStream("OrderList.xml", FileMode.Create))
+                xml.Serialize(fs, OrderList);
+
+        }
+
+        public void Export()
+        {
+            XmlSerializer xml = new XmlSerializer(typeof(List<Order>));
+            using (FileStream fs = new FileStream("OrderList.xml", FileMode.Open))
+            {
+                OrderList= (List<Order>)xml.Deserialize(fs);
+            }
+
+        }
     }
 }
