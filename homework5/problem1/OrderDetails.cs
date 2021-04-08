@@ -11,7 +11,7 @@ namespace problem1
         public int GoodPrice { get; set; }
 
         OrderDetails() { }
-        OrderDetails(int goodNum,string goodName,int goodPrice)
+        OrderDetails(int goodNum, string goodName, int goodPrice)
         {
             this.GoodNum = goodNum;
             this.GoodName = goodName;
