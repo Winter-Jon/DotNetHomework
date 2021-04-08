@@ -4,14 +4,14 @@ using System.Text;
 
 namespace problem1
 {
-    class OrderDetails
+    public class OrderDetails
     {
         public int GoodNum { get; set; }
         public string GoodName { get; set; }
         public int GoodPrice { get; set; }
 
         OrderDetails() { }
-        OrderDetails(int goodNum, string goodName, int goodPrice)
+        public OrderDetails(int goodNum, string goodName, int goodPrice)
         {
             this.GoodNum = goodNum;
             this.GoodName = goodName;

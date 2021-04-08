@@ -4,7 +4,7 @@ using System.Text;
 
 namespace problem1
 {
-    class Order
+    public class Order
     {
         readonly List<OrderDetails> orderDetailsList;
         public int OrderDetailsNum { get => orderDetailsList.Count; }
@@ -20,8 +20,8 @@ namespace problem1
             } 
         }
 
-        Order() { }
-        Order(List<OrderDetails> orderDetailsList,string customer) 
+        public Order() { }
+        public Order(List<OrderDetails> orderDetailsList,string customer) 
         { 
             this.orderDetailsList = orderDetailsList;
             this.Customer = customer;

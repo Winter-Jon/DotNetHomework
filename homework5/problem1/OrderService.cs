@@ -8,11 +8,11 @@ using System.Xml.Serialization;
 
 namespace problem1
 {
-    class OrderService
+    public class OrderService
     {
-        private List<Order> OrderList;
+        List<Order> OrderList;
 
-        public void AddOrderDetails(Order order)
+        public void AddOrder(Order order)
         {
             //judge same
             foreach (Order i in OrderList)
@@ -25,7 +25,7 @@ namespace problem1
             OrderList.Add(order);
         }
 
-        public void DeleteOrderDetails(int orderNum)
+        public void DeleteOrder(int orderNum)
         {
             try
             {
