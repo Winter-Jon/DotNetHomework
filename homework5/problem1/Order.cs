@@ -2,49 +2,51 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace problem1
+namespace OrderProgram
 {
     public class Order
     {
-        readonly List<OrderDetails> orderDetailsList;
-        public int OrderDetailsNum { get => orderDetailsList.Count; }
-        public string Customer { set; get; }
-        public int OrderPrice
+        public List<OrderDetails> OrderDetailsList { get;}
+        public int OrderNum { get; }
+        public string Customer {get; }
+        public double OrderPrice
         { 
             get
             {
                 int sum = 0;
-                foreach (OrderDetails i in orderDetailsList)
+                foreach (OrderDetails i in OrderDetailsList)
                     sum += i.GoodPrice;
                 return sum;
             } 
         }
 
-        public Order() { }
-        public Order(List<OrderDetails> orderDetailsList,string customer) 
-        { 
-            this.orderDetailsList = orderDetailsList;
+        public Order() { this.OrderDetailsList = new List<OrderDetails>(); }
+        public Order( int orderNum,string customer,List<OrderDetails> orderDetailsList) 
+        {
+            this.OrderDetailsList = new List<OrderDetails>();
+            this.OrderNum = orderNum;
+            this.OrderDetailsList = orderDetailsList;
             this.Customer = customer;
         }
 
         public void AddOrderDetails(OrderDetails orderDetails)
         {
             //judge same
-            foreach (OrderDetails i in orderDetailsList)
+            foreach (OrderDetails i in OrderDetailsList)
                 if (orderDetails == i)
                 {
                     Console.WriteLine("same");
                     return;
                 }
 
-            orderDetailsList.Add(orderDetails);
+            OrderDetailsList.Add(orderDetails);
         }
 
         public void DeleteOrderDetails(int goodNo)
         {
             try
             {
-                orderDetailsList.RemoveAt(goodNo);
+                OrderDetailsList.RemoveAt(goodNo);
             }
             catch(ArgumentNullException e)
             {
@@ -56,7 +58,7 @@ namespace problem1
         {
             string order="Customer:"+Customer+"\n";
             int num = 1;
-            foreach (OrderDetails i in orderDetailsList)
+            foreach (OrderDetails i in OrderDetailsList)
             { 
                 order = order + "No:"+num+"     " + i + "\n";
                 num++;
@@ -68,14 +70,14 @@ namespace problem1
         public override bool Equals(object obj)
         {
             return obj is Order order &&
-                   EqualityComparer<List<OrderDetails>>.Default.Equals(orderDetailsList, order.orderDetailsList) &&
+                   EqualityComparer<List<OrderDetails>>.Default.Equals(OrderDetailsList, order.OrderDetailsList) &&
                    Customer == order.Customer &&
                    OrderPrice == order.OrderPrice;
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(orderDetailsList, Customer, OrderPrice);
+            return HashCode.Combine(OrderDetailsList, Customer, OrderPrice);
         }
     }
 }

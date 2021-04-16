@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace problem1
+namespace OrderProgram
 {
 
     class Program

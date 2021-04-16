@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace problem1
+namespace OrderProgram
 {
     public class OrderDetails
     {
         public int GoodNum { get; set; }
         public string GoodName { get; set; }
         public int GoodPrice { get; set; }
+        public double GoodTotalPrice { get => GoodNum * GoodPrice; }
 
         OrderDetails() { }
         public OrderDetails(int goodNum, string goodName, int goodPrice)

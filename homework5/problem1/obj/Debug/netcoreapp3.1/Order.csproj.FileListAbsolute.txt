@@ -1,0 +1,13 @@
+D:\projects\C#\DotNetHomework\homework5\problem1\bin\Debug\netcoreapp3.1\Order.exe
+D:\projects\C#\DotNetHomework\homework5\problem1\bin\Debug\netcoreapp3.1\Order.deps.json
+D:\projects\C#\DotNetHomework\homework5\problem1\bin\Debug\netcoreapp3.1\Order.runtimeconfig.json
+D:\projects\C#\DotNetHomework\homework5\problem1\bin\Debug\netcoreapp3.1\Order.runtimeconfig.dev.json
+D:\projects\C#\DotNetHomework\homework5\problem1\bin\Debug\netcoreapp3.1\Order.dll
+D:\projects\C#\DotNetHomework\homework5\problem1\bin\Debug\netcoreapp3.1\Order.pdb
+D:\projects\C#\DotNetHomework\homework5\problem1\obj\Debug\netcoreapp3.1\Order.csprojAssemblyReference.cache
+D:\projects\C#\DotNetHomework\homework5\problem1\obj\Debug\netcoreapp3.1\Order.AssemblyInfoInputs.cache
+D:\projects\C#\DotNetHomework\homework5\problem1\obj\Debug\netcoreapp3.1\Order.AssemblyInfo.cs
+D:\projects\C#\DotNetHomework\homework5\problem1\obj\Debug\netcoreapp3.1\Order.csproj.CoreCompileInputs.cache
+D:\projects\C#\DotNetHomework\homework5\problem1\obj\Debug\netcoreapp3.1\Order.dll
+D:\projects\C#\DotNetHomework\homework5\problem1\obj\Debug\netcoreapp3.1\Order.pdb
+D:\projects\C#\DotNetHomework\homework5\problem1\obj\Debug\netcoreapp3.1\Order.genruntimeconfig.cache

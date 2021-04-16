@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\C#\\DotNetHomework\\homework5\\problem1\\problem1.csproj",
-      "projectName": "problem1",
-      "projectPath": "D:\\projects\\C#\\DotNetHomework\\homework5\\problem1\\problem1.csproj",
+      "projectUniqueName": "D:\\projects\\C#\\DotNetHomework\\homework5\\problem1\\Order.csproj",
+      "projectName": "Order",
+      "projectPath": "D:\\projects\\C#\\DotNetHomework\\homework5\\problem1\\Order.csproj",
       "packagesPath": "C:\\Users\\administrator1\\.nuget\\packages\\",
       "outputPath": "D:\\projects\\C#\\DotNetHomework\\homework5\\problem1\\obj\\",
       "projectStyle": "PackageReference",

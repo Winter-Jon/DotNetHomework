@@ -6,12 +6,13 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace problem1
+namespace OrderProgram
 {
     public class OrderService
     {
-        List<Order> OrderList;
+        public List<Order> OrderList { get; set; }
 
+        public OrderService() { OrderList = new List<Order>(); }
         public void AddOrder(Order order)
         {
             //judge same
@@ -29,7 +30,7 @@ namespace problem1
         {
             try
             {
-                OrderList.RemoveAt(orderNum-1);
+                OrderList.RemoveAt(orderNum - 1);
             }
             catch (ArgumentNullException e)
             {
@@ -39,17 +40,17 @@ namespace problem1
 
         public void OrderShow(int orderNum)
         {
-            string str=OrderList[orderNum - 1].ToString();
+            string str = OrderList[orderNum - 1].ToString();
             Console.WriteLine(str);
         }
 
         public void OrderSort(string i)
         {
-            switch(i)
+            switch (i)
             {
                 case "1":
                     {
-                        OrderList.Sort((p1, p2) =>  p1.OrderPrice - p2.OrderPrice);
+                        OrderList.Sort((p1, p2) => (int)(p1.OrderPrice - p2.OrderPrice));
                         break;
                     }
                 case "2":
@@ -57,25 +58,21 @@ namespace problem1
                         OrderList.Sort((p1, p2) => p1.Customer.CompareTo(p2.Customer));
                         break;
                     }
-                case "3":
-                    {
-                        OrderList.Sort((p1, p2) => p1.OrderDetailsNum - p2.OrderDetailsNum);
-                        break;
-                    }
-                default:break;
+
+                default: break;
             }
 
         }
 
         public List<Order> OrderSearch(string i)
         {
-            List<Order> OrderResult=null;
+            List<Order> OrderResult = null;
 
             switch (i)
             {
                 case "1":
                     {
-                        OrderResult=OrderPriceSearch();
+                        OrderResult = OrderPriceSearch();
                         break;
                     }
                 case "2":
@@ -83,29 +80,24 @@ namespace problem1
                         OrderResult = OrderCustomerSearch();
                         break;
                     }
-                case "3":
-                    {
-                        OrderResult = OrderDetailsNumSearch();
-                        break;
-                    }
                 default: break;
             }
 
-            OrderResult.Sort((p1, p2) => p1.OrderPrice - p2.OrderPrice);
+            OrderResult.Sort((p1, p2) => (int)(p1.OrderPrice - p2.OrderPrice));
             return OrderResult;
         }
-        
+
         private List<Order> OrderPriceSearch()
         {
-            string i=Console.ReadLine();
+            string i = Console.ReadLine();
             int price = Convert.ToInt32(Console.ReadLine());
-            List<Order> o=null;
+            List<Order> o = null;
 
             switch (i)
             {
                 case "1":
                     {
-                        o= (List<Order>)(from n in OrderList where n.OrderPrice > price select n);
+                        o = (List<Order>)(from n in OrderList where n.OrderPrice > price select n);
                         break;
                     }
                 case "2":
@@ -123,32 +115,6 @@ namespace problem1
             return o;
         }
 
-        private List<Order> OrderDetailsNumSearch()
-        {
-            string i = Console.ReadLine();
-            int detailsNum = Convert.ToInt32(Console.ReadLine());
-            List<Order> o = null;
-            switch (i)
-            {
-                case "1":
-                    {
-                        o = (List<Order>)(from n in OrderList where n.OrderDetailsNum > detailsNum select n);
-                        break;
-                    }
-                case "2":
-                    {
-                        o = (List<Order>)(from n in OrderList where n.OrderDetailsNum < detailsNum select n);
-                        break;
-                    }
-                case "3":
-                    {
-                        o = (List<Order>)(from n in OrderList where n.OrderDetailsNum == detailsNum select n);
-                        break;
-                    }
-                default: break;
-            }
-            return o;
-        }
 
         private List<Order> OrderCustomerSearch()
         {
@@ -171,7 +137,7 @@ namespace problem1
             XmlSerializer xml = new XmlSerializer(typeof(List<Order>));
             using (FileStream fs = new FileStream("OrderList.xml", FileMode.Open))
             {
-                OrderList= (List<Order>)xml.Deserialize(fs);
+                OrderList = (List<Order>)xml.Deserialize(fs);
             }
 
         }
