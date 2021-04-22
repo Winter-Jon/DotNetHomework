@@ -7,8 +7,8 @@ namespace OrderProgram
     public class Order
     {
         public List<OrderDetails> OrderDetailsList { get;}
-        public int OrderNum { get; }
-        public string Customer {get; }
+        public int OrderNum { get; set; }
+        public string Customer { get; set; }
         public double OrderPrice
         { 
             get
