@@ -40,8 +40,7 @@ namespace OrderForm
 
             orderService.AddOrder(order1);
 
-            bindingSource_Order.DataSource = orderService;
-            bindingSource_Order.DataMember = "OrderList";
+            bindingSource_Order.DataSource = orderService.OrderList;
             dataGridView1.DataSource = bindingSource_Order;
             Column1_OrderNum.DataPropertyName = "OrderNum";
             dataGridView1.Columns["OrderNum"].Visible = false;
@@ -71,12 +70,30 @@ namespace OrderForm
         }
 
 
-
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-
+            switch (comboBox1.Text)
+            {
+                case "订单号":
+                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderNum == Convert.ToDouble(textBox_search.Text));
+                    break;
+                case "客户名":
+                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.Customer == textBox_search.Text);
+                    break;
+                case "金额大于":
+                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderPrice > Convert.ToDouble(textBox_search.Text));
+                    break;
+                case "金额小于":
+                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderPrice < Convert.ToDouble(textBox_search.Text));
+                    break;
+                case "金额等于":
+                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderPrice == Convert.ToDouble(textBox_search.Text));
+                    break;
+                default:
+                    bindingSource_Order.DataSource = orderService;
+                    break;
+            }
         }
-
         private void dataGridView2_CellClick(object sender, System.Windows.Forms.DataGridViewCellEventArgs e)
         {
             dataGridView2.CurrentCell.ContextMenuStrip = contextMenuStrip2Cell;

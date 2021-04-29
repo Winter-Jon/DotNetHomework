@@ -17,8 +17,8 @@
   "libraries": {
     "Order/1.0.0": {
       "type": "project",
-      "path": "D:\\projects\\C#\\DotNetHomework\\homework5\\problem1\\Order.csproj",
-      "msbuildProject": "D:\\projects\\C#\\DotNetHomework\\homework5\\problem1\\Order.csproj"
+      "path": "../../homework5/problem1/Order.csproj",
+      "msbuildProject": "../../homework5/problem1/Order.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\administrator1\\source\\repos\\homework8\\OrderForm\\OrderForm.csproj",
+      "projectUniqueName": "D:\\projects\\C#\\DotNetHomework\\homework8\\OrderForm\\OrderForm.csproj",
       "projectName": "OrderForm",
-      "projectPath": "C:\\Users\\administrator1\\source\\repos\\homework8\\OrderForm\\OrderForm.csproj",
+      "projectPath": "D:\\projects\\C#\\DotNetHomework\\homework8\\OrderForm\\OrderForm.csproj",
       "packagesPath": "C:\\Users\\administrator1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\administrator1\\source\\repos\\homework8\\OrderForm\\obj\\",
+      "outputPath": "D:\\projects\\C#\\DotNetHomework\\homework8\\OrderForm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
