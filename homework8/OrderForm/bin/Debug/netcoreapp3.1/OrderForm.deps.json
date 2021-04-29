@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "OrderForm/1.0.0": {
+        "dependencies": {
+          "Order": "1.0.0"
+        },
+        "runtime": {
+          "OrderForm.dll": {}
+        }
+      },
+      "Order/1.0.0": {
+        "runtime": {
+          "Order.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OrderForm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Order/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

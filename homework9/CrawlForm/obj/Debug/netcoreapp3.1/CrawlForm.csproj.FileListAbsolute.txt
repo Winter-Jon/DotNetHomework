@@ -1,0 +1,16 @@
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.csprojAssemblyReference.cache
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.Form1.resources
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.csproj.GenerateResource.cache
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.AssemblyInfoInputs.cache
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.AssemblyInfo.cs
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.csproj.CoreCompileInputs.cache
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\bin\Debug\netcoreapp3.1\CrawlForm.exe
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\bin\Debug\netcoreapp3.1\CrawlForm.deps.json
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\bin\Debug\netcoreapp3.1\CrawlForm.runtimeconfig.json
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\bin\Debug\netcoreapp3.1\CrawlForm.runtimeconfig.dev.json
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\bin\Debug\netcoreapp3.1\CrawlForm.dll
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\bin\Debug\netcoreapp3.1\CrawlForm.pdb
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.dll
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.pdb
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.genruntimeconfig.cache
+D:\projects\C#\DotNetHomework\homework9\CrawlForm\obj\Debug\netcoreapp3.1\CrawlForm.Form2.resources
