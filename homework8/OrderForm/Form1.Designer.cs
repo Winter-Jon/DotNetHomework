@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace OrderForm
 {
     partial class OrderForm
@@ -43,14 +45,12 @@ namespace OrderForm
             this.Column2_GoodTotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemOrderDetailAdd = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemOrderDetailDel = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1_OrderNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1_Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1_OrderPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemOrderAdd = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemOrderDel = new System.Windows.Forms.ToolStripMenuItem();
             this.bindingSource_OrderDetail = new System.Windows.Forms.BindingSource(this.components);
             this.contextMenuStrip2Cell = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem2CellChange = new System.Windows.Forms.ToolStripMenuItem();
@@ -190,22 +190,16 @@ namespace OrderForm
             // 
             this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemOrderDetailAdd,
-            this.toolStripMenuItemOrderDetailDel});
+            this.toolStripMenuItemOrderDetailAdd});
             this.contextMenuStrip2.Name = "contextMenuStrip1";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(169, 52);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(169, 28);
             // 
             // toolStripMenuItemOrderDetailAdd
             // 
             this.toolStripMenuItemOrderDetailAdd.Name = "toolStripMenuItemOrderDetailAdd";
             this.toolStripMenuItemOrderDetailAdd.Size = new System.Drawing.Size(168, 24);
             this.toolStripMenuItemOrderDetailAdd.Text = "添加订单明细";
-            // 
-            // toolStripMenuItemOrderDetailDel
-            // 
-            this.toolStripMenuItemOrderDetailDel.Name = "toolStripMenuItemOrderDetailDel";
-            this.toolStripMenuItemOrderDetailDel.Size = new System.Drawing.Size(168, 24);
-            this.toolStripMenuItemOrderDetailDel.Text = "删除订单明细";
+            this.toolStripMenuItemOrderDetailAdd.Click += new System.EventHandler(this.toolStripMenuItemOrderDetailAdd_Click);
             // 
             // dataGridView1
             // 
@@ -257,22 +251,16 @@ namespace OrderForm
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemOrderAdd,
-            this.toolStripMenuItemOrderDel});
+            this.toolStripMenuItemOrderAdd});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(139, 52);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(139, 28);
             // 
             // toolStripMenuItemOrderAdd
             // 
             this.toolStripMenuItemOrderAdd.Name = "toolStripMenuItemOrderAdd";
             this.toolStripMenuItemOrderAdd.Size = new System.Drawing.Size(138, 24);
             this.toolStripMenuItemOrderAdd.Text = "添加订单";
-            // 
-            // toolStripMenuItemOrderDel
-            // 
-            this.toolStripMenuItemOrderDel.Name = "toolStripMenuItemOrderDel";
-            this.toolStripMenuItemOrderDel.Size = new System.Drawing.Size(138, 24);
-            this.toolStripMenuItemOrderDel.Text = "删除订单";
+            this.toolStripMenuItemOrderAdd.Click += new System.EventHandler(this.toolStripMenuItemOrderAdd_Click);
             // 
             // contextMenuStrip2Cell
             // 
@@ -288,12 +276,14 @@ namespace OrderForm
             this.toolStripMenuItem2CellChange.Name = "toolStripMenuItem2CellChange";
             this.toolStripMenuItem2CellChange.Size = new System.Drawing.Size(138, 24);
             this.toolStripMenuItem2CellChange.Text = "修改单元";
+            this.toolStripMenuItem2CellChange.Click += new System.EventHandler(this.toolStripMenuItem2CellChange_Click);
             // 
             // toolStripMenuItem2DelRow
             // 
             this.toolStripMenuItem2DelRow.Name = "toolStripMenuItem2DelRow";
             this.toolStripMenuItem2DelRow.Size = new System.Drawing.Size(138, 24);
             this.toolStripMenuItem2DelRow.Text = "删除行";
+            this.toolStripMenuItem2DelRow.Click += new System.EventHandler(this.toolStripMenuItem2DelRow_Click);
             // 
             // contextMenuStrip1Cell
             // 
@@ -309,12 +299,14 @@ namespace OrderForm
             this.toolStripMenuItem1CellChange.Name = "toolStripMenuItem1CellChange";
             this.toolStripMenuItem1CellChange.Size = new System.Drawing.Size(138, 24);
             this.toolStripMenuItem1CellChange.Text = "修改单元";
+            this.toolStripMenuItem1CellChange.Click += new System.EventHandler(this.toolStripMenuItem1CellChange_Click);
             // 
             // toolStripMenuItem1DelRow
             // 
             this.toolStripMenuItem1DelRow.Name = "toolStripMenuItem1DelRow";
             this.toolStripMenuItem1DelRow.Size = new System.Drawing.Size(138, 24);
             this.toolStripMenuItem1DelRow.Text = "删除行";
+            this.toolStripMenuItem1DelRow.Click += new System.EventHandler(this.toolStripMenuItem1DelRow_Click);
             // 
             // OrderForm
             // 
@@ -340,6 +332,9 @@ namespace OrderForm
             this.ResumeLayout(false);
 
         }
+
+
+
 
 
 
@@ -370,9 +365,7 @@ namespace OrderForm
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1CellChange;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1DelRow;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOrderAdd;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOrderDel;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOrderDetailAdd;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOrderDetailDel;
     }
 }
 

@@ -90,7 +90,7 @@ namespace OrderForm
                     bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderPrice == Convert.ToDouble(textBox_search.Text));
                     break;
                 default:
-                    bindingSource_Order.DataSource = orderService;
+                    bindingSource_Order.DataSource = orderService.OrderList;
                     break;
             }
         }
@@ -104,6 +104,34 @@ namespace OrderForm
             dataGridView1.CurrentCell.ContextMenuStrip = contextMenuStrip1Cell;
         }
 
+        private void toolStripMenuItemOrderDetailAdd_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
+        private void toolStripMenuItemOrderAdd_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void toolStripMenuItem2CellChange_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void toolStripMenuItem2DelRow_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void toolStripMenuItem1DelRow_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void toolStripMenuItem1CellChange_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
