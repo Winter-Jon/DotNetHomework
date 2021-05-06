@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Collections;
 using System.Collections.Generic;
 using static CrawlForm.Program;
+using System.Linq;
 
 namespace CrawlForm
 {
@@ -18,14 +19,13 @@ namespace CrawlForm
         private void button1_Click(object sender, EventArgs e)
         {
             form2.ShowDialog();
-             ArrayList urlarray = new ArrayList(urlsResult.Keys);
             List<string> urlList = new List<string>();
-            foreach(string i in urlarray)
+            foreach(string i in urlsResult.Keys)
             {
                 System.Diagnostics.Debug.WriteLine(i);
                 urlList.Add(i);
             }
-            dataGridView1.DataSource = urlList;
+            dataGridView1.DataSource = (from s in urlList select new { s }).ToList();
 
         }
 
