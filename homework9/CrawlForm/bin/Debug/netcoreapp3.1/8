@@ -1,0 +1,1626 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="referrer" content="always">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+    <meta name="report" content='{"spm":"1004.2023"}'>
+  <link href="https://g.csdnimg.cn/static/logo/favicon32.ico"  rel="shortcut icon" type="image/x-icon" />
+  
+  
+  <script src="//csdnimg.cn/public/common/libs/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://g.csdnimg.cn/user-login/2.3.2/user-login.js"></script>
+  <script>
+      function check_user_status()
+      {
+          window.csdn.userLogin.loadAjax();
+          var result = window.csdn.userLogin.result;
+          return result.status || false
+      }
+  </script>
+  <link rel="stylesheet" href="//csdnimg.cn/public/common/libs/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://csdnimg.cn/release/bbs/dist/css/application-922fa93475.css">
+  <link rel="stylesheet" href="https://csdnimg.cn/release/bbs/dist/css/bbs_new-41130f87c7.css">
+  <script>
+      var CFG = {
+          BASE_URL: "https://csdnimg.cn/release/bbs/dist/",    //当前页面对应的虚拟路径,静态资源对应目录同<base href="">
+          LOCAL_URL:"https://bbs.csdn.net/",
+          API_URL: "https://bbs.csdn.net/",                 //当前项目默认的后端API地址
+          ROOT_URL: "https://bbs.csdn.net/",          //当前项目根路径, JS跳转
+          STATIC_URL: "https://csdnimg.cn/release/bbs/dist/",          //本项目静态资源根目录
+          STATIC_GLOBAL_URL: "https://csdnimg.cn/",    //公共静态资源根目录
+          TOPIC_ID:""
+      }
+  </script>
+   <title>BADAO_LIUMANG_QIZHI的留言板-CSDN论坛</title>
+
+  <script type="text/javascript" src="//g.csdnimg.cn/tingyun/1.8.3/bbs.js"></script>
+    <meta name="csdn-baidu-search" content='{"keyword": "BADAO_LIUMANG_QIZHI的留言板"}'/>
+  <meta name="keywords" content="BADAO_LIUMANG_QIZHI的留言板">
+  <meta name="description" content="BADAO_LIUMANG_QIZHI的留言板">
+
+  <!--
+  <script>
+      (function(config) {
+          window.AnalysysAgent = window.AnalysysAgent || []
+          window.AnalysysAgent.methods = 'identify alias reset track profileSet profileSetOnce profileIncrement profileAppend profileUnset profileDelete registerSuperProperty registerSuperProperties unRegisterSuperProperty clearSuperProperties getSuperProperty getSuperProperties pageView debugMode auto appkey name uploadURL hash visitorConfigURL autoProfile autoWebstay'.split(' ');
+
+          function factory(b) {
+              return function() {
+                  var a = Array.prototype.slice.call(arguments);
+                  a.unshift(b);
+                  window.AnalysysAgent.push(a);
+                  return window.AnalysysAgent;
+              }
+          };
+          for (var i = 0; i < AnalysysAgent.methods.length; i++) {
+              var key = window.AnalysysAgent.methods[i];
+              AnalysysAgent[key] = factory(key);
+          }
+          for (var key in config) {
+              AnalysysAgent[key](config[key])
+          }
+          var date = new Date();
+          var time = new String(date.getFullYear()) + new String(date.getMonth() + 1) + new String(date.getDate());
+
+          var d = document,
+              c = d.createElement('script'),
+              n = d.getElementsByTagName('script')[0];
+          c.type = 'text/javascript';
+          c.async = true;
+          c.id = 'devSDK';
+          c.src = 'https://csdnimg.cn/release/bbs/AnalysysAgent_JS_SDK.min.js?time1='+ time
+          n.parentNode.insertBefore(c, n);
+      })({
+          appkey: 'csdnbbsstatistics',
+          uploadURL: 'https://report.csdn.net:4089/',
+          debugMode: 2
+
+      })
+  </script>
+-->
+</head>
+<body>
+  <!-- 自动推送工具代码-->
+  <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/libs/libs-f6ec322dc4.js"></script>
+    <!-- 请置于所有广告位代码之前 -->
+  <script src="//dup.baidustatic.com/js/ds.js"></script>
+  <style>
+    #topic-detail-ad-ul{width:960px;float:left;font-size:1px;margin:0;padding:0}
+    #topic-detail-ad-l{float:left;}
+    #topic-detail-ad-r{float:right;}
+    #topic-detail-ad-ul li{list-style: none;}
+  </style>
+  <script type="text/javascript" src="https://static.mediav.com/js/mvf_news_feed.js"></script>
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/syntaxhighlighter/syntaxhighlighter-fe278769e6.js"></script>
+  <script>
+      CFG.TOPIC_ID = 395529876;
+  </script>
+
+  <link href="//csdnimg.cn/release/bbs/assets/topic_show-dd1adea0deef4ced1600a1f12ee463bc.css" media="screen" rel="stylesheet" type="text/css" />
+<div class="container container-box clearfix csdn_main_container">
+  <link rel="stylesheet" href="https://g.csdnimg.cn/nav-second/1.0.3/css/nav-second.css">
+<style>
+  #navs{
+    float: left;
+    width: 96px;
+    margin-right: 8px;
+    line-height: 32px;
+    margin-top: 8px;
+    position: relative;
+  }
+
+</style>
+<div id="navs"></div>
+<script src="https://g.csdnimg.cn/nav-second/1.0.3/nav-second.js" type="text/javascript"></script>
+<script>
+$(function () {
+  var buttonUrl = ''
+    buttonUrl = '/topics/new?forum_id=p-BADAO_LIUMANG_QIZHI'
+  window.csdn.navSecond.init({
+      nav:[
+          {
+              value:"精选板块",
+              children:[
+                  {
+                      value:"移动开发",
+                      url:"/forums/Mobile",
+                      children:[
+                          {
+                              value: "IOS",
+                              url: "/forums/ios"
+                          },
+                          {
+                              value: "Android",
+                              url: "/forums/Android"
+                          },
+                          {
+                              value: "Qt",
+                              url: "/forums/Qt"
+                          },
+                          {
+                              value: "WP",
+                              url: "forums/WindowsMobile"
+                          }
+                      ]
+                  },
+                  {
+                      value:"云计算",
+                      url:"/forums/CloudComputing",
+                      children:[
+                          {
+                              value:"IaaS",
+                              url:"/forums/AWS"
+                          },
+                          {
+                              value:"Pass/SaaS",
+                              url:"/forums/CloudFoundry"
+                          },
+                          {
+                              value:"分布式计算/Hadoop",
+                              url:"/forums/hadoop"
+                          },
+                      ]
+                  },
+                  {
+                      value:"Java技术",
+                      url:"/forums/Java",
+                      children:[
+                          {
+                              value:"Java SE",
+                              url:"/forums/J2SE"
+                          },
+                          {
+                              value:"Java Web 开发",
+                              url:"/forums/Java_WebDevelop"
+                          },
+                          {
+                              value:"Java EE",
+                              url:"/forums/J2EE"
+                          },
+                          {
+                              value:"Java其他相关",
+                              url:"/forums/JavaOther"
+                          },
+                      ]
+                  },
+                  {
+                      value:".NET技术",
+                      url:"/forums/DotNET",
+                      children:[
+                          {
+                              value:".NETFramework",
+                              url:"/forums/DotNETFramework"
+                          },
+                          {
+                              value:"C#",
+                              url:"/forums/CSharp"
+                          },
+                          {
+                              value:".NET分析与设计",
+                              url:"/forums/DotNETAnalysisAndDesign"
+                          },
+                          {
+                              value:"ASP .NET",
+                              url:"/forums/ASPDotNET"
+                          },
+                          {
+                              value:"VB .NET",
+                              url:"/forums/VBDotNET"
+                          }
+                      ]
+                  },
+                  {
+                      value:"Web开发",
+                      url:"/forums/WebDevelop",
+                      children:[
+                          {
+                              value:"PHP",
+                              url:"/forums/PHP"
+                          },
+                          {
+                              value:"JavaScript",
+                              url:"/forums/JavaScript"
+                          },
+                          {
+                              value:"ASP",
+                              url:"/forums/ASP"
+                          },
+                          {
+                              value:"HTML(CSS)",
+                              url:"/forums/HTMLCSS"
+                          },
+                          {
+                              value:"HTML5",
+                              url:"/forums/HTML5"
+                          },
+                          {
+                              value:"Apache",
+                              url:"/forums/Apache"
+                          }
+                      ]
+                  },
+                  {
+                      value:"开发语言/框架",
+                      children:[
+                          {
+                              value:"Delphi",
+                              url:"/forums/Delphi"
+                          },
+                          {
+                              value:"VC/MFC",
+                              url:"/forums/VC"
+                          },
+                          {
+                              value:"VB",
+                              url:"/forums/VB"
+                          },
+                          {
+                              value:"C/C++",
+                              url:"/forums/Cpp"
+                          },
+                          {
+                              value:"C++ Builder",
+                              url:"/forums/BCB"
+                          },
+                          {
+                              value:"其他开发语言",
+                              url:"/forums/OtherLanguage"
+                          }
+                      ]
+                  },
+                  {
+                      value:"数据库开发",
+                      children:[
+                          {
+                              value:"MS-SQL Server",
+                              url:"/forums/MSSQL"
+                          },
+                          {
+                              value:"Oracle",
+                              url:"/forums/Oracle"
+                          },
+                          {
+                              value:"PowerBuilder",
+                              url:"/forums/PowerBuilder"
+                          },
+                          {
+                              value:"Informatica",
+                              url:"/forums/Informatica"
+                          },
+                          {
+                              value:"其他数据库开发",
+                              url:"/forums/OtherDatabase"
+                          }
+                      ]
+                  },
+                  {
+                      value:"硬件/嵌入式开发",
+                      url:"/forums/Embedded",
+                      children:[
+                          {
+                              value:"嵌入开发(WinCE)",
+                              url:"/forums/WinCE"
+                          },
+                          {
+                              value:"驱动开发/核心开发",
+                              url:"/forums/Embedded_driver"
+                          },
+                          {
+                              value:"硬件设计",
+                              url:"/forums/Embedded_hardware"
+                          },
+                          {
+                              value:"单片机/工控",
+                              url:"/forums/Embedded_SCM"
+                          },
+                          {
+                              value:"汇编语言",
+                              url:"/forums/ASM"
+                          },
+                          {
+                              value:"VxWorks开发",
+                              url:"/forums/VxWorks"
+                          }
+                      ]
+                  },
+                  {
+                      value:"Linux/Unix社区",
+                      url:"/forums/Linux",
+                      children:[
+                          {
+                              value:"系统维护与使用区",
+                              url:"/forums/Linux_System"
+                          },
+                          {
+                              value:"应用程序开发区",
+                              url:"/forums/Linux_Development"
+                          },
+                          {
+                              value:"内核源代码研究区",
+                              url:"/forums/Linux_Kernel"
+                          },
+                          {
+                              value:"驱动程序开发区",
+                              url:"/forums/Linux_Driver"
+                          },
+                          {
+                              value:"CPU和硬件区",
+                              url:"/forums/Linux_Hardware"
+                          },
+                      ]
+                  }
+              ]
+          },
+          {
+              value:"论坛牛人",
+              url:"/rank"
+          },
+          {
+              value:"排行榜",
+              url:"/total_rank"
+          },
+          {
+              value:"论坛地图",
+              url:"/map"
+          },
+          {
+              value:"论坛任务",
+              url:"/users/score_tasks"
+          },
+          {
+              value:"我的积分",
+              url:"https://bbs.csdn.net/user/point"
+          },
+          {
+              value:"论坛帮助",
+              url:"https://blogdev.blog.csdn.net/article/details/103488033"
+          },
+      ],
+      elId: "navs",
+      extraBtn: [
+          {
+            value: '我要发帖',
+            url: buttonUrl,
+            reportQuery:"spm=3001.4206",
+            reportClick:'{"spm":"3001.4206"}'
+          }
+      ]
+  })
+
+})
+</script>
+
+  <div class="clearfix fr container_main" >
+    <div id="left-box" >
+      <div class="bbs_detail_wrap" id="bbs_detail_wrap">
+        <div class="flash_messages">
+</div>
+
+        <!--帖子标题-->
+        <div class="bbs_title_h"></div>
+        <div id="bbs_title_bar" class="bbs_title_bar">
+          <div class="owner_top clearfix">
+            <h3 class="owner_h">
+              <span class="owner_title text-overflow" title="BADAO_LIUMANG_QIZHI的留言板">
+                BADAO_LIUMANG_QIZHI的留言板
+              </span>
+
+            </h3>
+            <div class="bbs_bread_wrap">
+             <div class="tips" style="display:inline-block">
+              </div>
+                <a href="/forums/PersonalArea" target="_blank">个人专区</a>
+                <span style="font-size: 14px;color:#5893C2">></span>
+              <a href="/forums/p-BADAO_LIUMANG_QIZHI" target="_blank">BADAO_LIUMANG_QIZHI</a>
+              <div class="fav_box">
+                  <a data-report-click='{"spm":"3001.4211"}' href="javascript:;" onclick="window.csdn.loginBox.show()" class="fav_btn unsave">收藏</a>
+                <a data-report-click='{"spm":"3001.4212"}' href="javascript:;" class="fav_btn reply_topic" >回复</a>
+              </div>
+              <span class="fr point_num">
+                [问题点数：0分]
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="post-410291983" class="mod_topic_wrap post topic" data-topic-id="395529876" data-post-id="410291983" data-is-topic-locked="false">
+
+  <dl class="topic_wrap clearfix">
+      <dt class="topic_l ">
+        <div data-username="" class="user_left">
+          <a href="//my.csdn.net/BADAO_LIUMANG_QIZHI" target="_blank" class="user_head_box" rel="nofollow">
+            <img src="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi" class="avatar">
+              <img src="https://g.csdnimg.cn/static/user-reg-year/2x/3.png" class="user-years">
+          </a>
+          <div class="user_material">
+            <div class="user_material_bg">
+              <dl class="user_material_c">
+                <dt class="fl">
+                  <a href="//my.csdn.net/BADAO_LIUMANG_QIZHI" target="_blank" class="user_head_box" rel="nofollow">
+                    <img src="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi" class="avatar">
+                  </a>
+                </dt>
+                  <dd>
+                    <ul class="topic_list">
+                        <li>
+                          <em>&sdot;</em><a href="/topics/395529876" target="_blank">BADAO_LIUMANG_QIZHI的留言板</a>
+                        </li>
+                    </ul>
+                  </dd>
+                  <dd class="more_topic_wrap">
+                    <a href="/users/BADAO_LIUMANG_QIZHI/topics" target="_blank" class="more_topic">更多帖子</a></dd>
+                <dd class="fun_dd">
+                  <a href="javascript:;" class="follow_btn genius_att att_active" data-username="BADAO_LIUMANG_QIZHI">关注</a>
+                  <!--下面是已关注按钮样式-->
+                  <!--a.al_follow_btn(href="javascript:;") 已关注-->
+                  <a href="https://im.csdn.net/chat/BADAO_LIUMANG_QIZHI" class="att_active" target="_blank">私信</a>
+                  <a href="//my.csdn.net/BADAO_LIUMANG_QIZHI" class="att_active" target="_blank">空间</a>
+                  <a href="//blog.csdn.net/BADAO_LIUMANG_QIZHI" class="att_active" target="_blank">博客</a>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <span class="owner" title="个人专区-BADAO_LIUMANG_QIZHI版版主">版主</span>
+        </div>
+        <div class="user_right">
+          <div class="user_nick_name">
+            <div class="nick_name">
+              <a href="//my.csdn.net/BADAO_LIUMANG_QIZHI" class="Hash" rel="nofollow" target="_blank" title="BADAO_LIUMANG_QIZHI">BADAO_LIUMANG...</a>
+            </div>
+            <div class="user_level">
+              <span class="user_right_title">等级</span>
+              <img src="../../dist/images/bbs1.png?t=1595470293682" class="topic_show_user_level">
+              <div class="topic_show_posts">
+                <div class="smallTittle">本版专家分：0</div>
+              </div>
+            </div>
+          </div>
+              <div class="showTittleDD clearfix">
+                <span class="user_right_title">勋章</span>
+                  <div class="medal_box csdn-user-medal-btn" data-username="BADAO_LIUMANG_QIZHI" data-nickname="BADAO_LIUMANG_QIZHI" data-avatar="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi">
+                      <img src="https://csdnimg.cn/medal/qiandao3@240.png" alt="Blank" class="xunZhang" width="20">
+                      <div class="showTittle">
+                        <div class="trangle"></div>
+                        <dl>
+                          <dt>
+                            <img src="https://csdnimg.cn/medal/qiandao3@240.png" style="width: 54px; height: 60px" >
+                          </dt>
+                          <dd>
+                            <strong>签到新秀</strong>
+                            
+                          </dd>
+                        </dl>
+                      </div>
+                  </div>
+                  <div class="medal_box csdn-user-medal-btn" data-username="BADAO_LIUMANG_QIZHI" data-nickname="BADAO_LIUMANG_QIZHI" data-avatar="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi">
+                      <img src="https://csdnimg.cn/medal/maimai@240.png" alt="Blank" class="xunZhang" width="20">
+                      <div class="showTittle">
+                        <div class="trangle"></div>
+                        <dl>
+                          <dt>
+                            <img src="https://csdnimg.cn/medal/maimai@240.png" style="width: 54px; height: 60px" >
+                          </dt>
+                          <dd>
+                            <strong>脉脉勋章</strong>
+                            
+                          </dd>
+                        </dl>
+                      </div>
+                  </div>
+                  <div class="medal_box csdn-user-medal-btn" data-username="BADAO_LIUMANG_QIZHI" data-nickname="BADAO_LIUMANG_QIZHI" data-avatar="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi">
+                      <img src="https://csdnimg.cn/medal/github@240.png" alt="Blank" class="xunZhang" width="20">
+                      <div class="showTittle">
+                        <div class="trangle"></div>
+                        <dl>
+                          <dt>
+                            <img src="https://csdnimg.cn/medal/github@240.png" style="width: 54px; height: 60px" >
+                          </dt>
+                          <dd>
+                            <strong>GitHub</strong>
+                            
+                          </dd>
+                        </dl>
+                      </div>
+                  </div>
+                  <div class="medal_box csdn-user-medal-btn" data-username="BADAO_LIUMANG_QIZHI" data-nickname="BADAO_LIUMANG_QIZHI" data-avatar="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi">
+                      <img src="https://csdnimg.cn/medal/linkedin@240.png" alt="Blank" class="xunZhang" width="20">
+                      <div class="showTittle">
+                        <div class="trangle"></div>
+                        <dl>
+                          <dt>
+                            <img src="https://csdnimg.cn/medal/linkedin@240.png" style="width: 54px; height: 60px" >
+                          </dt>
+                          <dd>
+                            <strong>领英</strong>
+                            
+                          </dd>
+                        </dl>
+                      </div>
+                  </div>
+              </div>
+          <div class="close_topic">
+            结帖率 0%
+          </div>
+        </div>
+      </dt>
+
+    <dd class="topic_r post_info floorOwner" data-username="BADAO_LIUMANG_QIZHI" data-nickname="BADAO_LIUMANG_QIZHI" data-floor="0">
+      <div class="post_body post_body_min_h">
+        <div class="text">
+            大家好，这里是我的留言板，如果有问题，欢迎大家留言，我会第一时间进行回复
+
+
+            <div marginwidth="0" marginheight="0" scrolling="no" width="100%">
+            </div>
+        </div>
+        <!-- <div class="question_wrap"><span>问题点数：</span><em>分</em></div> -->
+      </div>
+      <div class="control control_new clearfix">
+        <div class="control_l fl">
+
+          <label class="date_time">2020-01-02 18:39:32</label>
+        </div>
+        <div class="control_r fr">
+          <label data-report-click='{"spm":"3001.4207"}' onclick="post_digg(395529876,410291983,this)" class="red_praise digg d_hide">
+            <span class="icon_praise"></span>
+            <em>点赞 </em>
+          </label>
+          <!--<span class="reply_intro">回复数 <em class="reply_num">1</em></span>-->
+            <a href="/topics/395529876?list=lz" class="only-filter d_hide" data-report-click="{&quot;spm&quot;:&quot;3001.4209&quot;}">只看楼主</a>
+          <a data-report-click='{"spm":"3001.4208"}' href="javascript:;" rel="nofollow" class="quote d_hide">引用</a>
+          <a data-report-click='{"spm":"3001.4210"}' href="javascript:;" class="report_spam d_hide">举报</a>
+          <span class="floor" id="landlord">楼主</span>
+          <span class="floor pack_up">收起</span>
+        </div>
+      </div>
+      <div class="omit_wrap">
+        <div class="tips">
+          <span>展开阅读全文</span>
+          <i></i>
+        </div>
+      </div>
+    </dd>
+  </dl>
+</div>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          ajax_cache_recommends(395529876);
+      });
+
+      function ajax_cache_recommends(id) {
+          $.ajax({
+              type: 'get',
+              url: '/topics/ajax_cache_recommends?id=' + id.toString(),
+              async: false,
+              dataType: 'jsonp',
+              success: function (resobj) {
+              }
+          })
+      }
+  </script>
+
+
+        		<div id="post-410625217" class="mod_topic_wrap post" data-topic-id="395529876" data-post-id="410625217" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l ">
+							<div data-username="" class="user_left">
+
+								<a href="//my.csdn.net/china1314920" target="_blank" class="user_head_box" rel="nofollow">
+									<img src="//profile.csdnimg.cn/5/A/8/1_china1314920" class="avatar" >
+										<img src="https://g.csdnimg.cn/static/user-reg-year/2x/14.png" class="user-years">
+								</a>
+								<div class="user_material">
+									<div class="user_material_bg">
+										<dl class="user_material_c">
+											<dt class="fl">
+												<a href="//my.csdn.net/china1314920" target="_blank" class="user_head_box" rel="nofollow">
+													<img src="//profile.csdnimg.cn/5/A/8/1_china1314920" class="avatar" >
+												</a>
+											</dt>
+												<dd>
+													<ul class="topic_list">
+															<li><em>&sdot;</em><a href="/topics/310173718" target="_blank">请各位推荐C#网络编程方面的书（急）</a></li>
+															<li><em>&sdot;</em><a href="/topics/290052275" target="_blank">请高手指点迷津，谢谢。</a></li>
+															<li><em>&sdot;</em><a href="/topics/270049346" target="_blank">C# winform 控件输入完后焦点移开检测事件 急用</a></li>
+													</ul>
+												</dd>
+												<dd class="more_topic_wrap"><a href="/users/china1314920/topics" target="_blank" class="more_topic">更多帖子</a></dd>
+											<dd class="fun_dd">
+												<a href="javascript:;" class="follow_btn genius_att  att_active" data-username="china1314920">关注</a>
+												<!--下面是已关注按钮样式-->
+												<!--a.al_follow_btn(href="javascript:;") 已关注-->
+												<a href="https://im.csdn.net/chat/china1314920" class="att_active" target="_blank">私信</a>
+												<a href="//my.csdn.net/china1314920" class="att_active" target="_blank">空间</a>
+												<a href="//blog.csdn.net/china1314920" class="att_active" target="_blank">博客</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+								
+							</div>
+							<div class="user_right">
+							    <div class="user_nick_name">
+                                    <div class="nick_name">
+                                        <a href="//my.csdn.net/china1314920" class="Hash" rel="nofollow" target="_blank" title="china1314920">china1314920</a>
+                                    </div>
+                                    <div class="user_level">
+                                        <span class="user_right_title">等级</span>
+                                        <img src="../../dist/images/bbs1.png?t=1595470293682" class="topic_show_user_level">
+                                        <div class="topic_show_posts">
+                                            <div class="smallTittle">本版专家分：0</div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</dt>
+				<dd class="topic_r post_info pb36" data-username="china1314920" data-nickname="china1314920" data-floor="1">
+					<div class="post_body post_body_min_h">
+							下载链接呢？
+
+							<div>
+								
+							</div>
+					</div>
+					<div class="control control_new clearfix">
+						<div class="control_l fl">
+
+							<label class="date_time">2020-02-11 23:23:23</label>
+						</div>
+
+						<div class="control_r fr">
+							<label data-report-click='{"spm":"3001.4207"}' onclick="post_digg(395529876,410625217,this)" class="red_praise digg d_hide">
+								<span class="icon_praise"></span>
+								<em>点赞  </em>
+							</label>
+								<a href="/topics/395529876?list=1912695" class="only-filter d_hide">只看TA</a>
+							<a data-report-click='{"spm":"3001.4208"}' href="javascript:;" rel="nofollow" class="quote d_hide">引用</a>
+							<a data-report-click='{"spm":"3001.4210"}' href="javascript:;" class="report_spam d_hide">举报</a>
+							<span class="floor">#1<span>得分 0</span></span>
+						</div>
+					</div>
+				</dd>
+			</dl>
+		</div>
+
+
+        <script>
+            // 点赞
+            function post_digg(topic_id,post_id,obj){
+                window.csdn.loginBox.show();
+                return false
+                var r = check_user_status();
+                if (r) {
+                    $.ajax({
+                        type:'PUT',
+                        dataType: "json",
+                        url:'/posts/'+post_id.toString()+'/digg',
+                        data: {
+                            topic_id: topic_id.toString()
+                        },
+                        success: function(json){
+                            if(json.success){
+                                $(obj).find("em").text("点赞 "+json.digg);
+                                $(obj).find("span").addClass("save")
+                            }else{
+                                alert("您已经投过票了");
+                            }
+                        }
+                    })
+                }
+            }
+
+            function post_bury(topic_id,post_id,obj){
+                var r = check_user_status();
+                if(r){
+                    $.ajax({
+                        type:'PUT',
+                        dataType: "json",
+                        url:'/posts/'+post_id.toString()+'/bury',
+                        data: {
+                            topic_id: topic_id.toString()
+                        },
+                        success: function(json){
+                            if(json.success){
+                                $(obj).find("em").text(json.bury);
+                            }else{
+                                alert("您已经投过票了");
+                            }
+                        }
+                    })
+                }
+
+            }
+
+
+        </script>
+        <div class="paginate_box_point"></div>
+        <div class="paginate_box ">
+          
+          <div class="fav_box fr">
+            <a href="javascript:;" class="fav_btn pick" >收起</a>
+          </div>
+          
+          <div class="fav_box fr">
+              <a data-report-click='{"spm":"3001.4211"}' href="javascript:;" onclick="window.csdn.loginBox.show()" class="fav_btn unsave">收藏</a>
+            <a data-report-click='{"spm":"3001.4212"}' href="javascript:;" class="fav_btn reply_topic" >回复</a>
+          </div>
+        </div>
+        <script>
+            $('em.jumpMenu').click(function() {
+                var page = $(this).parent().find('input.page_inpt').val();
+                if (page != 1) {
+                    window.location.href = (window.location.pathname + '?page=' + page);
+                } else {
+                    window.location.href = window.location.pathname;
+                }
+            });
+        </script>
+          <span class="login unuse" id="new_post">匿名用户不能发表回复！</span>
+      </div>
+      </div>
+      <!-- 右侧第三栏 -->
+      <div class="right-box" id="rightList">
+        <!-- 用户资料 -->
+        <div class="right_item">
+  <div class="user_head">
+    <a href="//my.csdn.net/BADAO_LIUMANG_QIZHI" target="_blank" class="user_head_l">
+      <img src="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi">
+    </a>
+    <div class="user_head_r">
+      <a href="//my.csdn.net/BADAO_LIUMANG_QIZHI" class="user_name" rel="nofollow" target="_blank" title="BADAO_LIUMANG_QIZHI">BADAO_LIUMANG...</a>
+      <p class="user_level">等级：<img src="../../dist/images/bbs1.png?t=1595470293682"></p>
+    </div>
+  </div>
+  <div class="user_bbs_medal">
+    <div class="showTittleDD">
+        <span class="csdn-user-medal-btn" data-username="BADAO_LIUMANG_QIZHI" data-nickname="BADAO_LIUMANG_QIZHI" data-avatar="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi">
+            <img src="https://csdnimg.cn/medal/qiandao3@240.png" alt="Blank" class="xunZhang" style="width: 36px; height: 36px">
+            <div class="showTittle">
+              <div class="trangle"></div>
+              <dl>
+                <dt>
+                  <img src="https://csdnimg.cn/medal/qiandao3@240.png" style="width: 54px; height: 60px" >
+                </dt>
+                <dd>
+                  <strong>签到新秀</strong>
+                  
+                </dd>
+              </dl>
+            </div>
+        </span>
+        <span class="csdn-user-medal-btn" data-username="BADAO_LIUMANG_QIZHI" data-nickname="BADAO_LIUMANG_QIZHI" data-avatar="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi">
+            <img src="https://csdnimg.cn/medal/maimai@240.png" alt="Blank" class="xunZhang" style="width: 36px; height: 36px">
+            <div class="showTittle">
+              <div class="trangle"></div>
+              <dl>
+                <dt>
+                  <img src="https://csdnimg.cn/medal/maimai@240.png" style="width: 54px; height: 60px" >
+                </dt>
+                <dd>
+                  <strong>脉脉勋章</strong>
+                  
+                </dd>
+              </dl>
+            </div>
+        </span>
+        <span class="csdn-user-medal-btn" data-username="BADAO_LIUMANG_QIZHI" data-nickname="BADAO_LIUMANG_QIZHI" data-avatar="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi">
+            <img src="https://csdnimg.cn/medal/github@240.png" alt="Blank" class="xunZhang" style="width: 36px; height: 36px">
+            <div class="showTittle">
+              <div class="trangle"></div>
+              <dl>
+                <dt>
+                  <img src="https://csdnimg.cn/medal/github@240.png" style="width: 54px; height: 60px" >
+                </dt>
+                <dd>
+                  <strong>GitHub</strong>
+                  
+                </dd>
+              </dl>
+            </div>
+        </span>
+        <span class="csdn-user-medal-btn" data-username="BADAO_LIUMANG_QIZHI" data-nickname="BADAO_LIUMANG_QIZHI" data-avatar="//profile.csdnimg.cn/1/3/5/1_badao_liumang_qizhi">
+            <img src="https://csdnimg.cn/medal/linkedin@240.png" alt="Blank" class="xunZhang" style="width: 36px; height: 36px">
+            <div class="showTittle">
+              <div class="trangle"></div>
+              <dl>
+                <dt>
+                  <img src="https://csdnimg.cn/medal/linkedin@240.png" style="width: 54px; height: 60px" >
+                </dt>
+                <dd>
+                  <strong>领英</strong>
+                  
+                </dd>
+              </dl>
+            </div>
+        </span>
+    </div>
+  </div>
+  <div class="user_bbs_foot">
+    <span class="user_btn unfollowed genius_att" data-username="BADAO_LIUMANG_QIZHI">关注</span>
+    <a href="https://im.csdn.net/chat/BADAO_LIUMANG_QIZHI" target="_blank" class="user_btn gry">私信</a>
+    <a href="//my.csdn.net/BADAO_LIUMANG_QIZHI" target="_blank" class="user_btn">TA的帖子</a>
+  </div>
+</div>
+
+        <div class="flex-box">
+          <!-- 个性化相关推荐 -->
+          <!-- 详情页右侧广告 id 516 -->
+            <div class="ad_top bbs_left_box" style="overflow: hidden;height:600px;width:300px" >
+                  <div id="kp_box_516" data-pid="516"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- pc-论坛内页右侧视窗-300*600 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-1076724771190722"
+     data-ad-slot="9406032482"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=516&a=2457&c=0&k=&spm=1004.2023.3001.4624&d=1&t=3&u=01f3309cf9ad4a7da9274b5aaf760f70" style="display: block;width: 0px;height: 0px;"></div>
+            </div>
+          <div class="persion_article"></div>
+        </div>
+      </div>
+        <!--相关推荐feed-->
+        <div class="mod_topic_wrap" style="float: left">
+          <div class="post_feed_box" style="width:788px">
+            <!--样式一-->
+            <div id="post_feed_wrap" class="post_feed_wrap post_feed_style1">
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/102733039","strategy":"2~all~sobaiduend~default","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~sobaiduend~default-1.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/102733039" target="_blank" title="SpringCloud-使用路由网关统一访问接口(附代码下载)"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~sobaiduend~default-1.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~sobaiduend~default-1.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/102733039","strategy":"2~all~sobaiduend~default","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~sobaiduend~default-1.nonecase\"}"}'>SpringCloud-使用路由网关统一访问接口(附代码下载)</a>
+                  </dt>
+                  <dd><p>https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/102673599  SpringCloud -创建统一的依赖管理：  https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/102530574  上面在实现了...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/109356152","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-2.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/109356152" target="_blank" title="Nacos简介、下载与配置持久化到Mysql"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-2.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-2.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/109356152","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-2.nonecase\"}"}'>Nacos简介、下载与配置持久化到Mysql</a>
+                  </dt>
+                  <dd><p>场景  什么是Nacos  Nacos致力于帮助您发现、配置和管理微服务。Nacos提供了一组简单易用的特性集，...博客：https://blog.csdn.net/<em>badao_liumang</em>_<em>qizhi</em> 关注公众号 霸道的程序猿 获取编程相关电子书、教程推送与免.</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/107486313","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-3.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/107486313" target="_blank" title="Windows中Redis的下载安装与修改密码并启动"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-3.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-3.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/107486313","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-3.nonecase\"}"}'>Windows中Redis的下载安装与修改密码并启动</a>
+                  </dt>
+                  <dd><p>https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/103967334  Redis的启动和关闭(前台启动和后台启动)：  https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/103972348  RedisDesktopManager...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84038383","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-4.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84038383" target="_blank" title="Windows上配置SSHKey到GItHub"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-4.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-4.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84038383","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-4.nonecase\"}"}'>Windows上配置SSHKey到GItHub</a>
+                  </dt>
+                  <dd><p>检查环境  在Linux和Mac系统中都自动安装了SSH，Windows系统需要安装Git Bash。 首先检查下本机是否已经安装了SSH，在终端输入ssh即可：    生成sshkey  ...出现上面内容就说明成功生成id_rsa和id_rsa.pub两个文件，id_...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://download.csdn.net/download/badao_liumang_qizhi/10529922","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-download-2~all~first_rank_v2~rank_v29-5.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://download.csdn.net/download/badao_liumang_qizhi/10529922" target="_blank" title="SpringBoot开发第一个Web应用代码"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-5.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-5.nonecase" data-report-click='{"mod":"popu_645","dest":"https://download.csdn.net/download/badao_liumang_qizhi/10529922","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-5.nonecase\"}"}'>SpringBoot开发第一个Web应用代码</a>
+                  </dt>
+                  <dd><p>SpringBoot开发第一个Web应用代码，SpringBoot开发第一个Web应用代码</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/109363303","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-6.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/109363303" target="_blank" title="若依微服务版手把手教你本地搭建环境并运行前后端项目"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-6.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-6.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/109363303","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-6.nonecase\"}"}'>若依微服务版手把手教你本地搭建环境并运行前后端项目</a>
+                  </dt>
+                  <dd><p>场景  若依微服务版RuoYi-Cloud，基于Spring Boot、Spring Cloud &amp; Alibaba、OAuth2的前后端分离的后台管理系统。  RuoYi-Cloud 是一个 Java EE 企业级快速开发平台，基于经典技术组合（Spring Boot、Spring ...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/99716066","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-7.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/99716066" target="_blank" title="C#窗体应用中使用ZedGraph曲线插件绘制图表"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-7.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-7.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/99716066","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-7.nonecase\"}"}'>C#窗体应用中使用ZedGraph曲线插件绘制图表</a>
+                  </dt>
+                  <dd><p>场景  ZedGraph  ZedGraph 是一个开源的.NET图表类库， 全部代码都是用C#开发的。...https://download.csdn.net/download/<em>badao_liumang</em>_<em>qizhi</em>/11578445  英文手册下载  https://download.csdn.net/download/badao_l...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://download.csdn.net/download/badao_liumang_qizhi/11635361","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-download-2~all~first_rank_v2~rank_v29-8.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://download.csdn.net/download/badao_liumang_qizhi/11635361" target="_blank" title="Winform中实现ZedGraph的多条Y轴示例代码.zip"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-8.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-8.nonecase" data-report-click='{"mod":"popu_645","dest":"https://download.csdn.net/download/badao_liumang_qizhi/11635361","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-8.nonecase\"}"}'>Winform中实现ZedGraph的多条Y轴示例代码.zip</a>
+                  </dt>
+                  <dd><p>Winform中实现ZedGraph的多条Y轴示例代码,</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84454198","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-9.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84454198" target="_blank" title="VisualStudio2017下载与安装教程详解"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-9.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-9.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84454198","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-9.nonecase\"}"}'>VisualStudio2017下载与安装教程详解</a>
+                  </dt>
+                  <dd><p>下载  官网下载地址  ...   版本区别  1.社区版（Community）：免费提供给单个开发人员，给予初学者及大部分程序员支持，可以无任何经济负担、合法地使用。...2.企业版：为正规企业量身定做，能够提供点对点的解决方案，...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90673806","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-10.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90673806" target="_blank" title="Sqlserver2014下载与安装"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-10.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-10.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90673806","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-10.nonecase\"}"}'>Sqlserver2014下载与安装</a>
+                  </dt>
+                  <dd><p>场景  Sqlserver2014下载与安装。  官网下载地址：  https://www.microsoft.com/zh-CN/download/details.aspx?id=30438  实现  下载  1.选择中文简体，点击下载按钮。...https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/83867967","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-11.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/83867967" target="_blank" title="从Python的turtle绘图开始学习图形化程序设计"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-11.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-11.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/83867967","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-11.nonecase\"}"}'>从Python的turtle绘图开始学习图形化程序设计</a>
+                  </dt>
+                  <dd><p>Turtle  python2.6版本中后引入的一个简单的绘图工具，叫做海龟绘图(Turtle Graphics),turtle库是python的内部库,使用导入即可 :      import turtle  画布 ...画布就是turtle为我们展开用于绘图区域, 我们可以设置它...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/81779381","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-12.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/81779381" target="_blank" title="No module named cv2"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-12.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-12.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/81779381","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-12.nonecase\"}"}'>No module named cv2</a>
+                  </dt>
+                  <dd><p>代码中有：import cv2，运行提示No module named cv2  执行:pip install opencv 也不行       最后找到解决方法：   pip install opencv-python       等待完成：        </p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/weixin_42372722/article/details/112022764","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-13.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/weixin_42372722/article/details/112022764" target="_blank" title="det曲线_Winform中设置ZedGraph的曲线符号Symbol以及对应关系"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-13.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-13.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/weixin_42372722/article/details/112022764","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-13.nonecase\"}"}'>det曲线_Winform中设置ZedGraph的曲线符号Symbol以及对应关系</a>
+                  </dt>
+                  <dd><p>场景Winforn中设置ZedGraph曲线图的属性、坐标轴属性、刻度属性：Winform中实现ZedGraph的多条Y轴(附源码下载)：添加多条曲线后，会默认生成不带任何Symbol的曲线，如果要修改其曲线的Symbol。注：实现LineItem ...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/102775001","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-14.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/102775001" target="_blank" title="史上最全Winform中使用ZedGraph教程与资源汇总整理(附资源下载)"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-14.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-14.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/102775001","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-14.nonecase\"}"}'>史上最全Winform中使用ZedGraph教程与资源汇总整理(附资源下载)</a>
+                  </dt>
+                  <dd><p>https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/99716066  Winforn中设置ZedGraph曲线图的属性、坐标轴属性、刻度属性：  https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/1001...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/83833741","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-15.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/83833741" target="_blank" title="五行代码快速使用python的turtle库绘画"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-15.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-15.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/83833741","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-15.nonecase\"}"}'>五行代码快速使用python的turtle库绘画</a>
+                  </dt>
+                  <dd><p>简介  1.python2.6版本中后引入的一个简单的绘图工具，叫做海龟绘图(Turtle Graphics),turtle库是python的内部库,使用导入即可 ：import turtle  2.操纵海龟绘图有着许多的命令,这些命令可以划分为两种:一种为运动...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89599695","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-16.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89599695" target="_blank" title="MyBatisPlus插件扩展_SqlExplainInterceptor执行分析插件的使用"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-16.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-16.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89599695","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-16.nonecase\"}"}'>MyBatisPlus插件扩展_SqlExplainInterceptor执行分析插件的使用</a>
+                  </dt>
+                  <dd><p>https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/column/info/37194  简介  SQL 执行分析拦截器【 目前只支持 MYSQL-5.6.3 以上版本 】，  作用是分析 处理 DELETE UPDATE 语句， 防止小白或者恶意 delete update 全表...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89599710","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-17.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89599710" target="_blank" title="MyBatisPlus插件扩展_PerformanceInterceptor性能分析插件的使用"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-17.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-17.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89599710","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-17.nonecase\"}"}'>MyBatisPlus插件扩展_PerformanceInterceptor性能分析插件的使用</a>
+                  </dt>
+                  <dd><p>https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/column/info/37194  简介  性能分析拦截器，用于输出每条 SQL 语句及其执行时间  参数：maxTime SQL 执行最大时长，超过自动停止运行，有助于发现问题。 参数：format ...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/qq_40241957/article/details/101779290","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-18.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/qq_40241957/article/details/101779290" target="_blank" title="MyBatisPlus插件扩展_PaginationInterceptor分页插件的使用"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-18.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-18.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/qq_40241957/article/details/101779290","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-18.nonecase\"}"}'>MyBatisPlus插件扩展_PaginationInterceptor分页插件的使用</a>
+                  </dt>
+                  <dd><p>实现 配置插件 来到项目下的applicationContext.xml中配置sqlSessionFactoryBean的地方。 &lt;!-- 配置SqlSessionFactoryBean  Mybatis提供的: org.mybatis.spring.SqlSessionFactoryBean  MP提供的:...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/99231274","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-19.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/99231274" target="_blank" title="VS中怎样打开MSDN帮助文档"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-19.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-19.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/99231274","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-19.nonecase\"}"}'>VS中怎样打开MSDN帮助文档</a>
+                  </dt>
+                  <dd><p>场景  在VS中进行编辑代码时，突然对某种语法或关键字等忘记。  这时可以借助MSDN官方文档来查看语法。  实现  比如要查看float的特征。...在vs中输入float,然后按F1键，会在默认浏览器上打开帮助文档。...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/83057629","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-20.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/83057629" target="_blank" title="Cordova打包教程知识体系整理（Vue项目打包成ipa）"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-20.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-20.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/83057629","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-20.nonecase\"}"}'>Cordova打包教程知识体系整理（Vue项目打包成ipa）</a>
+                  </dt>
+                  <dd><p>使用工具：  1.Webstorm2017 ... https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/82156578  2.Mac book pro+Xcode8   如果Xcode使用中出现问题：   https://blog.csdn.net/BADAO_LIUMAN...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/weixin_39747721/article/details/111745547","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-21.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/weixin_39747721/article/details/111745547" target="_blank" title="python 视频分段_Python中使用moviepy进行视频分割"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-21.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-21.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/weixin_39747721/article/details/111745547","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-21.nonecase\"}"}'>python 视频分段_Python中使用moviepy进行视频分割</a>
+                  </dt>
+                  <dd><p>场景moviepy官网：https://pypi.org/project/moviepy/是一个用于视频编辑的Python库：切割、连接、标题插入、视频合成、非线性编辑，视频处理和定制效果的创建。Github:https://github.com/Zulko/moviepy实现首先你...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90166771","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-22.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90166771" target="_blank" title="Webservice入门教程_用CXF编写基于Spring的WebService"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-22.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-22.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90166771","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-22.nonecase\"}"}'>Webservice入门教程_用CXF编写基于Spring的WebService</a>
+                  </dt>
+                  <dd><p>https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/column/info/37726  实现  搭建服务端  1.打开Eclipse--新建Dynamic Project--CXF_Spring_Web  2.导入cxf的jar包  jar包位置：    将lib下的所有jar包文件导入，虽然不都...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/82156212","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-23.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/82156212" target="_blank" title="Navicat下载和破解以及使用"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-23.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-23.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/82156212","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-23.nonecase\"}"}'>Navicat下载和破解以及使用</a>
+                  </dt>
+                  <dd><p>一.下载  1.官网地址  http://www.navicat.com.cn/download/navicat-for-mysql  2.进入官网。找到下载试用，找到对应版本，点击下载。  这里下载Windows 64位    2.点击之后    二.安装  1.找到下载后的安装包，双击...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84954726","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-24.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84954726" target="_blank" title="Python实现抠图给证件照换背景"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-24.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-24.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84954726","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-24.nonecase\"}"}'>Python实现抠图给证件照换背景</a>
+                  </dt>
+                  <dd><p>场景  此功能主要是用来学习用法，功能不重要，学会了用法，其他功能自己开发。  效果  原证件照    背景图    合成效果    实现  导入一些工具包  opencv(cv2)，用于图像处理  numpy，用于数据计算。...新建显示...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/weixin_39962889/article/details/111275543","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-25.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/weixin_39962889/article/details/111275543" target="_blank" title="mvc 路由增加文件夹名_ASP.NET中MVC默认模板的项目结构"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-25.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-25.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/weixin_39962889/article/details/111275543","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-25.nonecase\"}"}'>mvc 路由增加文件夹名_ASP.NET中MVC默认模板的项目结构</a>
+                  </dt>
+                  <dd><p>ASP.NET中MVC编程模式简介与搭建HelloWorld项目https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/106795640在上面使用MVC搭建起来Hello World项目后。默认的项目结构如下：实现因为ASP.NET采用的是“约定...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89520240","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-26.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89520240" target="_blank" title="MyBatisPlus3.x代码生成器自定义模板配置"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-26.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-26.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89520240","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-26.nonecase\"}"}'>MyBatisPlus3.x代码生成器自定义模板配置</a>
+                  </dt>
+                  <dd><p>https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/89518466  MyBatisPlus中使用 @TableField完成字段自动填充：  https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/894...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/buzul/article/details/106886033","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-27.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/buzul/article/details/106886033" target="_blank" title="SpringCloud-使用熔断器防止服务雪崩-Ribbon和Feign方式(附代码下载)"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-27.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-27.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/buzul/article/details/106886033","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-27.nonecase\"}"}'>SpringCloud-使用熔断器防止服务雪崩-Ribbon和Feign方式(附代码下载)</a>
+                  </dt>
+                  <dd><p>https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/102535957 SpringCloud-服务注册与实现-Eureka创建服务提供者(附源码下载)： https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/102558004 ...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89644306","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-28.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89644306" target="_blank" title="MyBatisPlus中全局Sql注入器应用_逻辑删除使用"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-28.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-28.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89644306","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-28.nonecase\"}"}'>MyBatisPlus中全局Sql注入器应用_逻辑删除使用</a>
+                  </dt>
+                  <dd><p>https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/column/info/37194  MyBatisPlus中自定义全局操作流程：  https://blog.csdn.net/<em>BADAO_LIUMANG</em>_<em>QIZHI</em>/article/details/89608052  什么是逻辑删除  假删除、逻辑删除，并...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/weixin_31459297/article/details/114007340","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-29.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/weixin_31459297/article/details/114007340" target="_blank" title="teechart mysql_TeeChart的X轴为时间，多个Y轴的显示"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-29.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-29.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/weixin_31459297/article/details/114007340","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-29.nonecase\"}"}'>teechart mysql_TeeChart的X轴为时间，多个Y轴的显示</a>
+                  </dt>
+                  <dd><p>最后上代码public partial class Test : Form{private TChart tChart = new TChart();private int space = ;public Test(){InitializeComponent();Init();}/// /// 添加若干个自定义坐标轴/// /// private void ...</p></dd>
+                </dl>
+                <dl class="bbs_feed "
+                  data-report-view='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90669563","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task-blog-2~all~first_rank_v2~rank_v29-30.nonecase\"}"}'
+                >
+                  <dt>
+                    <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90669563" target="_blank" title="Windows上卸载SqlServer数据库"  data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-30.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-30.nonecase" data-report-click='{"mod":"popu_645","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90669563","strategy":"2~all~first_rank_v2~rank_v29","extra":"{\"utm_medium\":\"distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-30.nonecase\"}"}'>Windows上卸载SqlServer数据库</a>
+                  </dt>
+                  <dd><p>场景  Winodws7上卸载Sqlserver2014数据库。  实现  关闭Sqlserver服务  控制面板--服务，然后关闭SqlServer相关的所有服务。    控制面板卸载  控制面板--卸载程序，  卸载Sql Server 2014(64-bit) ......</p></dd>
+                </dl>
+                  <dl style="padding: 15px 0;line-height: 16px;overflow: hidden;">
+                    <dt>
+                      <span style="font-size: 18px;color: #3d3d3d;margin-right: 8px;">相关热词</span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_1c/Mtjakg5sNS1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c# for step</a>
+                        </span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_17/Mtjakg5sOC1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c#读取shp文件</a>
+                        </span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_1a/Mtjakg5sOS1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c# 多个if</a>
+                        </span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_1e/MtzaAgwsMC1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c#上传图片到安卓的接口</a>
+                        </span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_1a/MtzaAgwsMy1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c#中得到控件</a>
+                        </span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_12/MtzaAgwsNC1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c# 浏览器打开 调用</a>
+                        </span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_12/MtzaAgxsMC1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c# 绘制3维</a>
+                        </span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_1b/MtzaAgxsMS1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c#酒店管理系统数据库</a>
+                        </span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_15/MtzaAgxsMi1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c#链接api</a>
+                        </span>
+                        <span style="font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 26px;
+                            margin-left: 8px;
+                            margin-right: 8px;">
+                          <a href="https://www.csdn.net/gather_14/MtzaAgxsMy1kb3dubG9hZAO0O0OO0O0O.html" target="_blank" style="color: #6b6b6b;">c# 串口发送数据</a>
+                        </span>
+                    </dt>
+                  </dl>
+                <!-- <div class="dl_no_more" style="font-size:14px; color:red; text-align:center;padding-top:10px; ">我们是很有底线的</div> -->
+              </div>
+            </div>
+          </div>
+      <div class="bbs-common-footer" style="float: left; margin-top: 10px;width: 1010px;"></div>
+  </div>
+</div>
+
+
+<!-- 对联广告 -->
+<div id="ad_left" style="display:none">
+  <div>
+    <ins data-revive-zoneid="56" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+<script type="text/javascript">  
+  $(function(){
+      if ($(parent.window).width() >= 1280) {
+          parent.$('#ad_left').show();
+      }
+  });
+</script>
+  </div>
+</div>
+<div id="ad_right" style="display:none">
+  <div>
+    <ins data-revive-zoneid="57" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+<script type="text/javascript">    
+    $(function(){
+        if ($(parent.window).width() >= 1280) {
+            parent.$('#ad_right').show();
+        }
+    });
+</script>
+  </div>
+</div>
+
+<script>
+  $(function(){
+    window.onresize = function(){
+      if($(parent.window).width() <= 1280){
+        $('#ad_right').hide();
+        $('#ad_left').hide();
+      } else {
+          $('#ad_right').show();
+          $('#ad_left').show();
+      }
+    };
+      if ($(parent.window).width() >= 1280) {
+          $('#ad_right').show();
+          $('#ad_left').show();
+      }
+  });
+
+</script>
+
+<script type="text/javascript" src="//g.csdnimg.cn/baidu-search/1.0.8/baidu-search.js"></script>
+<script  type="text/javascript">
+  if (window.csdn === undefined) {
+    window.csdn = {};
+  }
+  if (typeof Array.prototype.filter != "function") {
+    Array.prototype.filter = function (fn, context) {
+      var arr = [];
+      if (typeof fn === "function") {
+         for (var k = 0, length = this.length; k < length; k++) {
+            fn.call(context, this[k], k, this) && arr.push(this[k]);
+         }
+      }
+      return arr;
+    };
+  }
+  var keyword = encodeURI("BADAO_LIUMANG_QIZHI的留言板");
+  // 重新定义百度Cas对象初始化操作
+  csdn.afterCasInit=function (keyword,cse) {
+    csdn.baiduSearch(keyword, function(data){
+      var result = diff(data)
+      showResult(result);
+    })
+  }
+  function getLinkId (link) {
+    if (!String.prototype.endsWith) {
+      String.prototype.endsWith = function(search, this_len) {
+        if (this_len === undefined || this_len > this.length) {
+          this_len = this.length;
+        }
+        return this.substring(this_len - search.length, this_len) === search;
+      };
+    }
+    if (!!~link.indexOf('?')) {
+      link = link.split('?')[0]
+    } else if (!!~link.indexOf('#')) {
+      link = link.split('#')[0]
+    }
+    link = link.endsWith('/') ? link.slice(0, link.length - 1) : link
+    return link.split('/').pop()
+  }
+  // 百度搜索跟现有数组去重
+  function diff (data) {
+    var currentIdList = []
+    var elLi = $(".post_feed_wrap .bbs_feed")
+    for (var i = 0; i < elLi.length; i++) {
+      currentIdList.push(getLinkId(elLi.eq(i).find('a').attr('href')))
+    }
+    var finalData = data.filter(function (item) {
+      return currentIdList.indexOf(getLinkId(item.linkUrl)) === -1
+    })
+    return finalData
+  }
+  function showResult(data){
+    var elLi = $(".post_feed_wrap .bbs_feed");
+    var dataLength = elLi.length;
+    baiduLenght = data.length;
+    var html = "";
+    for (var i = 0; i < baiduLenght && i<10; i = i + 2) {
+      var arr = [];
+      if (data[i + 1]) {
+        arr = convert(data.slice(i, i + 2), i);
+      } else {
+        arr = convert([data[i]], i);
+      }
+      if (baiduLenght > dataLength && i >= dataLength) {
+        arr = convert(data.slice(i, baiduLenght), i);
+        html = renderHtml(arr);
+        elLi.eq(elLi.length - 1).after(html);
+        break;
+      } else {
+        html = renderHtml(arr);
+        elLi.eq(i).before(html);
+      }
+    }
+  }
+
+
+  function convert(arr, index) {
+    var recom_utm = "";
+    var popu = "";
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+      var local = 1 + index + i;
+      newArr.push({
+        linkUrl: arr[i].linkUrl,
+        file_type_url:
+          "//g.csdnimg.cn/pub-recom/img/type/unknow.svg",
+        title: arr[i].title,
+        created_at: formateDate(arr[i].dispTime),
+        description: arr[i].abstract,
+        strategy: "baidujs",
+        mod: popu,
+        utm_medium:
+          recom_utm +
+          checkChannel(arr[i].linkUrl) +
+          "-baidujs-" +
+          local +
+          ".nonecase",
+      });
+    }
+    return newArr;
+  }
+  function renderHtml(arr) {
+    var s = "";
+    $.each(arr, function( index, value ) {
+      s += '<dl class="bbs_feed bbs_feed_baidu_box" data-report-view=\'{"mod":"popu_645","dest":"'+value['linkUrl']+'","strategy":"baidujs","extra":"{\\\"utm_medium\\\":\\\"distribute.pc_relevant_bbs_down.none-task-'+checkChannel(value['linkUrl'])+'-baidujs-'+(index+1)+'.nonecase\\\"}"}\'><dt><a href="'+value['linkUrl']+'" target="_blank" data-report-query="utm_medium=distribute.pc_relevant_bbs_down.none-task-'+checkChannel(value['linkUrl'])+'-baidujs-'+(index+1)+'.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task-'+checkChannel(value['linkUrl'])+'-baidujs-'+(index+1)+'.nonecase"  data-report-click=\'{"mod":"popu_645","dest":"'+value['linkUrl']+'","strategy":"baidujs","extra":"{\\\"utm_medium\\\":\\\"distribute.pc_relevant_bbs_down.none-task-'+checkChannel(value['linkUrl'])+'-baidujs-'+(index+1)+'.nonecase\\\"}"}\'>'+value['title']+'</a></dt><dd><p>'+value['description']+'</p></dd></dl>'
+    });
+    return s;
+  }
+  function checkChannel(url) {
+    var host = url.match(/^http(s)?:\/\/(.*?)\//)[0];
+    var pathname = url.replace(host, "");
+    if (host.indexOf("edu") > -1 && pathname.indexOf("detail") > -1) {
+      return "edu";
+    }
+    if (host.indexOf("download") > -1 && pathname.indexOf("download") > -1) {
+      return "download";
+    }
+    if (host.indexOf("bbs") > -1 && pathname.indexOf("topics") > -1) {
+      return "bbs";
+    }
+    if (host.indexOf("ask") > -1 && pathname.indexOf("questions") > -1) {
+      return "ask";
+    }
+    if (url.indexOf("article/details") > -1) {
+      return "blog";
+    }
+    if (url.indexOf("www.csdn.net/gather") > -1) {
+      return "gather";
+    }
+    return "other";
+  }
+  function formateDate(d) {
+    var dArr = d.split("-");
+    var nd = d;
+    if(dArr.length===3 && Number(dArr[1]) < 10 ) {
+      dArr[1] = "0" + dArr[1];
+      nd = dArr.join("-");
+    }
+    if(dArr.length===3 && Number(dArr[2]) < 10 ) {
+      dArr[2] = "0" + dArr[2];
+      nd = dArr.join("-");
+    }
+    return d == nd ? d : nd;
+  }
+
+  $(function () {
+    /** toolbar是否悬浮*/
+    window.csdn.configuration_tool_parameterv({
+        'need_first_suspend': true,//第一栏悬浮
+        'need_little_suspend': false,//第二栏悬浮
+        'little_tool_id': '' ,//第二栏id
+        'little_need_insert_type': '',//第二栏需要模块类型
+        need_change_function: function (flag) {
+          window.csdn.navSecond.changeNavFix(flag)
+        }
+    })
+  })
+
+</script>
+<script type="text/javascript">
+  // 全局设置
+  (window.csdn = window.csdn || {}, window.csdn.collectionBox = {
+      params: {
+          'url': "https://bbs.csdn.net/topics/395529876",           // 访问来源地址 必传
+          'title': "BADAO_LIUMANG_QIZHI的留言板",                                  // 访问收藏标题 必传
+          // 'description': '999',
+          'author': "BADAO_LIUMANG_QIZHI",                         // 访问作者用户 必传
+          'source_id': "395529876",                                 // 访问来源项目标识id 必传
+          'source': 'bbs'                                                  // 访问来源项目标识 必传
+      }
+  })
+  $(function () {
+    $('.answer_btn').on("click",function(){
+        window.csdn.loginBox.show();
+    })
+    $('.answer_back').on("click",function(){
+      $('#answer_box').css("display","none");
+    })
+    $('.answer_exit').on("click",function(){
+      $('#answer_box').css("display","none");
+    })
+    $('#close').on("click",function(){
+      $('#answer_box').css("display","none");
+    })
+    $('.return_answer_btn').on("click",function(){
+      window.location.href="/topics/395529876"
+    })
+
+    $(".csdn_bbs_warp span").on("click",function () {
+      $(".csdn_bbs_warp").hide();
+      $(".csdn-bbs").show();
+    })
+  })
+
+  //楼层底部吸地
+  $(window).resize(function(){
+    fixBottomboxScroll();
+    fixBottombox();
+    fixRightboxScroll();
+    fixRightbox();
+  });
+  fixRightboxScroll();
+  fixBottomboxScroll();
+  fixBottombox();
+  function fixBottomboxScroll() {
+    $(document).scroll(function (event) {
+      fixBottombox();
+    })
+  }
+  function fixBottombox() {
+      var d_left = $("#left-box").offset().left - $(window).scrollLeft();
+      var d_el = $(".paginate_box");
+      var aPoint = $(".paginate_box_point").offset().top;
+      if (aPoint >= $(window).scrollTop() && aPoint < ($(window).scrollTop() + $(window).height())) {
+          d_el.removeAttr("style");
+      } else if (aPoint < $(window).scrollTop() && aPoint < ($(window).scrollTop() + $(window).height())){
+          d_el.removeAttr("style");
+      } else {
+        d_el.css({
+            "position":"fixed",
+            "left":d_left+"px",
+            "bottom":"0",
+            "box-shadow":"0px -1px 1px 0px rgba(0,0,0,0.05)"
+          });
+      }
+  }
+
+  function fixRightboxScroll() {
+    $(document).scroll(function (event) {
+      fixRightbox();
+    })
+  }
+  function fixRightbox() {
+    var sTop = $(window).scrollTop();
+    var sLeft = $(window).scrollLeft();
+    var toolBarTop = $("#csdn-toolbar").height();
+    var rightTop = sTop>toolBarTop?10:toolBarTop;
+    var rightHeight = $("#rightList").height() + rightTop;
+    var rightleft = $("#left-box").width() + $("#left-box").offset().left - sLeft;
+    var winHeight = $(window).height();
+    var docHeight = $(document).height();
+    if(docHeight < rightHeight+85){
+    } else if(winHeight > rightHeight) {
+      if(sTop > 50){
+        $("#rightList").css({
+          "position": "fixed",
+          "z-index": "99",
+          "left": rightleft+"px",
+          "width": "300px",
+          "top": toolBarTop + "px"
+        })
+      } else {
+        $("#rightList").removeAttr("style")
+      }
+    } else {
+      if(sTop+winHeight>rightHeight){
+        $("#rightList").css({
+          "position": "fixed",
+          "bottom": "0px",
+          "z-index": "99",
+          "left": rightleft+"px",
+          "width": "300px",
+          "top": "auto"
+        })
+      } else {
+          $("#rightList").removeAttr("style")
+      }
+    }
+
+  }
+
+
+
+</script>
+<script language="javascript" type="text/javascript" src="//g.csdnimg.cn/collection-box/2.0.2/collection-box.js" id="collection-script"></script>
+<script language="javascript" type="text/javascript" src="//g.csdnimg.cn/user-medal/1.0.4/user-medal.js"></script>
+
+
+
+  <script src="//g.csdnimg.cn/common/csdn-toolbar/csdn-toolbar.js" type="text/javascript"></script>
+  <script src="https://g.csdnimg.cn/login-box/1.1.4/login-box.js"></script>
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/apps/bbsMin-fc24b040dd.js"></script>
+  <script>
+    if (window.csdn === undefined) {
+        window.csdn = {};
+    }
+    window.csdn.sideToolbar = {
+      options: {
+        afterFinished: function(){
+          setTimeout(function () {
+            // var viphtml = '<a class="option-box" data-type="vip" href="https://mall.csdn.net/vip" target="_blank">'+
+            //     '<img src="https://g.csdnimg.cn/side-toolbar/1.3/images/vip.png" alt="" srcset="">'+
+            //     '<span class="show-txt">VIP<br>免广告</span>'+
+            //     '</a>';
+            // $('.csdn-side-toolbar').prepend(viphtml)
+            var helphtml = '<a class="option-box" data-type="help" href="https://blogdev.blog.csdn.net/article/details/103488033" target="_blank">'+'<img src="https://g.csdnimg.cn/side-toolbar/3.0/images/bangzhucopy.png" alt="" srcset="">'+
+            '<span class="show-txt">帮助</span></a>';
+            $('.csdn-side-toolbar>a:last').before(helphtml)
+          },300)
+        },
+        contentEl: document.getElementsByClassName('csdn_main_container')[0]
+      }
+    }
+  </script>
+  <script src="https://g.csdnimg.cn/side-toolbar/3.0/side-toolbar.js"></script>
+  
+<div id="pop_win" style="display:none ;position: absolute; z-index: 10000; border: 1px solid rgb(220, 220, 220); top: 222.5px; left: 630px; opacity: 1; background: none 0px 0px repeat scroll rgb(255, 255, 255);">
+    
+</div>
+<div id="popup_mask"></div>
+<style>
+    #popup_mask
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        left: 0px;
+        top: 0px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        display: none;
+    }
+ 
+</style>
+
+    <script>
+      $(function(){
+          CSDN.activeAttLink('.user_material_bg,.user_bbs_foot');
+          CSDN.checkFollow('.user_bbs_foot')
+          posts_page_js._form_page();
+      });
+  </script>
+    <div id="bbsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h4 id="bbsModalLabel" class="modal-title">New message</h4>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+    <div id="reportModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h4 id="reportModalLabel" class="modal-title">New message</h4>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+  <script src="//g.csdnimg.cn/common/csdn-footer/csdn-footer.js" type="text/javascript"></script>
+  <script>
+      window.csdn.csdnFooter.options = {
+        el: '.bbs-common-footer',
+        type: 2
+      }
+  </script>
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/icon/iconfont_common-a4b5db6e1f.js"></script>
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/apps/markitUpJs-bbe619c100.js"></script>
+  <script type="text/javascript" src="//g.csdnimg.cn/preview-img/1.0.0/preview-img.js"></script>
+
+  <!--bi 上报 统计-->
+  <script src="//g.csdnimg.cn/common/csdn-report/report.js" type="text/javascript"></script>
+</body>
+</html>

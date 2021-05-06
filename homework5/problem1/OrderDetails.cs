@@ -11,7 +11,7 @@ namespace OrderProgram
         public int GoodPrice { get; set; }
         public double GoodTotalPrice { get => GoodNum * GoodPrice; }
 
-        OrderDetails() { }
+        public OrderDetails() { }
         public OrderDetails(int goodNum, string goodName, int goodPrice)
         {
             this.GoodNum = goodNum;

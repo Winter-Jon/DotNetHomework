@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Collections;
+using System.Collections.Generic;
 using static CrawlForm.Program;
 
 namespace CrawlForm
@@ -10,13 +12,20 @@ namespace CrawlForm
         public Form1()
         {
             InitializeComponent();
-            dataGridView1.DataSource = bindingSource1;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             form2.ShowDialog();
-            bindingSource1.DataSource = urlsResult.Keys;
+             ArrayList urlarray = new ArrayList(urlsResult.Keys);
+            List<string> urlList = new List<string>();
+            foreach(string i in urlarray)
+            {
+                System.Diagnostics.Debug.WriteLine(i);
+                urlList.Add(i);
+            }
+            dataGridView1.DataSource = urlList;
 
         }
 

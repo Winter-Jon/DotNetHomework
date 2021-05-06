@@ -1,288 +1,2154 @@
-﻿<!DOCTYPE html>
-<html lang="zh-cn">
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="origin-when-crossorigin" />
-    <meta name="description" content="NDoc是一个非常好的文档生成工具，现在还出了一些不错的中文版，如破宝的http://www.percyboy.com/w/ndoc/。但是由于NDoc现在的版本1.3 不支持Web项目，也不支持中文" />
-    <meta property="og:description" content="NDoc是一个非常好的文档生成工具，现在还出了一些不错的中文版，如破宝的http://www.percyboy.com/w/ndoc/。但是由于NDoc现在的版本1.3 不支持Web项目，也不支持中文" />
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>使用 NDoc 对 asp.net (Web) 项目产生文档的方法 - 拓荒者 - 博客园</title>
-    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
-    
-    <link rel="stylesheet" href="/css/blog-common.min.css?v=zS6-e1bxywlu3kpHvpr1J6MySwya3ztFtEnS7RYQ0Fk" />
-    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=9x2ZP2K8SSBJowZA6xv0D5FvOmlvd5g21u0NBEAEwfQ" />
-    
-    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=xFiYH0_zTHqf_pk9Nf2PvR4VdQ1qJnJcRVcot-VdM-8" />
-    
-    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
-    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
-    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
-    <script>
-        var currentBlogId = 9986;
-        var currentBlogApp = 'dstang2000';
-        var cb_enable_mathjax = false;
-        var isLogined = false;
-        var isBlogOwner = false;
-        var skinName = 'AnotherEon001';
-        var visitorUserId = '';
+    <meta charset="utf-8">
+    <link rel="canonical" href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="report" content='{"pid": "blog", "spm":"1001.2014"}'>
+    <meta name="referrer" content="always">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+    <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
+    <meta name="applicable-device" content="pc">
+    <link  href="https://g.csdnimg.cn/static/logo/favicon32.ico"  rel="shortcut icon" type="image/x-icon" />
+    <title>BADAO_LIUMANG_QIZHI的博客_CSDN博客-C#,SpringBoot,架构之路领域博主</title>
+    <meta name="description" content="BADAO_LIUMANG_QIZHI擅长C#,SpringBoot,架构之路,等方面的知识,BADAO_LIUMANG_QIZHI关注Spring,c#/.net/asp,Redis,架构,分布式,MySQL,Python,Linux,Java,Spring Boot领域.">
+    <script src="//g.csdnimg.cn/tingyun/1.8.5/blog.js" type='text/javascript'></script>
+        <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/css/list_enter-e74230aee2.min.css">
+        <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/themesSkin/skin-growway/skin-growway-d937252ffc.min.css">
+    <script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var isCorporate = false;//注释删除enterprise
+        var username =  "BADAO_LIUMANG_QIZHI";
+        var skinImg = "white";
+        var blog_address = "https://blog.csdn.net/BADAO_LIUMANG_QIZHI";
+        var currentUserName = "";
+        var isOwner = false;
+        var loginUrl = "http://passport.csdn.net/account/login?from=https://blog.csdn.net/BADAO_LIUMANG_QIZHI";
+        var blogUrl = "https://blog.csdn.net/";
+        var avatar = "https://profile.csdnimg.cn/1/3/5/3_badao_liumang_qizhi";
+        var articleTitle = "BADAO_LIUMANG_QIZHI的博客";
+        var articleDesc = "BADAO_LIUMANG_QIZHI擅长C#,SpringBoot,架构之路,等方面的知识,BADAO_LIUMANG_QIZHI关注Spring,c#/.net/asp,Redis,架构,分布式,MySQL,Python,Linux,Java,Spring Boot领域.";
+        var articleTitles = "BADAO_LIUMANG_QIZHI的博客_CSDN博客-C#,SpringBoot,架构之路领域博主";
+        var nickName = "BADAO_LIUMANG_QIZHI";
+        var articleDetailUrl = "";
+        if(window.location.host.split('.').length == 3) {
+            blog_address = blogUrl + username;
+        }
+        var skinStatus = "White";
+        var blogStaticHost = "https://csdnimg.cn/release/blogv2/"
     </script>
-        <script>
-            var currentPostDateAdded = '2005-10-08 12:12';
-        </script>
-    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=CJtNAb53Ex2fBes_h70ZUTUv5aZTxcvvM7mCnA44svE"></script>
-    
-    
-    
+    <script src="https://g.csdnimg.cn/??fixed-sidebar/1.1.6/fixed-sidebar.js" type="text/javascript"></script>
+    <script src='//g.csdnimg.cn/common/csdn-report/report.js' type='text/javascript'></script>
+    <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/public/sandalstrap/1.4/css/sandalstrap.min.css">
+    <style>
+        .MathJax, .MathJax_Message, .MathJax_Preview{
+            display: none
+        }
+    </style>
+    <script src="https://dup.baidustatic.com/js/ds.js"></script>
 </head>
-<body class="has-navbar has-bannerbar">
-    <a name="top"></a>
-        <a target="_blank" href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-pc')">
-            <div class="bannerbar aliyun forpc" style="background-size: contain;background-image: url(https://img2020.cnblogs.com/blog/35695/202104/35695-20210428221933214-737067094.jpg)">
-            </div>
-        </a>
-        <div id="bannerbar" class="bannerbar-mobile formobile">
-            <a href="https://www.aliyun.com/minisite/goods?userCode=swh7dvlt" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'aliyun-cps-blog-bannerbar-mobile')">
-                <img src="https://img2020.cnblogs.com/blog/35695/202104/35695-20210428213541700-642740375.jpg" alt="" />
+<body class="nodata " style="">
+    <script src="https://g.csdnimg.cn/common/csdn-toolbar/csdn-toolbar.js" type="text/javascript"></script>
+    <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+<link rel="stylesheet" href="https://g.csdnimg.cn/lib/cropper/3.1.6/cropper.css">
+<script src="https://g.csdnimg.cn/lib/cropper/3.1.6/cropper.js"></script>
+<script type="text/javascript" crossorigin src="https://g.csdnimg.cn/user-login/2.3.2/user-login.js"></script>
+<script>
+	$("#msgToastText").hide()
+</script>
+<div class="skin-boxshadow"></div>
+<div id="userSkin">
+	<div class="user-skin-box">
+		<p class="user-skin-title">
+        <span>自定义博客皮肤<span class="vip-get">VIP专享<span></span>
+        <span class="close-bt bt-back"><svg t="1567152543821" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10924" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12"><defs><style type="text/css"></style></defs><path d="M512 438.378667L806.506667 143.893333a52.032 52.032 0 1 1 73.6 73.621334L585.621333 512l294.485334 294.485333a52.074667 52.074667 0 0 1-73.6 73.642667L512 585.621333 217.514667 880.128a52.053333 52.053333 0 1 1-73.621334-73.642667L438.378667 512 143.893333 217.514667a52.053333 52.053333 0 1 1 73.621334-73.621334L512 438.378667z" fill="" p-id="10925"></path></svg></span>
+        </p>
+		<div class="user-skin-item">
+			<div class="user-skin-left"><span>*</span>博客头图：</div>
+			<div class="user-skin-right">
+				<input type="file" class="upload-skin-img" id="uploadHeaderimg" style="display:none" value="">
+				<label for="uploadHeaderimg" class="upload-img">
+					<div class="icon-box">
+					<img class="upload-icon" src="https://csdnimg.cn/release/blogv2/dist/pc/img/upLoadImage.png" alt="">
+					<img style="display:none" class="success-upload-icon" src="https://csdnimg.cn/release/blogv2/dist/pc/img/upLoadImageWhite.png" alt="">
+					<p class="tip-massage">点击选择上传的图片</p>
+					</div>
+				</label>
+                <p  class="user-skin-tip">格式为PNG、JPG，宽度*高度大于1920*100像素，不超过2MB，主视觉建议放在右侧，请参照线上博客头图</p>
+			    <p  class="user-skin-color">请上传大于1920*100像素的图片！</p>
+			</div>
+		</div>
+		<div class="user-skin-item">
+            <div class="user-skin-left"><span></span>博客底图：</div>
+			<div class="user-skin-right">
+				<input type="file" class="upload-skin-img" id="uploadBgimg" style="display:none" value="">
+				<label for="uploadBgimg" class="upload-img">
+					<div class="icon-box">
+					<img class="upload-icon" src="https://csdnimg.cn/release/blogv2/dist/pc/img/upLoadImage.png" alt="">
+					<img style="display:none" class="success-upload-icon" src="https://csdnimg.cn/release/blogv2/dist/pc/img/upLoadImageWhite.png" alt="">					
+					<p class="tip-massage">点击选择上传的图片</p>
+					</div>
+				</label>
+                <p class="user-skin-tip">图片格式为PNG、JPG，不超过1MB，可上下左右平铺至整个背景</p>
+			</div>
+		</div>
+		<div class="user-skin-item">
+            <div class="user-skin-left"><span></span>栏目图：</div>
+			<div class="user-skin-right">
+				<input type="file" class="upload-skin-img" id="uploadColumnimg" style="display:none" value="">
+				<label for="uploadColumnimg" class="upload-img">
+					<div class="icon-box">
+					<img class="upload-icon" src="https://csdnimg.cn/release/blogv2/dist/pc/img/upLoadImage.png" alt="">
+					<img style="display:none" class="success-upload-icon" src="https://csdnimg.cn/release/blogv2/dist/pc/img/upLoadImageWhite.png" alt="">					
+					<p class="tip-massage">点击选择上传的图片</p>
+					</div>
+				</label>
+                <p class="user-skin-tip">图片格式为PNG、JPG，图片宽度*高度为300*38像素，不超过0.5MB</p>
+			</div>
+			
+		</div>
+		<div class="user-skin-item user-skin-item-input">
+            <div class="user-skin-left"><span></span>主标题颜色：</div>
+			<div class="user-skin-right">
+				<input type="text" class="skin-input" id="topicColor" placeholder="#ffffff">
+                <p class="user-skin-tip">RGB颜色，例如：#AFAFAF</p>
+			</div>
+			
+		</div>
+		<div class="user-skin-item user-skin-item-input">
+            <div class="user-skin-left"><span></span>Hover：</div>
+			<div class="user-skin-right">
+				<input type="text" class="skin-input" id="topicHoverColor" placeholder="#ffffff">
+                <p class="user-skin-tip">RGB颜色，例如：#AFAFAF</p>
+			</div>
+			
+		</div>
+		<div class="user-skin-item user-skin-item-input">
+            <div class="user-skin-left"><span></span>副标题颜色：</div>
+			<div class="user-skin-right">
+				<input type="text" class="skin-input" id="subTopicColor" placeholder="#b8b8b8">
+                <p class="user-skin-tip">RGB颜色，例如：#AFAFAF</p>
+			</div>
+			
+		</div>
+		<div class="user-skin-bt">
+			<a href="javascript:;" class="user-skin-preview bt">预览</a>
+			<a href="javascript:;" class="user-skin-cancel bt bt-back">取消</a>
+			<a href="javascript:;" class="user-skin-refer bt">提交</a>
+		</div>
+	</div>
+</div>
+<div id="cropBox">
+	<div class="crop-box">
+		<p class="crop-box-title">
+        	<span>自定义博客皮肤</span>
+        	<span class="close-bt  bt-back"><svg t="1567152543821" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10924" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12"><defs><style type="text/css"></style></defs><path d="M512 438.378667L806.506667 143.893333a52.032 52.032 0 1 1 73.6 73.621334L585.621333 512l294.485334 294.485333a52.074667 52.074667 0 0 1-73.6 73.642667L512 585.621333 217.514667 880.128a52.053333 52.053333 0 1 1-73.621334-73.642667L438.378667 512 143.893333 217.514667a52.053333 52.053333 0 1 1 73.621334-73.621334L512 438.378667z" fill="" p-id="10925"></path></svg></span>
+        </p>
+		<div class="crop-img-before">
+			<img src="" alt="" id="cropImg">
+		</div>
+		<div class="crop-zoom">
+			<a href="javascript:;" class="bt-reduce">-</a><a href="javascript:;" class="bt-add">+</a>
+		</div>
+		<div class="crop-img-after">
+			<div  class="final-img"></div>
+		</div>
+		<div class="crop-bt">
+			<a href="javascript:;" class="bt-prev bt-back">上一步</a><a href="javascript:;" class="bt-next">保存</a>
+		</div>
+	</div>
+</div>
+<header>
+	<div class="container d-flex clearfix">
+		<div class="header-content-box " style=" padding:0;">
+		<div class="title-box">
+			<h1 class="title-blog ">
+				<a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI" style="">BADAO_LIUMANG_QIZHI的博客</a>
+			</h1>
+			<p class="description " style=""></p>
+		</div>
+		<div class="opt-box d-flex justify-content-end">
+				<a class="btn btn-sm" href="http://passport.csdn.net/account/login?from=https://blog.csdn.net/BADAO_LIUMANG_QIZHI" id="meUser" data-report-click='{"mod":"popu_832","spm":"1001.2014.3001.5240","dest":"http://passport.csdn.net/account/login?from=https://blog.csdn.net/BADAO_LIUMANG_QIZHI"}' data-report-view='{"mod":popu_832","spm":"1001.2014.3001.5240","dest":"http://passport.csdn.net/account/login?from=https://blog.csdn.net/BADAO_LIUMANG_QIZHI"}'><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/useSkinWhite.png" alt="">我也要用</a>
+		</div>
+		</div>
+	</div>
+</header>
+<div class="container clearfix pt0" id="mainBox">
+    <main class="content-mian-box"> 
+    <div class="container-header">
+        <ul class="container-header-ul" id="container-header-ul">
+         <li class="active margin" id="container-header-blog" data-type="blog" data-num="1668"><span  data-report-click='{"spm":"1001.2014.3001.5189"}'>博客(1668)</span></li> 
+            
+<li data-num="548" data-report-click='{"spm":"1001.2014.3001.5191"}' data-type="downloadfile" class="container-header-ul-li margin"><span >资源                (548)</span></li>
+            
+<li data-num="1" data-type="bbstopic" data-report-click='{"spm":"1001.2014.3001.5193"}' class="container-header-ul-li margin"><span >论坛                (1)</span></li>
+            <li data-num="0" data-type="askquestion" class="container-header-ul-li"></li>
+            <li data-num="" data-type="shou" data-report-click='{"spm":"1001.2014.3001.5232"}' data-flag="true" id="blogCollection" class="container-header-ul-li margin"><span>收藏</span></li>
+            <li data-num="" data-type="guan" data-report-click='{"spm":"1001.2014.3001.5233"}' data-flag="true" id="blogFollow" class="container-header-ul-li margin"><span>关注</span></li>
+        </ul>
+    </div>
+<div class="articleMeList-integration" id="articleMeList-blog" style="display:block;">
+  <div class="filter-box d-flex align-items-center">
+      <form action="" id="seeOriginal">
+      <label class="chk-box" for="chkOriginal">
+        <input onchange="this.checked ? document.getElementById('seeOriginal').submit() : location.href = 'https://blog.csdn.net/BADAO_LIUMANG_QIZHI'" type="checkbox" name="t" value="1"  id="chkOriginal" data-report-click='{"spm":"1001.2014.3001.5236","extend1":"点击选中"}'>
+        只看原创
+      </label>
+      </form>
+      <dl class="filter-sort-box d-flex align-items-center">
+        <dt>排序：</dt>
+        <dd><a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI" data-report-query="" class="btn-filter-sort active" target="_self" data-report-click='{"spm":"1001.2014.3001.5237"}'>按最后发布时间</a></dd>
+        <dd><a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI" data-report-query="orderby=ViewCount" class="btn-filter-sort " target="_self" data-report-click='{"spm":"1001.2014.3001.5238"}'>按访问量</a></dd>
+        <dd><a class="btn btn-sm rss" href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/rss/list" data-report-click='{"spm":"1001.2014.3001.5239"}'>
+        <img class="rss-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/rss.png" alt="">RSS订阅</a>
+        </dd>
+    </dl>
+  </div>
+  <div class="article-list">
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116329899">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116329899"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Gitlab怎样添加组、创建用户、创建项目与推送代码
+        </a> 
+      </h4>
+      <p class="content">
+        场景CentOS6中安装、配置、启动GitLab以及遇到的那些坑：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116304911在上面已经将GitLab安装并配置好之后。怎样新建组、用户、项目，以及后续的推送代码等。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现上面安装、配置并启动完git
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-05-01 14:09:56</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">27</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116326218">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116326218"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-项目整体、收尾、变更管理考点笔记
+        </a> 
+      </h4>
+      <p class="content">
+        场景历年考点分布什么是ITOWhat--每个子过程的定义Why--每个子过程的作用How--每个子过程的ITTO输入(Input):依据是什么、参考什么、应该审查什么工具和技术(Tool 和 Technology):用什么方法、用什么技术输出(Output):下一步制定什么、是为了做什么、记录在什么文件中项目整体管理包括的过程(1)制定项目章程:编写一份正式文件的过程，这份文件就是项目章程。通过发布项目章程，正式地批准项目并授权项目经理在项目活.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-05-01 10:36:41</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">39</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116304911">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116304911"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS6中安装、配置、启动GitLab以及遇到的那些坑
+        </a> 
+      </h4>
+      <p class="content">
+        场景GitLab是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的web服务。GitLab和GitHub一样属于第三方基于Git开发的作品，免费且开源(基于MIT协议)，与Github类似，可以注册用户，任意提交你的代码，添加SSHKey等等。不同的是，GitLab是可以部署到自己的服务器上，数据库等一切信息都掌握在自己手上，适合团队内部协作开发，你总不可能把团队内部的智慧总放在别人的服务器上吧?简单来说可把GitLab看作个人版的GitHub。注：博
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-30 15:51:25</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">22</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116265771">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116265771"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS配置启动ssh与开机自启
+        </a> 
+      </h4>
+      <p class="content">
+        场景在CentOS中安装gitlab时，需要配置SSH为开机启动。所以需要检查和配置服务器上是否已经启动。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现首先查看SSH是否安装rpm -qa | grep ssh可以看到已经安装了SSH如果没有安装可以通过yum install openssh-server来安装然后查看SSH服务是.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-29 13:05:41</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">24</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116200132">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116200132"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS中怎样安装、配置、启动Nginx
+        </a> 
+      </h4>
+      <p class="content">
+        场景Nginx在Windows下载安装启动与配置前后端请求代理：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/108122023在上面已经实现在Windows上搭建Nginx并部署项目后，如果是在CentOS的服务器上怎样配置Nginx。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现首先ngin
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-27 14:24:45</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">18</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116175976">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116175976"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS中怎样解压rar文件
+        </a> 
+      </h4>
+      <p class="content">
+        场景CentOS的服务器解压tar.gz包可以通过tar -zxvf badao.tar.gz来进行解压，可是如果是需要将自己打包为rar的压缩包上传之后并解压。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现下载rarlinuxwget http://www.rarlab.com/rar/rarlinux-x64-5.3.0.tar.gz然后解.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-26 22:26:34</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">22</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116168639">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116168639"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS6.9中使用yum install时提示:Cannot find a valid baseurl for repo: centos-sclo-rh
+        </a> 
+      </h4>
+      <p class="content">
+        场景CentOS的版本为6.9，在使用yum install 安装相关依赖时提示:Cannot find a valid baseurl for repo: centos-sclo-rh注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现原因是官方结束了对CentOS6的支持，导致在使用yum安装或更新程序的时候出现错误。首先清空CenOS-Base.repo.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-26 19:23:08</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">17</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116167708">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116167708"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS中启动Jar包、后台启动、查看输出日志、查看服务进程、杀死进程
+        </a> 
+      </h4>
+      <p class="content">
+        场景将项目的jar包打包后部署在CentOS的服务器上。怎样后台运行jar包，即使断开会话，服务依然运行。运行后查看输出的日志，看看是否启动成功。查看启动后服务的进程，以及杀死进程。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现首先使用Xftp将jar包上传到服务器上的某路径然后使用XShell连接并进入到此目录下然后在此目录下执行以下命令.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-26 19:02:19</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">21</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116154043">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116154043"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS中配置Mysql表名忽略大小写以及提示:Caused by: org.quartz.impl.jdbcjobstore.LockException: Failure obtaining d
+        </a> 
+      </h4>
+      <p class="content">
+        场景Jar包在本地Windows服务器上运行时不提示任何报错。但是在CentOS上运行时提示:Caused by: org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock这是因为在Linux平台下MySQL是默认严格区分大小写的。需要去修改Mysql的配置文件。CentOS中怎样安装mysql并修改密码、设置开机启动、配置远程连接：https://blog.csdn.net/BADA.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-26 14:33:45</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">26</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116142600">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116142600"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS中部署jar包时提示:org.quartz.SchedulerException: Couldn‘t get host name
+        </a> 
+      </h4>
+      <p class="content">
+        场景jar包在本地Windows系统上运行不报错，在CentOS服务器上运行时提示:org.quartz.SchedulerException: Couldn't get host name注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现这是因为jar包中有用到127.0.0.1来连接本地的数据库的代码。然后CentOS服务器找不到主机。首先查看主机名.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-26 08:56:15</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">11</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116136074">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116136074"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS6中怎样将jdk1.7升级到1.8
+        </a> 
+      </h4>
+      <p class="content">
+        场景在CentOS6上安装的jdk是1.7,在运行jar包时提示:Unsupported major.minor version 52.0这是因为此项目是用JDK1.8编写，JDK1.7版本太低不支持。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现首先下载jdk1.8在linux上的tar包。可从从其官网下载，但是需要注册登录。或者从网络上自行搜索.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-25 19:12:31</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">11</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116125970">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116125970"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS6在使用yum install 时提示镜像源路径不存在:PYCURL ERROR 22 - “The requested URL returned error: 404 Not Found
+        </a> 
+      </h4>
+      <p class="content">
+        场景CentOS6.9的版本在使用yum install gcc-c++安装C和C++的插件时提示：PYCURL ERROR 22 - “The requested URL returned error: 404 Not Found“注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现一开始在使用yum安装插件时提示：Loading mirror sp.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-25 13:46:17</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">15</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116119210">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116119210"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-项目立项管理考点笔记
+        </a> 
+      </h4>
+      <p class="content">
+        场景项目立项管理历年考点分布注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现立项流程可行性研究包括的内容招标与投标评标与选定承建方可行性研究的内容与步骤初步可行性研究与辅助研究详细可行性研究项目论证项目评估立项管理的案例分析储备记忆要点...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-25 10:52:03</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">14</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116017511">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116017511"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Xftp连接到Linux服务器时提示连接失败的配置
+        </a> 
+      </h4>
+      <p class="content">
+        场景使用Xftp连接到CentOS系统时提示会话的属性设置为这里的协议应该是SFTP，并且默认端口是22就可以建立连接了
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-22 15:55:42</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">22</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="116015985">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116015985"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS中怎样安装mysql并修改密码、设置开机启动、配置远程连接
+        </a> 
+      </h4>
+      <p class="content">
+        场景服务器的操作系统为CentOS6.9需要在上面安装Mysql数据库并能远程连接。安装之前首先检查是否已经安装了Mysqlrpm -qa | grep mysql注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现下载安装包第一种直接通过yum repository下载wget http://dev.mysql.com/get/mysql80-comm..
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-22 15:27:05</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">28</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115984611">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115984611"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          CentOS中怎样查看系统版本和内核版本
+        </a> 
+      </h4>
+      <p class="content">
+        场景在CenOS系统中怎样查看具体的系统的版本。使用Xshell登录后输入以下命令cat /etc/redhat-release那么上面的CentOS release 6.9就是具体的版本了。查看内核版本等信息可以执行以下命令uname -a...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-21 23:20:44</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">33</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115983635">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115983635"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Windows中启动Redis走配置文件的bat脚本
+        </a> 
+      </h4>
+      <p class="content">
+        场景Windows中Redis的下载安装与修改密码并启动：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/107486313在上面通过修改配置文件后启动redis的命令是redis-server.exe redis.windows.conf每次需要启动时都要在redis的目录下打开cmd，然后输入上面的命令。可以将这个命令做成bat脚本的方式，双击执行执行这个命令。实现效果如下注：博客：http.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-21 22:53:42</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">26</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115974868">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115974868"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Vue中使用Openlayers加载Geoserver发布的TileWMS时单击获取shp文件的坐标信息
+        </a> 
+      </h4>
+      <p class="content">
+        场景Vue中使用Openlayers加载Geoserver发布的TileWMS：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115916949在上面加载出来了TileWMS并能成功显示地图后，如果想在地图上点击能获取到点的坐标信息。在此之前需要了解下shp文件shpShapefile文件是美国环境系统研究所（ESRI）所研制的GIS文件系统格式文件，是工业标准的矢量数据文件。Shapefile将空间特.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-21 19:46:29</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">33</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115972968">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115972968"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-信息系统项目管理基础考点笔记
+        </a> 
+      </h4>
+      <p class="content">
+        场景1、此部分一般在上午考2分左右的选择题，不是很重要，主要介绍了项目管理体系，起着提纲孕领的作用!新教程在生命周期模型这块增加知识点较多!需要特别注意!2、在案例分析中也可能考的，比如17年上半年考了生命周期模型的选择在论文写作中一般不考3、此部分是提纲竿领的章节，不需要花过多时间进行学习，只需要掌握我们讲的一些要点即可历年考点分布注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-21 19:19:04</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">36</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115916949">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115916949"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Vue中使用Openlayers加载Geoserver发布的TileWMS
+        </a> 
+      </h4>
+      <p class="content">
+        场景Openlayers下载与加载geoserver的wms服务显示地图：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114320531Vue中使用Openlayers加载Geoserver发布的ImageWMS：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115867709在上面已经加载ImageWMS的基础上，想要加载TileWMSIma
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-20 19:41:06</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">30</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115915827">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115915827"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-信息化与信息系统考点笔记(下)
+        </a> 
+      </h4>
+      <p class="content">
+        场景信息系统项目管理师-信息化与信息系统核心知识点思维脑图：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114925580核心知识点思维导图见上面，必备考点笔记整理如下。笔记分为上下两个部分，上部分的链接如下：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115820274注：博客：https://blog.csdn.net/badao_l
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-20 18:47:14</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">21</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115867709">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115867709"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Vue中使用Openlayers加载Geoserver发布的ImageWMS
+        </a> 
+      </h4>
+      <p class="content">
+        场景Openlayers下载与加载geoserver的wms服务显示地图：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114320531在上面使用Openlayers加载wms服务显示地图的基础上，如果想要在Vue中使用Openlayers加载地图怎么用。在上面使用图层预览后可以直接在网页中显示wms地图ImageWMS与TileWMS的区别相同点：都是加载WMS服务。不同点：TitleWMS会把当前.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-19 16:39:06</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">19</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115826845">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115826845"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Vue中使用Openlayers加载OSM(Open Street Map)显示街道地图
+        </a> 
+      </h4>
+      <p class="content">
+        场景Openlayers下载与加载geoserver的wms服务显示地图：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114320531在上面使用Openlayers加载wms服务显示地图的基础上，如果想要在Vue中使用Openlayers加载地图怎么用。上面加载的wms的地图服务Openlayers的官方Quick start中给的例子使用的是OSMhttps://openlayers.org/en/lates
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-18 13:32:58</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">51</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115820274">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115820274"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-信息化与信息系统考点笔记(上)
+        </a> 
+      </h4>
+      <p class="content">
+        场景信息系统项目管理师-信息化与信息系统核心知识点思维脑图：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114925580核心知识点思维导图见上面，必备考点笔记整理如下。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现第一章信息化与信息系统概述本章小节概述1.1信息系统与信息化1.2
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-18 10:32:36</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">22</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115597765">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115597765"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-论文写作基本介绍笔记
+        </a> 
+      </h4>
+      <p class="content">
+        场景高级信息系统项目管理师考试论文写作作为下午科目的考试(3:20-5:20)，考试时间为2小时，要求写不少于2000字的论文2道论文题目，选择其中一道完成，总分75，45分及格，时间为2小时，要求写出不少于2000的论文。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现论文稿纸示例论文写作历年真题题目考点区域分布10大领域47...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-11 13:42:48</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">45</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115541995">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115541995"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-学习方法、重难点、10大知识领域笔记
+        </a> 
+      </h4>
+      <p class="content">
+        场景学习方法、重难点、10大知识领域笔记有关的知识整理。考试科目和分值分布注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现学习方法-费曼技巧重难点-PDCA循环人机料法环十大知识领域(十大管理)10大管理之间的关系项目管理最本质的内容就是整体管理，项目的范围、时间、成本、质量、人力资源、沟通、风险采购...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-09 11:21:06</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">57</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115486050">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115486050"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Logback配置输出sql
+        </a> 
+      </h4>
+      <p class="content">
+        场景若依微服务版手把手教你本地搭建环境并运行前后端项目：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/109363303在此基础上搭建起来了项目架构，但是默认控制台是不输出sql的。默认使用的是Logback输出日志。怎样使其输出sql实现找到对应服务下的resouece下的logback.xml调整日志级别为debug&lt;logger name=&quot;com.ruoyi&quot; level=&quot;debug.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-07 15:03:33</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">47</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115483196">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115483196"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-信息系统成本管理核心知识点思维脑图
+        </a> 
+      </h4>
+      <p class="content">
+        场景信息系统项目成本管理有关的知识整理。注：博客：https://blog.csdn.net/badao_liumang_qizhi 关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现概述成本规划估算成本制定预算控制成本成本管理的工具和技术完整思维导图下载https://download.csdn.net/download/BADAO_LIUMANG_QIZHI/16520896...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-07 13:13:32</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">35</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115466945">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115466945"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          SpringBoot中通过重写WebMvcConfigurer的方法配置静态资源映射实现图片上传后返回网络Url
+        </a> 
+      </h4>
+      <p class="content">
+        场景前端调用上传照片的功能，将某照片上传到服务器上某磁盘路径下，然后将通过静态资源映射，将在服务器上访问的地址存储到数据库中，这样在需要获取这种照片的时候就能通过服务器上的url来获取和显示这张照片。若依前后端分离版本地搭建开发环境并运行项目的教程：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/108465662在此基础上搭建起来前后端分离的项目，然后使用若依的通用的上传接口实现图片的上传。关于图片的上传的前端以及
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-06 19:07:34</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">40</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115457802">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115457802"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          SpringCloud(若依微服务版)读取Nacos中的配置以及多个服务共享Nacos配置的使用
+        </a> 
+      </h4>
+      <p class="content">
+        场景若依微服务版手把手教你本地搭建环境并运行前后端项目：https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/109363303在上面介绍了使用SpringCloud(若依微服务版)搭建项目的基础上，在业务开发中需要将某些配置存放在配置文件中，比如上传文件的地址、第三方接口的地址端口等。然后在使用的地方动态配置。这样在配置需要进行修改时就只需要修改配置文件即可。就不需要修改代码了。注：博客：https://blog.c
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-06 11:52:05</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">111</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115439904">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115439904"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-信息系统进度管理核心知识点思维脑图
+        </a> 
+      </h4>
+      <p class="content">
+        场景信息系统项目进度管理有关的知识整理。注：博客：https://blog.csdn.net/badao_liumang_qizhi 关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现进度管理概述规划进度管理定义活动排列活动顺序估算活动资源估算活动持续时间制订进度计划控制进度项目进度管理的技术和工具完整思维导图下载https://down...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-04-05 11:31:53</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">29</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115326934">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115326934"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Vue中Web组态实现方案-WebTopo的使用
+        </a> 
+      </h4>
+      <p class="content">
+        场景Web组态实现效果WebTopo的github地址https://github.com/phynos/WebTopo注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现首先你的电脑需要安装node，可以使用npm进行安装依赖进入根目录执行npm install建议使用cnpm install如果安装依赖有问题，两种方式切换着用或者多.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-03-30 15:27:27</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">73</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115324189">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115324189"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Vue中组态实现方案-BaseMap的使用
+        </a> 
+      </h4>
+      <p class="content">
+        场景Vue中实现组态绘制的效果可以方便的实现自由绘制底图与展示效果。github地址：https://github.com/bojue/BaseMapgitee地址：https://gitee.com/JiaBin520/BaseMap注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现将代码克隆到本地git clone https://gi.
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-03-30 14:09:46</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">58</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115323657">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115323657"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          skywalking链路追踪在微服务架构中的使用
+        </a> 
+      </h4>
+      <p class="content">
+        场景链路追踪随着微服务分布式系统变得日趋复杂，越来越多的组件开始走向分布式化，如分布式服务、分布式数据库、分布式缓存等，使得后台服务构成了一种复杂的分布式网络。在服务能力提升的同时，复杂的网络结构也使问题定位更加困难。在一个请求在经过诸多服务过程中，出现了某一个调用失败的情况，查询具体的异常由哪一个服务引起的就变得十分抓狂，问题定位和处理效率是也会非常低。分布式链路追踪就是将一次分布式请求还原成调用链路，将一次分布式请求的调用情况集中展示，比如各个服务节点上的耗时、请求具体到达哪台机器上、每个服
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-03-30 13:54:10</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">47</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/commentCountWhite.png" alt="">1</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115308120">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115308120"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Mysql中怎样设置指定ip远程访问连接
+        </a> 
+      </h4>
+      <p class="content">
+        场景Mysql安装在远程的Windows 服务器上，需要配置使指定的ip可以访问。如果没有提前配置指定ip，那么在访问时就会提示：注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现登录到服务器上,在mysql的安装目录下的bin目录下打开cmd，连接登录mysqlmysql -u root -p然后输入root密码登录执行下面语句GRAN...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-03-29 18:37:43</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">44</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115300415">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115300415"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-信息系统范围管理核心知识点思维脑图
+        </a> 
+      </h4>
+      <p class="content">
+        场景信息系统项目范围管理有关的知识整理。注：博客：https://blog.csdn.net/badao_liumang_qizhi 关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现范围管理概述与规划范围管理收集需求范围定义创建WBS确定范围控制范围完整版思维导图下载https://download.csdn.net/download/BADAO_LIUMANG_QIZHI/1...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-03-29 14:30:29</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">18</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115260885">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115260885"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          Mysql中怎样使用update更新某列的数据减去指定值
+        </a> 
+      </h4>
+      <p class="content">
+        场景Mysql数据库中两列来存储坐标数据此两列的类型为decimal由于坐标系的坐标原点调整，需要将此两列的x与y统一更新，减去指定的值实现update signallight set site_x = site_x-368.1其中singallight是表名，site_x是列名，需要统一减去368.1...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-03-27 10:22:35</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">82</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115209884">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115209884"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-信息系统项目整体管理核心知识点思维脑图
+        </a> 
+      </h4>
+      <p class="content">
+        场景信息系统项目整体管理有关的知识整理。注：博客：https://blog.csdn.net/badao_liumang_qizhi 关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现整体管理概述项目整体管理知识领域包括识别、定义、结合、统一与协调项目管理过程组内不同过程与项目管理活动所需进行的各种过程与活动是一个全局性、综合性的管理制定项目章程制定项目管理计划指导与管理项目执行项目监控工作实施整体...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-03-25 15:28:24</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">43</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115177872">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115177872"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-信息系统立项管理核心知识点思维脑图
+        </a> 
+      </h4>
+      <p class="content">
+        场景信息系统项目立项管理有关的知识整理。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现立项管理内容可行性研究项目评估与论证补充知识完整版思维导图下载地址https://download.csdn.net/download/BADAO_LIUMANG_QIZHI/16073159...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-03-24 15:15:22</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">31</span>
+        </p>
+      </div>
+    </div>
+    <div class="article-item-box csdn-tracking-statistics" data-articleid="115091339">
+      <h4 class="">
+        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/115091339"  data-report-click='{"spm":"1001.2014.3001.5190"}' target="_blank">
+            <span class="article-type type-1 float-none">原创</span>
+          信息系统项目管理师-信息系统项目管理基础核心知识点思维脑图
+        </a> 
+      </h4>
+      <p class="content">
+        场景信息系统项目管理基础有关的知识整理。注：博客：https://blog.csdn.net/badao_liumang_qizhi关注公众号霸道的程序猿获取编程相关电子书、教程推送与免费下载。实现项目管理基础组织结构对项目的影响信息系统的生命周期项目管理过程与补充完整思维导图下载地址https://download.csdn.net/download/BADAO_LIUMANG_QIZHI/16039284...
+      </p>
+      <div class="info-box d-flex align-content-center">
+        <p>
+          <span class="date">2021-03-22 18:47:24</span>
+          <span class="read-num"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">63</span>
+        </p>
+      </div>
+    </div>
+  </div>
+      <div class="pagination-box" id="pageBox"></div>
+</div>
+<div class="articleMeList-integration">
+  <div class="article-list-integration">
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/10526704" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Java架构师指南配套代码资源</h4></a>        <div class="desc">Java架构师指南配套代码资源,Java架构师指南配套代码资源</div>
+        <div class="bottom">
+          <p class="time">
+           2018-07-07
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11136765" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>MyBatisPlus条件构造器带条件查询selectList使用示例代码</h4></a>        <div class="desc">MyBatisPlus条件构造器带条件查询selectList使用示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-04-22
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/10868928" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>SSM整+Maven整合时使用Mybatis逆向工程自动生成代码</h4></a>        <div class="desc">SSM整+Maven整合时使用Mybatis逆向工程自动生成代码，SSM整+Maven整合时使用Mybatis逆向工程自动生成代码</div>
+        <div class="bottom">
+          <p class="time">
+           2018-12-22
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11185695" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>VC++9.0For&amp;Python27;.zip</h4></a>        <div class="desc">Microsoft Visual C++9.0 is required Microsoft Visual C++9.0 is required</div>
+        <div class="bottom">
+          <p class="time">
+           2019-05-17
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11142313" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>MyBatisPlus条件构造器带条件排序方法orderBy、orderByDesc、orderByAsc使用示例代码</h4></a>        <div class="desc">MyBatisPlus条件构造器带条件排序方法orderBy、orderByDesc、orderByAsc使用示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-04-24
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/12473588" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Winform中通过NPOI导出Excel的三种方式HSSFWorkbook，XSSFWorkbook，SXSSFWorkbook示例代码.zip</h4></a>        <div class="desc">Winform中通过NPOI导出Excel的三种方式HSSFWorkbook，XSSFWorkbook，SXSSFWorkbook示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2020-05-29
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/12614011" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Winform中将WebBrower浏览器控件由IE内核修改为Chrome的WebKit内核示例代码.zip</h4></a>        <div class="desc">Winform中将WebBrower浏览器控件由IE内核修改为Chrome的WebKit内核示例代码.zip</div>
+        <div class="bottom">
+          <p class="time">
+           2020-07-14
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/13487201" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Android中使用Room(ORM关系映射框架)对sqllite数据库进行增删改查示例代码.rar</h4></a>        <div class="desc">Android中使用Room(ORM关系映射框架)对sqllite数据库进行增删改查示例代码.rar</div>
+        <div class="bottom">
+          <p class="time">
+           2020-12-07
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/13082218" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>RuoYi-process多模块activity工作流项目代码.rar</h4></a>        <div class="desc">RuoYi-process多模块activity工作流项目代码；</div>
+        <div class="bottom">
+          <p class="time">
+           2020-11-02
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/12441241" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Angular中的数据请求 内置模块HttpClient实现（get post  jsonp  以及第三方模板axios请求数据示例代码.zip</h4></a>        <div class="desc">Angular中的数据请求 内置模块HttpClient实现（get post  jsonp  以及第三方模板axios请求数据示例代码.zip</div>
+        <div class="bottom">
+          <p class="time">
+           2020-05-20
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11152822" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>哔哩哔哩助手谷歌插件</h4></a>        <div class="desc">截止20190430亲测可用 哔哩哔哩助手谷歌插件</div>
+        <div class="bottom">
+          <p class="time">
+           2019-04-30
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11593399" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>C#中实现一个TreeGridView(树形表格)示例代码.zip</h4></a>        <div class="desc">C#中实现一个TreeGridView(树形表格)示例代码C#中实现一个TreeGridView(树形表格)示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-22
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11148624" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>mybatis-plus&amp;实践&amp;及架构原理</h4></a>        <div class="desc">mybatis-plus&amp;实践&amp;及架构原理</div>
+        <div class="bottom">
+          <p class="time">
+           2019-04-27
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/10798142" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>jd&amp;-gui&amp;-windows-1.4.0</h4></a>        <div class="desc">Java 反编译工具，可运行exe文件，版本1.4。</div>
+        <div class="bottom">
+          <p class="time">
+           2018-11-21
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11587578" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>C#中使用二进制和ProtoBuf分别进行序列化、反序列化、压缩、解压缩对比测试示例源码.zip</h4></a>        <div class="desc">C#中使用二进制和ProtoBuf分别进行序列化、反序列化、压缩、解压缩对比测试示例源码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-21
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="https://download.csdn.net/download/BADAO_LIUMANG_QIZHI/18270571" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>gitlab-ce-12.4.2-ce.0.el6.x86_64.rar</h4></a>        <div class="desc">gitlab-ce-12.4.2-ce.0.el6.x86_64.rar
+gitlab-ce-12.4.2-ce.0.el6.x86_64.rar
+gitlab-ce-12.4.2-ce.0.el6.x86_64.rargitlab-ce-12.4.2-ce.0.el6.x86_64.rar</div>
+        <div class="bottom">
+          <p class="time">
+           2021-04-30
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11527969" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>零基础学C#光盘源代码3.0.zip</h4></a>        <div class="desc">数据库：Microsoft SQL Server 2005 Express；
+技术平台：IIS（Internet Information Server 5版本及其以上）；.Net Framework3.5; 
+调试（开发）工具：Microsoft Visual Studio .NET 2008；
+服务器操作系统：开发过程中使用Windows XP Professional操作系统，系统运行服务器可以采用Windows 2000 Professional、Windows 2000 Server或其他操作系统。</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-12
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11611444" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Winform中使用NPOI实现导出Excel并文件另存为示例代码.zip</h4></a>        <div class="desc">Winform中使用NPOI实现导出Excel并文件另存为示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-25
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11609884" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Winform控价库-Devexpress-18使用代码.zip</h4></a>        <div class="desc">Winform控价库-Devexpress-18使用代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-24
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11608734" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Winform控件库-DevExpressComponents-14.zip</h4></a>        <div class="desc">Winform控件库-DevExpressComponents-14;</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-24
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11146176" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Python中通过PyPDF2实现PDF拆分</h4></a>        <div class="desc">Python中通过PyPDF2实现PDF拆分</div>
+        <div class="bottom">
+          <p class="time">
+           2019-04-26
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11617199" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>使用DevExpress的PdfViewer实现PDF打开、预览、另存为、打印示例代码.zip</h4></a>        <div class="desc">使用DevExpress的PdfViewer实现PDF打开、预览、另存为、打印示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-27
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/10767801" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>vue实现导出Excel的两个js文件-Blob+Export2Excel</h4></a>        <div class="desc">vue实现导出的两个js文件-Blob+Export2</div>
+        <div class="bottom">
+          <p class="time">
+           2018-11-06
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/12821547" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Vue+SpringBoot前后端交互实现文件上传示例代码.rar</h4></a>        <div class="desc">Vue+SpringBoot前后端交互实现文件上传示例代码;Vue+SpringBoot前后端交互实现文件上传示例代码;Vue+SpringBoot前后端交互实现文件上传示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2020-09-08
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/12589864" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>ASP.NET中使用一般处理程序ashx作为后台处理实现响应get和post请求示例代码.zip</h4></a>        <div class="desc">ASP.NET中使用一般处理程序ashx作为后台处理实现响应get和post请求示例代码.zip</div>
+        <div class="bottom">
+          <p class="time">
+           2020-07-08
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11612098" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Winform中使用NPOI实现Excel导入并赋值给DataTable示例代码.zip</h4></a>        <div class="desc">Winform中使用NPOI实现Excel导入并赋值给DataTable示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-25
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11962411" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>jdk-8u45-linux-x64.tar.zip</h4></a>        <div class="desc">jdk-8u45-linux-x64.tar.gz,下载后解压，jdk-8u45-linux-x64.tar.gz,下载后解压</div>
+        <div class="bottom">
+          <p class="time">
+           2019-11-06
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="https://download.csdn.net/download/BADAO_LIUMANG_QIZHI/18202179" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>浏览器中打开本地文件的浏览器插件Enable local file links.rar</h4></a>        <div class="desc">浏览器中打开本地文件的浏览器插件Enable local file links.rar
+浏览器中打开本地文件的浏览器插件Enable local file links.rar
+浏览器中打开本地文件的浏览器插件Enable local file links.rar</div>
+        <div class="bottom">
+          <p class="time">
+           2021-04-28
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11226925" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>sweetalert2相关资源文件.zip</h4></a>        <div class="desc">sweetalert2相关资源文件</div>
+        <div class="bottom">
+          <p class="time">
+           2019-06-05
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/10928169" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>MyBatis官方中文帮助文档手册</h4></a>        <div class="desc">MyBatis官方中文帮助文档手册,MyBatis官方中文帮助文档手册</div>
+        <div class="bottom">
+          <p class="time">
+           2019-01-19
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11139946" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>MyBatisPlus条件构造器带条件更新update使用示例代码</h4></a>        <div class="desc">MyBatisPlus条件构造器带条件更新update使用示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-04-23
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/12584817" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>ASP.NET的MVC中使用Cookie做身份验证示例代码.zip</h4></a>        <div class="desc">ASP.NET的MVC中使用Cookie做身份验证示例代码;</div>
+        <div class="bottom">
+          <p class="time">
+           2020-07-07
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/12584653" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>ASP.NET的MVC中使用Session做身份验证示例代码.zip</h4></a>        <div class="desc">ASP.NET的MVC中使用Session做身份验证示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2020-07-07
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/14037794" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Windows上MQ客户端MQTTBox-win.rar</h4></a>        <div class="desc">Windows上MQ客户端MQTTBox-win.rar</div>
+        <div class="bottom">
+          <p class="time">
+           2021-01-07
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11074485" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>SpringBoot中使用FastJson解析Json数据示例代码</h4></a>        <div class="desc">SpringBoot中使用FastJson解析Json数据示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-03-30
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/12028246" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Winform中实现文件批量复制示例代码</h4></a>        <div class="desc">Winform中实现文件批量复制示例代码,</div>
+        <div class="bottom">
+          <p class="time">
+           2019-12-12
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11635361" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>Winform中实现ZedGraph的多条Y轴示例代码.zip</h4></a>        <div class="desc">Winform中实现ZedGraph的多条Y轴示例代码,</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-29
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11578558" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>C#窗体应用中使用ZedGraph曲线插件绘制图表Demo程序.zip</h4></a>        <div class="desc">C#窗体应用中使用ZedGraph曲线插件绘制图表Demo程序；</div>
+        <div class="bottom">
+          <p class="time">
+           2019-08-19
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/BADAO_LIUMANG_QIZHI/12561499" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>ASP.NET中新建MVC项目并连接SqlServer数据库实现增删改查示例代码.zip</h4></a>        <div class="desc">ASP.NET中新建MVC项目并连接SqlServer数据库实现增删改查:
+https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/107024544</div>
+        <div class="bottom">
+          <p class="time">
+           2020-06-29
+          </p>
+        </div>
+    </div>
+    <div class="article-list-integration-item">
+<a href="http://download.csdn.net/download/badao_liumang_qizhi/11929718" data-report-click='{"spm":"1001.2014.3001.4369"}' target="_blank"><h4>爬取喜马拉雅音频.zip</h4></a>        <div class="desc">爬取喜马拉雅音频示例代码</div>
+        <div class="bottom">
+          <p class="time">
+           2019-10-27
+          </p>
+        </div>
+    </div>
+    <div class="bottom-move">
+ <a href="https://download.csdn.net/user/BADAO_LIUMANG_QIZHI/uploads" data-report-click='{"spm":"1001.2014.3001.4366"}' target="_blank"> 查看更多</a>    </div> 
+  </div> 
+</div>
+<div class="articleMeList-integration">
+  <div class="article-list-integration">
+    <div class="article-list-integration-item">
+<a href="https://bbs.csdn.net/topics/395529876" data-report-click='{"spm":"1001.2014.3001.4372"}' target="_blank"><h4>BADAO_LIUMANG_QIZHI的留言板</h4></a>        <div class="desc"></div>
+        <div class="bottom">
+          <p class="time">
+<span>发表于 2020-01-02</span> <span>最后回复 2020-02-11</span>          </p>
+        </div>
+    </div>
+  </div> 
+</div>
+<div class="articleMeList-integration">
+  <div class="no-data d-flex flex-column justify-content-center align-items-center">
+      <p>
+        <img class="monkey-blank" src="https://csdnimg.cn/release/blogv2/dist/pc/img/monkeyWhite.png">
+      </p>
+      <h6>空空如也</h6>
+  </div>
+</div>
+
+<div class="articleMeList-integration">
+  <div class="collecItem-box">
+    <p class="collecItem-type"><span class="active" data-type="collecAdd">TA创建的收藏夹  </span><span data-type="collecFan">TA关注的收藏夹</span></p>
+    <div class="collecItem-box-add blog-box-type-list rolling-load-shou active" data-page="1" data-flag="true" data-type="collecAdd"></div>
+    <div class="collecItem-box-add blog-box-type-list rolling-load-shou " data-page="1" data-flag="true" data-type="collecFan"></div>
+  </div>
+</div>
+<div class="articleMeList-integration">
+  <div class="blogFollow">
+    <p class="blogFollow-type"><span class="active" data-type="FollowNum">TA关注的人 </span><span data-type="FollowFan">TA的粉丝</span></p>
+    <div class="blogFollow-box rolling-load-guan blog-box-type-list active" data-page="1" data-flag="true" data-type="FollowNum"></div>
+    <div class="blogFollow-box rolling-load-guan blog-box-type-list" data-page="1" data-flag="true" data-type="FollowFan"></div>
+  </div>
+</div>
+<div class="blog-footer-bottom" style="margin-top:10px;"></div>
+<script src="https://g.csdnimg.cn/common/csdn-footer/csdn-footer.js" data-isfootertrack="false" type="text/javascript"></script>
+<script type="text/javascript">
+    window.csdn.csdnFooter.options = {
+        el: '.blog-footer-bottom',
+        type: 2
+    }
+</script>    </main>
+<aside class="blog_container_aside">
+	<div id="asideProfile" class="aside-box">
+    <div class="profile-intro d-flex">
+        <div class="avatar-box d-flex justify-content-center flex-column">
+            <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI" data-report-click='{"mod":"popu_379","spm":"1001.2101.3001.4121","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI","ab":"new"}'>
+                <img src="https://profile.csdnimg.cn/1/3/5/3_badao_liumang_qizhi" class="avatar_pic">
             </a>
         </div>
-    <div id="top_nav" class="navbar forpc">
-        <nav id="nav_main" class="navbar-main">
-            <ul id="nav_left" class="navbar-list navbar-left">
-                <li class="navbar-branding"><a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="博客园Logo" /></a></li>
-                <li><a href="/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-sitehome')">首页</a></li>
-                <li><a href="https://news.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-news')">新闻</a></li>
-                <li><a href="https://q.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-q')">博问</a></li>
-                <li><a id="nav_brandzone" href="https://brands.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-brands')">专区</a></li>
-                <li><a href="https://ing.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-ing')">闪存</a></li>
-                <li><a href="https://edu.cnblogs.com/" onclick="ga('send', 'event', 'Link', 'click', 'skin-navbar-edu')">班级</a></li>
-            </ul>
-            <ul id="nav_right" class="navbar-list navbar-right">
-                <li>
-                    <form id="zzk_search" class="navbar-search" action="https://zzk.cnblogs.com/s" method="get">
-                        <input name="w" id="zzk_search_input" placeholder="代码改变世界" type="text" tabindex="3" />
-                        <button type="submit" id="zzk_search_button">
-                            <img src="/images/aggsite/search.svg" alt="搜索" />
-                        </button>
-                    </form>
-                </li>
-                <li id="navbar_login_status" class="navbar-list">
-                    <a class="navbar-user-info navbar-blog" href="https://i.cnblogs.com/EditPosts.aspx?opt=1" alt="写随笔" title="写随笔">
-                        <img id="new_post_icon" class="navbar-icon" src="/images/aggsite/newpost.svg" alt="写随笔" />
+        <div class="user-info d-flex flex-column profile-intro-name-box">
+            <div class="profile-intro-name-boxTop">
+                <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI" class="" id="uid" title="BADAO_LIUMANG_QIZHI" data-report-click='{"mod":"popu_379","spm":"1001.2101.3001.4122","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI","ab":"new"}'>
+                    <span class="name " username="BADAO_LIUMANG_QIZHI">BADAO_LIUMANG_QIZHI</span>
+                </a>
+                <span>
+                </span>
+                <span class="flag expert-blog">
+                <span class="bubble">CSDN认证博客专家</span>
+                </span>
+                <span class="flag company-blog">
+                <span class="bubble">CSDN认证企业博客</span>
+                </span>
+            </div>
+            <div class="profile-intro-name-boxFooter">
+                <span class="personal-home-page personal-home-years">码龄3年</span>
+                    <span class="personal-home-page">
+                    <a class="personal-home-certification" href="https://i.csdn.net/#/uc/profile?utm_source=14998968" target="_blank" title="暂无认证">
+                    <img src="https://csdnimg.cn/identity/nocErtification.png" alt="">
+                    暂无认证
                     </a>
-                    <a id="navblog-myblog-icon" class="navbar-user-info navbar-blog" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx" alt="我的博客" title="我的博客">
-                        <img id="myblog_icon" class="navbar-icon" src="/images/aggsite/myblog.svg" alt="我的博客" />
-                    </a>
-                    <a class="navbar-user-info navbar-message navbar-icon-wrapper" href="https://msg.cnblogs.com/" alt="短消息" title="短消息">
-                        <img id="msg_icon" class="navbar-icon" src="/images/aggsite/message.svg?v=J0WS2P2iPgaIVgXxcAhliw4AFZIpaTWxtdoNAv9eiCA" alt="短消息" />
-                        <span id="msg_count" style="display: none"></span>
-                    </a>
-                    <div id="user_info" class="navbar-user-info dropdown">
-                        <a class="dropdown-button" href="https://home.cnblogs.com/">
-                            <img id="user_icon" class="navbar-avatar" src="/images/aggsite/avatar-default.svg" alt="用户头像" />
-                        </a>
-                        <div class="dropdown-menu">
-                            <a id="navblog-myblog-text" href="https://passport.cnblogs.com/GetBlogApplyStatus.aspx">我的博客</a>
-                            <a href="https://home.cnblogs.com/">我的园子</a>
-                            <a href="https://account.cnblogs.com/settings/account">账号设置</a>
-                            <a href="javascript:void(0)" id="navbar_lite_mode_toggle" title="简洁模式会使用简洁款皮肤显示所有博客">
-    简洁模式 <img id="navbar_lite_mode_on" src="/images/lite-mode-check.svg" class="hide" /><span id="navbar_lite_mode_spinner" class="hide">...</span>
-</a>
-                            <a href="javascript:void(0)" onclick="account.logout();">退出登录</a>
-                        </div>
-                    </div>
-                    <a class="navbar-anonymous" href="https://account.cnblogs.com/signup/">注册</a>
-                    <a class="navbar-anonymous" href="javascript:void(0);" onclick="account.login()">登录</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    
-    <div id="wrapper">
-<div id="header">
-
-<div id="top">
-<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
-</h1>
-<div id="subtitle">KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value </div>
-</div>
-<div id="sub"><div id="blog_stats_place_holder"><script>loadBlogStats();</script></div></div>
-
-
-
-
-</div>
-<div id="main_container">
-<div id="main_content">
-<div id="content">
-	<div id="post_detail">
-    <div class="post">
-        <h2>
-            
-<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/dstang2000/archive/2005/10/08/250188.html">
-    <span>使用 NDoc 对 asp.net (Web) 项目产生文档的方法</span>
-    
-
-
-
-</a>
-
-        </h2>
-        <div class="postbody">
-            <div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
-<p>NDoc是一个非常好的文档生成工具，现在还出了一些不错的中文版，如<br>破宝的<a href="http://www.percyboy.com/w/ndoc/">http://www.percyboy.com/w/ndoc/</a>。<br>但是由于NDoc现在的版本1.3 不支持Web项目，也不支持中文文件名，<br>下面提出一个临时性的解决办法</p>
-<p>1. 解决不认识http://的Web项目的问题<br>方法： <br>（1）将.csproj文件复制一份，其中将项目类型由“Web”改为“Local”<br>（2）将.sln复制一份，将其中的项目路径由<a href="http://localhost/xxxx">http://localhost/xxxx</a> 改为本地路径如 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c:/inetpub/wwwroot/xxxx ，并指向则才改过的.csproj文件。<br>然后用NDoc打开刚改过的.sln文件即可。<br><br>2. 解决不认识中文文件名、路径名的问题<br>解决方法：将.csproj用记事本打开，在最前面加上一行：<br>&lt;?xml version="1.0" encoding="utf-8" ?&gt; <br>然后另存（但文件名不变），但一定要将编码设为utf-8。<br>注意，如果项目保存则上面一行由vs.net去掉，则又得重新加上。<br><br>以上办法行得通，不过是临时的办法，<br>希望NDoc1.4中会解决这些问题。</p>
-</div>
-<div id="MySignature"></div>
-<div class="clear"></div>
-<div id="blog_post_info_block">
-    <div id="blog_post_info"></div>
-    <div class="clear"></div>
-    <div id="post_next_prev"></div>
-</div>
+                    </span>
+            </div>
         </div>
-        <p class="postfoot">
-            posted on 
-<span id="post-date">2005-10-08 12:12</span>&nbsp;
-<a href="https://www.cnblogs.com/dstang2000/">拓荒者</a>&nbsp;
-阅读(<span id="post_view_count">1189</span>)&nbsp;
-评论(<span id="post_comment_count">3</span>)&nbsp;
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=250188" rel="nofollow">编辑</a>&nbsp;
-<a href="javascript:void(0)" onclick="AddToWz(250188);return false;">收藏</a>
-        </p>
+    </div>
+    <div class="data-info d-flex item-tiling">
+        <dl class="text-center" title="1666">
+            <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI" data-report-click='{"mod":"1598321000_001","spm":"1001.2101.3001.4310"}' data-report-query="t=1">  
+                <dt><span class="count">1666</span></dt>
+                <dd class="font">原创</dd>
+            </a>
+        </dl>
+        <dl class="text-center" data-report-click='{"mod":"1598321000_002","spm":"1001.2101.3001.4311"}' title="2413">
+            <a href="https://blog.csdn.net/rank/list/weekly" target="_blank">
+                <dt><span class="count">2413</span></dt>
+                <dd class="font">周排名</dd>
+            </a>
+        </dl>
+        <dl class="text-center" title="379">
+            <a href="https://blog.csdn.net/rank/list/total" data-report-click='{"mod":"1598321000_003","spm":"1001.2101.3001.4312"}' target="_blank">
+                <dt><span class="count">379</span></dt>
+                <dd class="font">总排名</dd>
+            </a>
+        </dl>
+        <dl class="text-center" style="min-width:58px" title="2374349">  
+            <dt><span class="count">237万+</span></dt>
+            <dd>访问</dd>
+        </dl>
+        <dl class="text-center" title="8级,点击查看等级说明">
+            <dt><a href="https://blog.csdn.net/blogdevteam/article/details/103478461" target="_blank">
+                <img class="level" src="https://csdnimg.cn/identity/blog8.png">
+            </a>
+            </dt>
+            <dd>等级</dd>
+        </dl>
+    </div>
+    <div class="item-rank"></div>
+    <div class="data-info d-flex item-tiling">
+        <dl class="text-center" title="35334">
+            <dt><span class="count">3万+</span></dt>
+            <dd>积分</dd>
+        </dl>
+         <dl class="text-center" id="fanBox" title="707">
+            <dt><span class="count" id="fan">707</span></dt>
+            <dd>粉丝</dd>
+        </dl>
+        <dl class="text-center" title="596">
+            <dt><span class="count">596</span></dt>
+            <dd>获赞</dd>
+        </dl>
+        <dl class="text-center" title="512">
+            <dt><span class="count">512</span></dt>
+            <dd>评论</dd>
+        </dl>
+        <dl class="text-center" title="2064">
+            <dt><span class="count">2064</span></dt>
+            <dd>收藏</dd>
+        </dl>
+    </div>
+    <div class="aside-box-footer" data-report-view='{"spm":"3001.4296"}'>
+        <div class="badge-box d-flex">
+            <div class="badge d-flex">
+                <div class="icon-badge" title="领英">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/linkedin@240.png" alt="领英">
+                    </div>
+                </div>
+                <div class="icon-badge" title="GitHub">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/github@240.png" alt="GitHub">
+                    </div>
+                </div>
+                <div class="icon-badge" title="脉脉勋章">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/maimai@240.png" alt="脉脉勋章">
+                    </div>
+                </div>
+                <div class="icon-badge" title="签到新秀">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/qiandao3@240.png" alt="签到新秀">
+                    </div>
+                </div>
+                <div class="icon-badge" title="专栏达人">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/zhuanlandaren@240.png" alt="专栏达人">
+                    </div>
+                </div>
+                <div class="icon-badge" title="持之以恒">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/chizhiyiheng@240.png" alt="持之以恒">
+                    </div>
+                </div>
+                <div class="icon-badge" title="1024勋章">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/1024@240.png" alt="1024勋章">
+                    </div>
+                </div>
+                <div class="icon-badge" title="1024勋章">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/1024up@240.png" alt="1024勋章">
+                    </div>
+                </div>
+                <div class="icon-badge" title="1024超级勋章">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/chaoji1024@240.png" alt="1024超级勋章">
+                    </div>
+                </div>
+                <div class="icon-badge" title="勤写标兵Lv4">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/qixiebiaobing4@240.png" alt="勤写标兵Lv4">
+                    </div>
+                </div>
+                <div class="icon-badge" title="至尊王者">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/zhizunwangzhe@240.png" alt="至尊王者">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-intro-name-boxOpration">
+        <div class="opt-letter-watch-box">
+        <a class="bt-button personal-letter" href="https://im.csdn.net/chat/BADAO_LIUMANG_QIZHI" target="_blank" rel="noopener">私信</a>
+        </div>
+        <div class="opt-letter-watch-box"> 
+            <a class="personal-watch bt-button" id="btnAttent" >关注</a>  
+        </div>
+    </div>
+</div>
+<div id="asideSearchArticle" class="aside-box">
+	<div class="aside-content search-comter">
+    <div class="aside-search aside-search-blog">         
+        <input type="text" class="input-serch-blog" name="" autocomplete="off" value="" id="search-blog-words" placeholder="搜博主文章">
+        <a class="btn-search-blog">
+                    <img src="//csdnimg.cn/cdn/content-toolbar/csdn-sou.png?v=1587021042">
+        </a>
+    </div>
     </div>
 </div>
 
-<script src="https://common.cnblogs.com/highlight/10.3.1/highlight.min.js"></script>
-<script>markdown_highlight();</script>
+
+<div id="asideHotArticle" class="aside-box">
+	<h3 class="aside-title">热门文章</h3>
+	<div class="aside-content">
+		<ul class="hotArticle-list">
+			<li>
+				<a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89425635" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89425635","ab":"new"}'>
+				MybatisPlus中@TableField注解的使用
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">59427</span>
+                </a>
+			</li>
+			<li>
+				<a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84545135" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84545135","ab":"new"}'>
+				Java中BigDecimal比较大小的方法
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">49555</span>
+                </a>
+			</li>
+			<li>
+				<a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89459572" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89459572","ab":"new"}'>
+				MyBatisPlus查询方法selectById、selectOne、selectBatchIds、selectByMap、selectPage的使用
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">39853</span>
+                </a>
+			</li>
+			<li>
+				<a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89431498" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89431498","ab":"new"}'>
+				MybatisPlus中插入数据获取主键值
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">36397</span>
+                </a>
+			</li>
+			<li>
+				<a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90673806" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/90673806","ab":"new"}'>
+				Sqlserver2014下载与安装
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">36331</span>
+                </a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="asideCategory" class="aside-box flexible-box">
+    <h3 class="aside-title">分类专栏</h3>
+    <div class="aside-content">
+        <ul>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9318407.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9318407.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/2020082016261153.jpg?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">编程书籍与教程</span>
+                    </span>
+                    <span class="count float-right">29篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_10689684.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_10689684.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756925.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">信息系统项目管理师</span>
+                    </span>
+                    <span class="count float-right">32篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7784444.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7784444.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756925.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">SpringBoot</span>
+                    </span>
+                    <span class="count float-right">150篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8401955.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8401955.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756780.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">架构之路</span>
+                    </span>
+                    <span class="count float-right">126篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8051250.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8051250.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756926.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Vue</span>
+                    </span>
+                    <span class="count float-right">73篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_10826479.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_10826479.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756724.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">GIS相关</span>
+                    </span>
+                    <span class="count float-right">9篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_10388560.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_10388560.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Netty</span>
+                    </span>
+                    <span class="count float-right">5篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_10493996.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_10493996.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756757.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">MongoDb</span>
+                    </span>
+                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8058093.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8058093.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756916.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">SSM</span>
+                    </span>
+                    <span class="count float-right">48篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9466196.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9466196.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756757.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Nginx</span>
+                    </span>
+                    <span class="count float-right">16篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_10053575.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_10053575.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756780.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Electron</span>
+                    </span>
+                    <span class="count float-right">17篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9665183.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9665183.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756927.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Redis</span>
+                    </span>
+                    <span class="count float-right">31篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_10111057.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_10111057.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756754.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">ASP.NET</span>
+                    </span>
+                    <span class="count float-right">22篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9915254.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9915254.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756913.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Angular</span>
+                    </span>
+                    <span class="count float-right">24篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_10036881.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_10036881.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756928.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Ionic</span>
+                    </span>
+                    <span class="count float-right">6篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9595525.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9595525.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756925.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Dubbo</span>
+                    </span>
+                    <span class="count float-right">7篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9580882.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9580882.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756927.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">JPA</span>
+                    </span>
+                    <span class="count float-right">10篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7789776.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7789776.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756757.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Python</span>
+                    </span>
+                    <span class="count float-right">115篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9288784.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9288784.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20190428195358957.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Webservice入门项目实战</span>
+                    </span>
+                    <span class="count float-right">9篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9288273.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9288273.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20190418204236206.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">MyBatisPlus入门项目实战</span>
+                    </span>
+                    <span class="count float-right">23篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9291308.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9291308.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20190621205100539.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">EasyUI入门学习教程</span>
+                    </span>
+                    <span class="count float-right">24篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9283100.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9283100.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20190430090129231.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">SSM整合+分页+Druid+CRUD+事务+JSON JarTemplate</span>
+                    </span>
+                    <span class="count float-right">8篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9286857.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9286857.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20190430085943515.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">SpringBoot实战项目</span>
+                    </span>
+                    <span class="count float-right">26篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9282563.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9282563.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20190430090107522.jpeg?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Vue实现仿百度音乐播放器</span>
+                    </span>
+                    <span class="count float-right">15篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7813153.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7813153.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756916.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">IDE问题解决</span>
+                    </span>
+                    <span class="count float-right">101篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7790232.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7790232.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756919.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">PC</span>
+                    </span>
+                    <span class="count float-right">18篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7791688.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7791688.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756923.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Jquery</span>
+                    </span>
+                    <span class="count float-right">46篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7808513.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7808513.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756916.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Linux</span>
+                    </span>
+                    <span class="count float-right">59篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7809055.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7809055.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756780.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">版本管理</span>
+                    </span>
+                    <span class="count float-right">15篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7914160.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7914160.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Android</span>
+                    </span>
+                    <span class="count float-right">92篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7937710.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7937710.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756926.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">SpringMVC</span>
+                    </span>
+                    <span class="count float-right">10篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7960133.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7960133.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756916.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Cordova</span>
+                    </span>
+                    <span class="count float-right">11篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_7976458.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_7976458.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756738.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">数据库</span>
+                    </span>
+                    <span class="count float-right">59篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8004847.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8004847.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756930.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Maven</span>
+                    </span>
+                    <span class="count float-right">14篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8011622.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8011622.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756927.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">JS</span>
+                    </span>
+                    <span class="count float-right">14篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8011706.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8011706.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756918.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">BJUI</span>
+                    </span>
+                    <span class="count float-right">13篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8049247.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8049247.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756930.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">MyBatis</span>
+                    </span>
+                    <span class="count float-right">18篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8083583.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8083583.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756927.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Webpack</span>
+                    </span>
+                    <span class="count float-right">10篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8093682.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8093682.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756927.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">ElementUI</span>
+                    </span>
+                    <span class="count float-right">48篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8095491.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8095491.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756927.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Node</span>
+                    </span>
+                    <span class="count float-right">30篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8097299.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8097299.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756724.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">JavaWeb</span>
+                    </span>
+                    <span class="count float-right">8篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8318159.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8318159.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756724.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">前端那些骚操作</span>
+                    </span>
+                    <span class="count float-right">30篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8444799.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8444799.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756724.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">JavaSE</span>
+                    </span>
+                    <span class="count float-right">64篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8527459.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8527459.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756724.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Vue实现仿音乐播放器</span>
+                    </span>
+                    <span class="count float-right">14篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8548266.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8548266.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756918.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Bootstrap</span>
+                    </span>
+                    <span class="count float-right">3篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8603340.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8603340.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Html/CSS</span>
+                    </span>
+                    <span class="count float-right">12篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8869535.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8869535.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756780.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">MyBatisPlus</span>
+                    </span>
+                    <span class="count float-right">42篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8870205.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8870205.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756925.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Webservice</span>
+                    </span>
+                    <span class="count float-right">19篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8938385.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8938385.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756925.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Shiro</span>
+                    </span>
+                    <span class="count float-right">12篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_8982692.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_8982692.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756919.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">SpringCloud</span>
+                    </span>
+                    <span class="count float-right">12篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9005604.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9005604.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756925.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">EasyUI</span>
+                    </span>
+                    <span class="count float-right">25篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9065030.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9065030.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756926.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">微服务架构</span>
+                    </span>
+                    <span class="count float-right">20篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9187989.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9187989.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756928.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">Docker</span>
+                    </span>
+                    <span class="count float-right">26篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9216318.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9216318.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756738.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">C#</span>
+                    </span>
+                    <span class="count float-right">262篇</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="clearfix" target="_blank" href="https://blog.csdn.net/badao_liumang_qizhi/category_9250528.html" data-report-click='{"mod":"popu_537","spm":"1001.2101.3001.4137","strategy":"pc付费专栏左侧入口","dest":"https://blog.csdn.net/badao_liumang_qizhi/category_9250528.html","ab":"new"}'>
+                    <img src="https://img-blog.csdnimg.cn/20201014180756923.png?x-oss-process=image/resize,m_fixed,h_64,w_64" alt="" onerror="this.src='https://img-blog.csdnimg.cn/20201014180756922.png?x-oss-process=image/resize,m_fixed,h_64,w_64'">
+                    <span class="title oneline">
+                        <span class="text">信息系统架构设计师</span>
+                    </span>
+                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p class="text-center">
+        <a class="flexible-btn" data-fbox="aside-archive"><img class="look-more" src="https://csdnimg.cn/release/blogv2/dist/pc/img/arrowDownWhite.png" alt=""></a>
+    </p>
+</div>
+<div id="asideNewComments" class="aside-box">
+    <h3 class="aside-title">最新评论</h3>
+    <div class="aside-content">
+        <ul class="newcomment-list">
+            <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84038383#comments_16217663" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84038383#comments_16217663","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84038383#comments_16217663","ab":"new"}'>Windows上配置SSHKey到GItHub</a>
+                <p class="comment ellipsis">
+                    <a href="https://letmefly.blog.csdn.net" class="user-name" target="_blank">Tisfy: </a>
+                    <span class="code-comments">我曾经忘情于汉廷的歌赋，但刚发现此文甚妙！</span>
+                </p>
+            </li>
+            <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114370676#comments_16212148" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114370676#comments_16212148","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114370676#comments_16212148","ab":"new"}'>若依微服务版怎样在common-core模块下引用第三方lib的jar包(MobileIMSDK4J_tcp的jar包)</a>
+                <p class="comment ellipsis">
+                    <a href="https://blog.csdn.net/weixin_39032019" class="user-name" target="_blank">明月十四桥: </a>
+                    <span class="code-comments">大侠文采飞扬才情过人李白唐伯虎杜甫泰戈尔在世看此文章必定甘败下风从此无脸见人，在下对你的敬佩之意有如滔滔江水连绵不绝。</span>
+                </p>
+            </li>
+            <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114369986#comments_16209256" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114369986#comments_16209256","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/114369986#comments_16209256","ab":"new"}'>Maven项目在pom文件中引入lib下的第三方jar包并打包进去</a>
+                <p class="comment ellipsis">
+                    <a href="https://blog.csdn.net/weixin_39032019" class="user-name" target="_blank">明月十四桥: </a>
+                    <span class="code-comments">笔落惊风雨，诗成泣鬼神！</span>
+                </p>
+            </li>
+            <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84618023#comments_16197835" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84618023#comments_16197835","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/84618023#comments_16197835","ab":"new"}'>String转BigDecimal，BigDecimal常用操作，以及避免踩坑</a>
+                <p class="comment ellipsis">
+                    <a href="https://letmefly.blog.csdn.net" class="user-name" target="_blank">Tisfy: </a>
+                    <span class="code-comments">好文！，正如：休言女子非英物，夜夜龙泉壁上鸣。</span>
+                </p>
+            </li>
+            <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89431498#comments_16140837" data-report-click='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89431498#comments_16140837","ab":"new"}' data-report-view='{"mod":"popu_542","spm":"1001.2101.3001.4231","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/89431498#comments_16140837","ab":"new"}'>MybatisPlus中插入数据获取主键值</a>
+                <p class="comment ellipsis">
+                    <a href="https://blog.csdn.net/weixin_43886646" class="user-name" target="_blank">allworldg: </a>
+                    <span class="code-comments">数据库受影响的行数</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="asideArchive" class="aside-box" style="display:block!important; width:300px;">
+    <h3 class="aside-title">最新文章</h3>
+    <div class="aside-content">
+        <ul class="inf_list clearfix">
+            <li class="clearfix">
+            <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116329899" target="_blank" data-report-click='{"mod":"popu_382","spm":"1001.2101.3001.4136","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116329899","ab":"new"}' data-report-view='{"mod":"popu_382","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116329899","ab":"new"}'>Gitlab怎样添加组、创建用户、创建项目与推送代码</a>
+            </li>
+            <li class="clearfix">
+            <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116326218" target="_blank" data-report-click='{"mod":"popu_382","spm":"1001.2101.3001.4136","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116326218","ab":"new"}' data-report-view='{"mod":"popu_382","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116326218","ab":"new"}'>信息系统项目管理师-项目整体、收尾、变更管理考点笔记</a>
+            </li>
+            <li class="clearfix">
+            <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116304911" target="_blank" data-report-click='{"mod":"popu_382","spm":"1001.2101.3001.4136","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116304911","ab":"new"}' data-report-view='{"mod":"popu_382","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/116304911","ab":"new"}'>CentOS6中安装、配置、启动GitLab以及遇到的那些坑</a>
+            </li>
+        </ul>
+        <div class="archive-bar"></div>
+        <div class="archive-box">
+                <div class="archive-title">2021</div> 
+                <div class="archive-content">
+                    <div class="archive-item">
+                        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/05" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/05"}'>
+                        <span class="time">05月</span>
+                        <span class="count">2篇</span>
+                        </a>
+                    </div>
+                    <div class="archive-item">
+                        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/04" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/04"}'>
+                        <span class="time">04月</span>
+                        <span class="count">29篇</span>
+                        </a>
+                    </div>
+                    <div class="archive-item">
+                        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/03" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/03"}'>
+                        <span class="time">03月</span>
+                        <span class="count">24篇</span>
+                        </a>
+                    </div>
+                    <div class="archive-item">
+                        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/02" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/02"}'>
+                        <span class="time">02月</span>
+                        <span class="count">11篇</span>
+                        </a>
+                    </div>
+                    <div class="archive-item">
+                        <a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/01" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":"https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2021/01"}'>
+                        <span class="time">01月</span>
+                        <span class="count">17篇</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="archive-list-item"><a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2020/12" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":""}'><span class="year">2020年</span><span class="num">442篇</span></a></div>
+                <div class="archive-list-item"><a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2019/12" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":""}'><span class="year">2019年</span><span class="num">786篇</span></a></div>
+                <div class="archive-list-item"><a href="https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/month/2018/12" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":""}'><span class="year">2018年</span><span class="num">357篇</span></a></div>
+        </div>
+    </div>
+</div>
+	<div id="footerRightAds" class="isShowFooterAds">
+		<div class="aside-box">
+			<div id="kp_box_57" data-pid="57"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- PC-博客详情页-左下视窗（300*600） -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1076724771190722"
+     data-ad-slot="1173711872"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
 <script>
-    var allowComments = true, cb_blogId = 9986, cb_blogApp = 'dstang2000', cb_blogUserGuid = 'd796310b-63cf-dd11-9e4d-001cf0cd104b';
-    var cb_entryId = 250188, cb_entryCreatedDate = '2005-10-08 12:12', cb_postType = 1;
-    updatePostStats(
-        [cb_entryId],
-        function(id, count) { $("#post_view_count").text(count) },
-        function(id, count) { $("#post_comment_count").text(count) })
-    zoomManager.apply("#cnblogs_post_body img:not(.code_img_closed):not(.code_img_opened)");
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=57&a=2488&c=0&k=&spm=1001.2014.3001.5001&d=1&t=3&u=4978c51bc8ae4ae8bed37b458c32c355" style="display: block;width: 0px;height: 0px;"></div>
+		</div>
+	</div>
+    <!-- 详情页显示目录 -->
+</aside>
+<script>
+	$("a.flexible-btn").click(function(){
+		$(this).parents('div.aside-box').removeClass('flexible-box');
+		$(this).parents("p.text-center").remove();
+	})
 </script>
-<a name="!comments"></a>
-<div id="blog-comments-placeholder"></div>
-<div id="comment_form" class="commentform">
-    <a name="commentform"></a>
-    <div id="divCommentShow"></div>
-    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
-    <div id="comment_form_container"></div>
-    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
-    <div id="ad_t2"></div>
-    <div id="opt_under_post"></div>
-    <div id="cnblogs_c1" class="under-post-card">
-        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+<script type="text/javascript"  src="https://g.csdnimg.cn/user-tooltip/2.4/user-tooltip.js"></script>
+<script type="text/javascript"  src="https://g.csdnimg.cn/user-medal/1.0.6/user-medal.js"></script></div>
+<div class="mask"></div>
+<div class="promptBox clearfix">
+    <div class="title clearfix bottom-dis-16">
+        <span class="float-left">提示</span>
+        <a class="float-right Boxclose">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#csdnc-times"></use>
+            </svg>
+        </a>
     </div>
-    <div id="under_post_card1"></div>
-    <div id="cnblogs_c2" class="under-post-card">
-        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
+    <div class="text">确定要删除当前文章？</div>
+    <div class="pro-btn float-right">
+        <a class="clickNo">取消</a>
+        <a class="clickYes">删除</a>
     </div>
-    <div id="under_post_card2"></div>
-    <div id="HistoryToday" class="under-post-card"></div>
-    <script type="text/javascript">
-       var commentManager = new blogCommentManager();
-       commentManager.renderComments(0);
-       fixPostBody();
-       deliverBigBanner();
-setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
-       deliverC1C2();
-       loadNewsAndKb();
-       loadBlogSignature();
-LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
-       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
-       loadOptUnderPost();
-       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
-    </script>
 </div>
-
-
-
-</div>
-</div>
-<div id="leftmenu">
-
-
-<h3>导航</h3>
-<ul>
-    <li>
-        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
-博客园</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
-首页</a>
-
-    </li>
-    <li>
-        
-
-<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
-新随笔</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
-联系</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/dstang2000/rss/">
-订阅</a>
-        
-<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
-    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
-</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
-管理</a>
-
-    </li>
-</ul>
-
-
-<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
-<div id="sidebar_news" class="newsItem">
-            <script>loadBlogNews();</script>
-</div>
-<div id="sidebar_c3"></div>
-<div id="blog-sidecolumn"></div>
-                    <script>loadBlogSideColumn();</script>
-
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<p id="footer">
-	Powered by: 
-	<br />
-	
-	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
-	<br />
-	Copyright &copy; 2021 拓荒者
-<br /><span id="poweredby">Powered by .NET 5.0 on Kubernetes</span>
-
-</p>
-
-
-</div>
-</div>
-
-
-    
-
-    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjuN_ZxdwkeGGouArOpqo3NAZtMOlxoNCf5RuEZxvTInc2cxDAsVt5NSxcONcOmb7ZlSMFVeBhxn0KW2GwOZ15JKmR9EXHrZ2DtxBdhsFs29pnzO2aneNcOONiUEX4qXqH4" />
-</body>
+<script  type="text/javascript">
+    var currentPage = 1;
+    var baseUrl = 'https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/list';
+    var pageSize =40;
+    var listTotal = 1668;
+    var pageQueryStr = '';
+    function getAllUrl(page) {
+        return baseUrl + "/" + page + pageQueryStr;
+    }
+</script>
+<script src="https://csdnimg.cn/release/blogv2/dist/pc/js/common-cc21cbaf03.min.js" type="text/javascript"></script>
+<script src="https://csdnimg.cn/release/blogv2/dist/pc/js/list-c16171ada3.min.js" type="text/javascript"></script>
+<script src="https://g.csdnimg.cn/side-toolbar/3.0/side-toolbar.js" type="text/javascript"></script>
+<script type="text/javascript" crossorigin src="https://g.csdnimg.cn/login-box/1.1.4/login-box.js"></script></body>
 </html>

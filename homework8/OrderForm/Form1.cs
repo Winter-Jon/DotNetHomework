@@ -106,12 +106,21 @@ namespace OrderForm
 
         private void toolStripMenuItemOrderDetailAdd_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
+            orderService.OrderList[dataGridView1.CurrentCellAddress.Y].AddOrderDetails(form3.orderDetails);
+            form3.Close();
+            bindingSource_Order.ResetBindings(true);
         }
-
+        
         private void toolStripMenuItemOrderAdd_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            orderService.AddOrder(form2.order);
+            form2.Close();
+            bindingSource_Order.ResetBindings(true);
+
         }
 
         private void toolStripMenuItem2CellChange_Click(object sender, EventArgs e)
@@ -121,12 +130,14 @@ namespace OrderForm
 
         private void toolStripMenuItem2DelRow_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            orderService.OrderList[dataGridView1.CurrentCellAddress.Y].DeleteOrderDetails(dataGridView2.CurrentCellAddress.Y );
+            bindingSource_Order.ResetBindings(true);
         }
 
         private void toolStripMenuItem1DelRow_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            orderService.DeleteOrder(dataGridView1.CurrentCellAddress.Y+1);
+            bindingSource_Order.ResetBindings(true);
         }
 
         private void toolStripMenuItem1CellChange_Click(object sender, EventArgs e)
