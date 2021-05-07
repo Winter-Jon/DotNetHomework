@@ -1,0 +1,6 @@
+D:\projects\C#\DotNetHomework\homework10\ParallelCrawl\obj\Debug\netcoreapp3.1\ParallelCrawl.csprojAssemblyReference.cache
+D:\projects\C#\DotNetHomework\homework10\ParallelCrawl\obj\Debug\netcoreapp3.1\CrawlForm.Form2.resources
+D:\projects\C#\DotNetHomework\homework10\ParallelCrawl\obj\Debug\netcoreapp3.1\ParallelCrawl.csproj.GenerateResource.cache
+D:\projects\C#\DotNetHomework\homework10\ParallelCrawl\obj\Debug\netcoreapp3.1\ParallelCrawl.AssemblyInfoInputs.cache
+D:\projects\C#\DotNetHomework\homework10\ParallelCrawl\obj\Debug\netcoreapp3.1\ParallelCrawl.AssemblyInfo.cs
+D:\projects\C#\DotNetHomework\homework10\ParallelCrawl\obj\Debug\netcoreapp3.1\ParallelCrawl.csproj.CoreCompileInputs.cache

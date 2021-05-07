@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using static CrawlForm.Program;
 
 namespace CrawlForm
@@ -58,8 +59,7 @@ namespace CrawlForm
                     if((bool)i.Value==true)
                         urlList.Add(i.Key.ToString());
                 }
-                Parallel.ForEach(urlList, item => Parse(item)
-            ) ;
+                Parallel.ForEach(urlList, item => Parse(item)) ;
                 Console.WriteLine("爬行结束");
             }
         }
