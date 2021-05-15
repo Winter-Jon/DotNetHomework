@@ -37,6 +37,17 @@ namespace OrderSQL
         public int OrderId { get; set; }
         public string Customer { get; set; }
         public List<OrderDetail> OrderDetails{ get; set; }
+        [NotMapped]
+        public int OrderPrice
+        {
+            get
+            {
+                int sum = 0;
+                if(OrderDetails!=null)
+                OrderDetails.ForEach(od => sum += od.GoodTotalPrice);
+                return sum;
+            }
+        }
     }
 
     public class OrderDetail
@@ -49,6 +60,8 @@ namespace OrderSQL
         public Order order { get; set; }
         [ForeignKey("order")]
         public int OrderId { get; set; }
+        [NotMapped]
+        public int GoodTotalPrice { get => GoodPrice * GoodNum; }
 
     }
 }

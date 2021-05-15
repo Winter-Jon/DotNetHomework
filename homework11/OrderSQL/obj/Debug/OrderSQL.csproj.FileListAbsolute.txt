@@ -25,3 +25,5 @@ D:\projects\C#\DotNetHomework\homework11\OrderSQL\obj\Debug\OrderSQL.csproj.Copy
 D:\projects\C#\DotNetHomework\homework11\OrderSQL\obj\Debug\OrderSQL.exe
 D:\projects\C#\DotNetHomework\homework11\OrderSQL\obj\Debug\OrderSQL.pdb
 D:\projects\C#\DotNetHomework\homework11\OrderSQL\obj\Debug\OrderSQL.Migrations.Init.resources
+D:\projects\C#\DotNetHomework\homework11\OrderSQL\obj\Debug\OrderForm.Form1.resources
+D:\projects\C#\DotNetHomework\homework11\OrderSQL\obj\Debug\OrderSQL.Migrations.Init1.resources

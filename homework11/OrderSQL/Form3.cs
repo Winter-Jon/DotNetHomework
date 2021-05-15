@@ -5,13 +5,13 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using OrderProgram;
+using OrderSQL;
 
 namespace OrderForm
 {
     public partial class Form3 : Form
     {
-        public OrderDetails orderDetails { get; set; }
+        public OrderDetail orderDetail { get; set; }
         public Form3()
         {
             InitializeComponent();
@@ -19,10 +19,10 @@ namespace OrderForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            orderDetails = new OrderDetails();
-            orderDetails.GoodName = textBox_GoodName.Text;
-            orderDetails.GoodNum = Convert.ToInt32(text_GoodNo.Text);
-            orderDetails.GoodPrice = Convert.ToInt32(textBox_GoodPrice.Text);
+            orderDetail = new OrderDetail();
+            orderDetail.GoodName = textBox_GoodName.Text;
+            orderDetail.GoodNum = Convert.ToInt32(text_GoodNo.Text);
+            orderDetail.GoodPrice = Convert.ToInt32(textBox_GoodPrice.Text);
 
         }
     }

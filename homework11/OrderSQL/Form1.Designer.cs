@@ -32,17 +32,12 @@ namespace OrderForm
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.bindingSource_Order = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox_search = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column2_GoodName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2_GoodPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2_GoodNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2_GoodTotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemOrderDetailAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -51,23 +46,29 @@ namespace OrderForm
             this.Column1_OrderPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemOrderAdd = new System.Windows.Forms.ToolStripMenuItem();
-            this.bindingSource_OrderDetail = new System.Windows.Forms.BindingSource(this.components);
             this.contextMenuStrip2Cell = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem2CellChange = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2DelRow = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1Cell = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1CellChange = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1DelRow = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_Order)).BeginInit();
+            this.bindingSource_Order = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource_OrderDetail = new System.Windows.Forms.BindingSource(this.components);
+            this.Column2_GoodId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2_GoodName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2_GoodPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2_GoodNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2_GoodTotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.contextMenuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_OrderDetail)).BeginInit();
             this.contextMenuStrip2Cell.SuspendLayout();
             this.contextMenuStrip1Cell.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_Order)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_OrderDetail)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,7 +81,7 @@ namespace OrderForm
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(663, 36);
+            this.panel1.Size = new System.Drawing.Size(933, 45);
             this.panel1.TabIndex = 0;
             // 
             // comboBox1
@@ -92,28 +93,28 @@ namespace OrderForm
             "金额等于",
             "金额大于",
             "金额小于"});
-            this.comboBox1.Location = new System.Drawing.Point(101, 10);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Location = new System.Drawing.Point(135, 12);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(65, 20);
+            this.comboBox1.Size = new System.Drawing.Size(85, 23);
             this.comboBox1.TabIndex = 2;
             // 
             // textBox_search
             // 
-            this.textBox_search.Location = new System.Drawing.Point(184, 10);
-            this.textBox_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_search.Location = new System.Drawing.Point(245, 12);
+            this.textBox_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_search.Name = "textBox_search";
-            this.textBox_search.Size = new System.Drawing.Size(85, 21);
+            this.textBox_search.Size = new System.Drawing.Size(112, 25);
             this.textBox_search.TabIndex = 1;
             // 
             // buttonSearch
             // 
             this.buttonSearch.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonSearch.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
-            this.buttonSearch.Location = new System.Drawing.Point(27, 4);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSearch.Location = new System.Drawing.Point(36, 5);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(60, 27);
+            this.buttonSearch.Size = new System.Drawing.Size(80, 34);
             this.buttonSearch.TabIndex = 0;
             this.buttonSearch.Text = "查询";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -128,10 +129,10 @@ namespace OrderForm
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(0, 36);
+            this.panel2.Location = new System.Drawing.Point(0, 45);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(663, 271);
+            this.panel2.Size = new System.Drawing.Size(933, 339);
             this.panel2.TabIndex = 1;
             // 
             // dataGridView2
@@ -143,20 +144,152 @@ namespace OrderForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column2_GoodId,
             this.Column2_GoodName,
             this.Column2_GoodPrice,
             this.Column2_GoodNum,
             this.Column2_GoodTotalPrice});
             this.dataGridView2.ContextMenuStrip = this.contextMenuStrip2;
-            this.dataGridView2.Location = new System.Drawing.Point(253, 0);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Location = new System.Drawing.Point(337, 0);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(411, 271);
+            this.dataGridView2.Size = new System.Drawing.Size(597, 339);
             this.dataGridView2.TabIndex = 1;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemOrderDetailAdd});
+            this.contextMenuStrip2.Name = "contextMenuStrip1";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(169, 28);
+            // 
+            // toolStripMenuItemOrderDetailAdd
+            // 
+            this.toolStripMenuItemOrderDetailAdd.Name = "toolStripMenuItemOrderDetailAdd";
+            this.toolStripMenuItemOrderDetailAdd.Size = new System.Drawing.Size(168, 24);
+            this.toolStripMenuItemOrderDetailAdd.Text = "添加订单明细";
+            this.toolStripMenuItemOrderDetailAdd.Click += new System.EventHandler(this.toolStripMenuItemOrderDetailAdd_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1_OrderNum,
+            this.Column1_Customer,
+            this.Column1_OrderPrice});
+            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.Size = new System.Drawing.Size(340, 339);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // Column1_OrderNum
+            // 
+            this.Column1_OrderNum.HeaderText = "订单号";
+            this.Column1_OrderNum.MinimumWidth = 6;
+            this.Column1_OrderNum.Name = "Column1_OrderNum";
+            this.Column1_OrderNum.ReadOnly = true;
+            this.Column1_OrderNum.Width = 81;
+            // 
+            // Column1_Customer
+            // 
+            this.Column1_Customer.HeaderText = "客户名";
+            this.Column1_Customer.MinimumWidth = 6;
+            this.Column1_Customer.Name = "Column1_Customer";
+            this.Column1_Customer.ReadOnly = true;
+            this.Column1_Customer.Width = 81;
+            // 
+            // Column1_OrderPrice
+            // 
+            this.Column1_OrderPrice.HeaderText = "总金额";
+            this.Column1_OrderPrice.MinimumWidth = 6;
+            this.Column1_OrderPrice.Name = "Column1_OrderPrice";
+            this.Column1_OrderPrice.ReadOnly = true;
+            this.Column1_OrderPrice.Width = 81;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemOrderAdd});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(139, 28);
+            // 
+            // toolStripMenuItemOrderAdd
+            // 
+            this.toolStripMenuItemOrderAdd.Name = "toolStripMenuItemOrderAdd";
+            this.toolStripMenuItemOrderAdd.Size = new System.Drawing.Size(138, 24);
+            this.toolStripMenuItemOrderAdd.Text = "添加订单";
+            this.toolStripMenuItemOrderAdd.Click += new System.EventHandler(this.toolStripMenuItemOrderAdd_Click);
+            // 
+            // contextMenuStrip2Cell
+            // 
+            this.contextMenuStrip2Cell.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip2Cell.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2CellChange,
+            this.toolStripMenuItem2DelRow});
+            this.contextMenuStrip2Cell.Name = "contextMenuStrip2";
+            this.contextMenuStrip2Cell.Size = new System.Drawing.Size(139, 52);
+            // 
+            // toolStripMenuItem2CellChange
+            // 
+            this.toolStripMenuItem2CellChange.Name = "toolStripMenuItem2CellChange";
+            this.toolStripMenuItem2CellChange.Size = new System.Drawing.Size(138, 24);
+            this.toolStripMenuItem2CellChange.Text = "修改单元";
+            this.toolStripMenuItem2CellChange.Click += new System.EventHandler(this.toolStripMenuItem2CellChange_Click);
+            // 
+            // toolStripMenuItem2DelRow
+            // 
+            this.toolStripMenuItem2DelRow.Name = "toolStripMenuItem2DelRow";
+            this.toolStripMenuItem2DelRow.Size = new System.Drawing.Size(138, 24);
+            this.toolStripMenuItem2DelRow.Text = "删除行";
+            this.toolStripMenuItem2DelRow.Click += new System.EventHandler(this.toolStripMenuItem2DelRow_Click);
+            // 
+            // contextMenuStrip1Cell
+            // 
+            this.contextMenuStrip1Cell.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1Cell.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1CellChange,
+            this.toolStripMenuItem1DelRow});
+            this.contextMenuStrip1Cell.Name = "contextMenuStrip2";
+            this.contextMenuStrip1Cell.Size = new System.Drawing.Size(139, 52);
+            // 
+            // toolStripMenuItem1CellChange
+            // 
+            this.toolStripMenuItem1CellChange.Name = "toolStripMenuItem1CellChange";
+            this.toolStripMenuItem1CellChange.Size = new System.Drawing.Size(138, 24);
+            this.toolStripMenuItem1CellChange.Text = "修改单元";
+            this.toolStripMenuItem1CellChange.Click += new System.EventHandler(this.toolStripMenuItem1CellChange_Click);
+            // 
+            // toolStripMenuItem1DelRow
+            // 
+            this.toolStripMenuItem1DelRow.Name = "toolStripMenuItem1DelRow";
+            this.toolStripMenuItem1DelRow.Size = new System.Drawing.Size(138, 24);
+            this.toolStripMenuItem1DelRow.Text = "删除行";
+            this.toolStripMenuItem1DelRow.Click += new System.EventHandler(this.toolStripMenuItem1DelRow_Click);
+            // 
+            // Column2_GoodId
+            // 
+            this.Column2_GoodId.HeaderText = "商品号";
+            this.Column2_GoodId.MinimumWidth = 6;
+            this.Column2_GoodId.Name = "Column2_GoodId";
+            this.Column2_GoodId.ReadOnly = true;
+            this.Column2_GoodId.Width = 80;
             // 
             // Column2_GoodName
             // 
@@ -190,141 +323,17 @@ namespace OrderForm
             this.Column2_GoodTotalPrice.Name = "Column2_GoodTotalPrice";
             this.Column2_GoodTotalPrice.ReadOnly = true;
             // 
-            // contextMenuStrip2
-            // 
-            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemOrderDetailAdd});
-            this.contextMenuStrip2.Name = "contextMenuStrip1";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(149, 26);
-            // 
-            // toolStripMenuItemOrderDetailAdd
-            // 
-            this.toolStripMenuItemOrderDetailAdd.Name = "toolStripMenuItemOrderDetailAdd";
-            this.toolStripMenuItemOrderDetailAdd.Size = new System.Drawing.Size(148, 22);
-            this.toolStripMenuItemOrderDetailAdd.Text = "添加订单明细";
-            this.toolStripMenuItemOrderDetailAdd.Click += new System.EventHandler(this.toolStripMenuItemOrderDetailAdd_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1_OrderNum,
-            this.Column1_Customer,
-            this.Column1_OrderPrice});
-            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(255, 271);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // Column1_OrderNum
-            // 
-            this.Column1_OrderNum.HeaderText = "订单号";
-            this.Column1_OrderNum.MinimumWidth = 6;
-            this.Column1_OrderNum.Name = "Column1_OrderNum";
-            this.Column1_OrderNum.ReadOnly = true;
-            this.Column1_OrderNum.Width = 66;
-            // 
-            // Column1_Customer
-            // 
-            this.Column1_Customer.HeaderText = "客户名";
-            this.Column1_Customer.MinimumWidth = 6;
-            this.Column1_Customer.Name = "Column1_Customer";
-            this.Column1_Customer.ReadOnly = true;
-            this.Column1_Customer.Width = 66;
-            // 
-            // Column1_OrderPrice
-            // 
-            this.Column1_OrderPrice.HeaderText = "总金额";
-            this.Column1_OrderPrice.MinimumWidth = 6;
-            this.Column1_OrderPrice.Name = "Column1_OrderPrice";
-            this.Column1_OrderPrice.ReadOnly = true;
-            this.Column1_OrderPrice.Width = 66;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemOrderAdd});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 26);
-            // 
-            // toolStripMenuItemOrderAdd
-            // 
-            this.toolStripMenuItemOrderAdd.Name = "toolStripMenuItemOrderAdd";
-            this.toolStripMenuItemOrderAdd.Size = new System.Drawing.Size(124, 22);
-            this.toolStripMenuItemOrderAdd.Text = "添加订单";
-            this.toolStripMenuItemOrderAdd.Click += new System.EventHandler(this.toolStripMenuItemOrderAdd_Click);
-            // 
-            // contextMenuStrip2Cell
-            // 
-            this.contextMenuStrip2Cell.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip2Cell.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2CellChange,
-            this.toolStripMenuItem2DelRow});
-            this.contextMenuStrip2Cell.Name = "contextMenuStrip2";
-            this.contextMenuStrip2Cell.Size = new System.Drawing.Size(125, 48);
-            // 
-            // toolStripMenuItem2CellChange
-            // 
-            this.toolStripMenuItem2CellChange.Name = "toolStripMenuItem2CellChange";
-            this.toolStripMenuItem2CellChange.Size = new System.Drawing.Size(124, 22);
-            this.toolStripMenuItem2CellChange.Text = "修改单元";
-            this.toolStripMenuItem2CellChange.Click += new System.EventHandler(this.toolStripMenuItem2CellChange_Click);
-            // 
-            // toolStripMenuItem2DelRow
-            // 
-            this.toolStripMenuItem2DelRow.Name = "toolStripMenuItem2DelRow";
-            this.toolStripMenuItem2DelRow.Size = new System.Drawing.Size(124, 22);
-            this.toolStripMenuItem2DelRow.Text = "删除行";
-            this.toolStripMenuItem2DelRow.Click += new System.EventHandler(this.toolStripMenuItem2DelRow_Click);
-            // 
-            // contextMenuStrip1Cell
-            // 
-            this.contextMenuStrip1Cell.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1Cell.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1CellChange,
-            this.toolStripMenuItem1DelRow});
-            this.contextMenuStrip1Cell.Name = "contextMenuStrip2";
-            this.contextMenuStrip1Cell.Size = new System.Drawing.Size(125, 48);
-            // 
-            // toolStripMenuItem1CellChange
-            // 
-            this.toolStripMenuItem1CellChange.Name = "toolStripMenuItem1CellChange";
-            this.toolStripMenuItem1CellChange.Size = new System.Drawing.Size(124, 22);
-            this.toolStripMenuItem1CellChange.Text = "修改单元";
-            this.toolStripMenuItem1CellChange.Click += new System.EventHandler(this.toolStripMenuItem1CellChange_Click);
-            // 
-            // toolStripMenuItem1DelRow
-            // 
-            this.toolStripMenuItem1DelRow.Name = "toolStripMenuItem1DelRow";
-            this.toolStripMenuItem1DelRow.Size = new System.Drawing.Size(124, 22);
-            this.toolStripMenuItem1DelRow.Text = "删除行";
-            this.toolStripMenuItem1DelRow.Click += new System.EventHandler(this.toolStripMenuItem1DelRow_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 308);
+            this.ClientSize = new System.Drawing.Size(933, 385);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.OrderForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_Order)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -332,9 +341,10 @@ namespace OrderForm
             this.contextMenuStrip2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_OrderDetail)).EndInit();
             this.contextMenuStrip2Cell.ResumeLayout(false);
             this.contextMenuStrip1Cell.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_Order)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource_OrderDetail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -358,10 +368,6 @@ namespace OrderForm
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1_OrderNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1_Customer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1_OrderPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2_GoodName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2_GoodPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2_GoodNum;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2_GoodTotalPrice;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2Cell;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2DelRow;
@@ -372,6 +378,11 @@ namespace OrderForm
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1DelRow;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOrderAdd;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOrderDetailAdd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2_GoodId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2_GoodName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2_GoodPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2_GoodNum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2_GoodTotalPrice;
     }
 }
 

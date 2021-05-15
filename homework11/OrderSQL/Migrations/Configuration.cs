@@ -22,6 +22,7 @@
             context.Orders.Add(new Order { OrderId = 2, Customer = "bbb" });
             context.OrderDetails.Add(new OrderDetail { GoodId = 1, GoodName = "&&", GoodPrice = 12, GoodNum = 2, OrderId = 1 });
             context.OrderDetails.Add(new OrderDetail { GoodId = 2, GoodName = "**", GoodPrice = 2, GoodNum = 32, OrderId = 2 });
+            context.OrderDetails.Add(new OrderDetail { GoodId = 3, GoodName = "@@", GoodPrice = 6, GoodNum = 4, OrderId = 1 });
             context.SaveChanges();
         }
     }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OrderProgram;
+using OrderSQL;
 
 namespace OrderForm
 {
@@ -19,47 +20,39 @@ namespace OrderForm
         public Form1()
         {
             InitializeComponent();
+            using (var db = new OrderDbContext())
+            {
 
-            OrderDetails o1 = new OrderDetails(1, "a", 10);
-            OrderDetails o2 = new OrderDetails(2, "b", 15);
-            OrderDetails o3 = new OrderDetails(3, "c", 20);
-            List<OrderDetails> orderDetailsList = new List<OrderDetails>();
-            List<OrderDetails> orderDetailsList2 = new List<OrderDetails>();
+                var orders=db.Orders.OrderBy(o=>o.OrderId).ToList();
+                var orderDetails = db.OrderDetails.OrderBy(od=>od.GoodId).ToList();
 
-            orderDetailsList.Add(o1);
-            orderDetailsList.Add(o2);
-            Order order = new Order( 1,"L",orderDetailsList);
+                bindingSource_Order.DataSource = orders;
+                dataGridView1.DataSource = bindingSource_Order;
+                Column1_OrderNum.DataPropertyName = "OrderId";
+                dataGridView1.Columns["OrderId"].Visible = false;
+                Column1_Customer.DataPropertyName = "Customer";
+                dataGridView1.Columns["Customer"].Visible = false;
+                Column1_OrderPrice.DataPropertyName = "OrderPrice";
+                dataGridView1.Columns["OrderPrice"].Visible = false;
 
-            Order order1 = new Order(2,  "J",orderDetailsList2);
+                bindingSource_OrderDetail.DataSource = bindingSource_Order;
+                bindingSource_OrderDetail.DataMember = "OrderDetails";
+                dataGridView2.DataSource = bindingSource_OrderDetail;
+                Column2_GoodId.DataPropertyName = "GoodId";
+                dataGridView2.Columns["GoodId"].Visible = false;
+                Column2_GoodName .DataPropertyName = "GoodName";
+                dataGridView2.Columns["GoodName"].Visible = false;
+                Column2_GoodNum.DataPropertyName = "GoodNum";
+                dataGridView2.Columns["GoodNum"].Visible = false;
+                Column2_GoodPrice.DataPropertyName = "GoodPrice";
+                dataGridView2.Columns["GoodPrice"].Visible = false;
+                dataGridView2.Columns["order"].Visible = false;
+                dataGridView2.Columns["OrderId"].Visible = false;
+                Column2_GoodTotalPrice.DataPropertyName = "GoodTotalPrice";
+                dataGridView2.Columns["GoodTotalPrice"].Visible = false;
 
-            orderService.AddOrder(order);
 
-            order1.AddOrderDetails(o2);
-            order1.AddOrderDetails(o1);
-            order1.AddOrderDetails(o3);
-
-            orderService.AddOrder(order1);
-
-            bindingSource_Order.DataSource = orderService.OrderList;
-            dataGridView1.DataSource = bindingSource_Order;
-            Column1_OrderNum.DataPropertyName = "OrderNum";
-            dataGridView1.Columns["OrderNum"].Visible = false;
-            Column1_Customer.DataPropertyName = "Customer";
-            dataGridView1.Columns["Customer"].Visible = false;
-            Column1_OrderPrice.DataPropertyName = "OrderPrice";
-            dataGridView1.Columns["OrderPrice"].Visible = false;
-
-            bindingSource_OrderDetail.DataSource = bindingSource_Order;
-            bindingSource_OrderDetail.DataMember = "OrderDetailsList";
-            dataGridView2.DataSource = bindingSource_OrderDetail;
-            Column2_GoodName .DataPropertyName = "GoodName";
-            dataGridView2.Columns["GoodName"].Visible = false;
-            Column2_GoodNum.DataPropertyName = "GoodNum";
-            dataGridView2.Columns["GoodNum"].Visible = false;
-            Column2_GoodPrice.DataPropertyName = "GoodPrice";
-            dataGridView2.Columns["GoodPrice"].Visible = false;
-            Column2_GoodTotalPrice.DataPropertyName = "GoodTotalPrice";
-            dataGridView2.Columns["GoodTotalPrice"].Visible = false;
+            }
 
         }
 
@@ -75,22 +68,58 @@ namespace OrderForm
             switch (comboBox1.Text)
             {
                 case "订单号":
-                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderNum == Convert.ToDouble(textBox_search.Text));
+                    int a=Convert.ToInt32(textBox_search.Text);
+                    using (var db=new OrderDbContext())
+                    {
+                        var order = db.Orders.SingleOrDefault(o => o.OrderId == a);
+                        bindingSource_Order.DataSource = order;
+                        bindingSource_OrderDetail.DataSource = bindingSource_Order;
+                        bindingSource_OrderDetail.DataMember = "OrderDetails";
+                    }
+                    //bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderId == Convert.ToDouble(textBox_search.Text));
                     break;
                 case "客户名":
-                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.Customer == textBox_search.Text);
+                    using (var db = new OrderDbContext())
+                    {
+                        var order = db.Orders.SingleOrDefault(o => o.Customer == comboBox1.Text);
+                        bindingSource_Order.DataSource = order;
+                    }
                     break;
                 case "金额大于":
-                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderPrice > Convert.ToDouble(textBox_search.Text));
+                    double b1 = Convert.ToDouble(textBox_search.Text);
+                    using (var db = new OrderDbContext())
+                    {
+                        var order = db.Orders.SingleOrDefault(o => o.OrderPrice == b1);
+                        bindingSource_Order.DataSource = order;
+                    }
                     break;
                 case "金额小于":
-                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderPrice < Convert.ToDouble(textBox_search.Text));
+                    double b2 = Convert.ToDouble(textBox_search.Text);
+                    using (var db = new OrderDbContext())
+                    {
+                        var order = db.Orders.SingleOrDefault(o => o.OrderPrice == b2);
+                        bindingSource_Order.DataSource = order;
+                    }
                     break;
                 case "金额等于":
-                    bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderPrice == Convert.ToDouble(textBox_search.Text));
+                    double b3 = Convert.ToDouble(textBox_search.Text);
+                    using (var db = new OrderDbContext())
+                    {
+                        var order = db.Orders.SingleOrDefault(o => o.OrderPrice == b3);
+                        bindingSource_Order.DataSource = order;
+                    }
                     break;
                 default:
-                    bindingSource_Order.DataSource = orderService.OrderList;
+                    using (var db = new OrderDbContext())
+                    {
+                        var order = db.Orders.OrderBy(o=>o.OrderId).ToList();
+                        var orderdetail = db.OrderDetails.OrderBy(o => o.GoodId).ToList();
+                        bindingSource_Order.DataSource = order;
+                        bindingSource_OrderDetail.DataSource = bindingSource_Order;
+                        bindingSource_OrderDetail.DataMember = "OrderDetails";
+                    }
+
+                    //bindingSource_Order.DataSource = orderService.OrderList;
                     break;
             }
         }
@@ -108,7 +137,7 @@ namespace OrderForm
         {
             Form3 form3 = new Form3();
             form3.ShowDialog();
-            orderService.OrderList[dataGridView1.CurrentCellAddress.Y].AddOrderDetails(form3.orderDetails);
+
             form3.Close();
             bindingSource_Order.ResetBindings(true);
         }
@@ -130,13 +159,13 @@ namespace OrderForm
 
         private void toolStripMenuItem2DelRow_Click(object sender, EventArgs e)
         {
-            orderService.OrderList[dataGridView1.CurrentCellAddress.Y].DeleteOrderDetails(dataGridView2.CurrentCellAddress.Y );
+            //orderService.OrderList[dataGridView1.CurrentCellAddress.Y].DeleteOrderDetails(dataGridView2.CurrentCellAddress.Y );
             bindingSource_Order.ResetBindings(true);
         }
 
         private void toolStripMenuItem1DelRow_Click(object sender, EventArgs e)
         {
-            orderService.DeleteOrder(dataGridView1.CurrentCellAddress.Y+1);
+            //orderService.DeleteOrder(dataGridView1.CurrentCellAddress.Y+1);
             bindingSource_Order.ResetBindings(true);
         }
 
