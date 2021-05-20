@@ -74,7 +74,7 @@ namespace OrderForm
                         var order = db.Orders.SingleOrDefault(o => o.OrderId == a);
                         bindingSource_Order.DataSource = order;
                         bindingSource_OrderDetail.DataSource = bindingSource_Order;
-                        bindingSource_OrderDetail.DataMember = "OrderDetails";
+                        if(order!=null)bindingSource_OrderDetail.DataMember = "OrderDetails";
                     }
                     //bindingSource_Order.DataSource = orderService.OrderList.Where(o => o.OrderId == Convert.ToDouble(textBox_search.Text));
                     break;
@@ -116,7 +116,7 @@ namespace OrderForm
                         var orderdetail = db.OrderDetails.OrderBy(o => o.GoodId).ToList();
                         bindingSource_Order.DataSource = order;
                         bindingSource_OrderDetail.DataSource = bindingSource_Order;
-                        bindingSource_OrderDetail.DataMember = "OrderDetails";
+                        if (order != null) bindingSource_OrderDetail.DataMember = "OrderDetails";
                     }
 
                     //bindingSource_Order.DataSource = orderService.OrderList;
